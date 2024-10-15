@@ -1,3 +1,4 @@
+#! /home/marek/miniconda3/envs/py38/bin/python
 # -*- coding: utf-8 -*-
 """
 Spyder Editor
