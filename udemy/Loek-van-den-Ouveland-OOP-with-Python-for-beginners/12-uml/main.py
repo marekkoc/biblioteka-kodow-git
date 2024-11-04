@@ -3,10 +3,12 @@ Udemy.com
 
 Object Oriented Programming with Python for beginners.
 
-11. UML, Inheritence
+Skcja 4. UML, Inheritence
+
+12. UML ----> Universal Modeling Language
 
 C: 2024.11.01
-M: 2024.11.01
+M: 2024.11.03 
 """
 
 class Employee:
