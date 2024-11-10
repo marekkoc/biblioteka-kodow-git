@@ -3,18 +3,20 @@ Udemy.com
 
 Object Oriented Programming with Python for beginners.
 
-Skcja 5. Refactor, Reports, Encapsulation
+Skcja 6. Dependency Injection, Polymorphism
 
-16. Encapsulation
+17. Dependency Injection
 
-C: 2024.11.08
-M: 2024.11.09
+C: 2024.11.10
+M: 2024.11.10
 """
 
 from employee import Manager
 from employee import Attendant
 from employee import Cook
 from employee import Mechanic
+from reporting import AccountingReport
+from reporting import StaffingReport
 
           
 print()         
@@ -30,19 +32,12 @@ employees = [
     Mechanic("Chack", "Rainey", 1800)  
 ]
 
-def pring_accounting_report():
-    print('Accounting')
-    print("==========")
-    for e in employees:
-        print(f"{e.get_full_name()}, ${e.salary}")
+accounting_report = AccountingReport(employees)
+accounting_report.pring_accounting_report()
 
-def print_staffing_report():
-    print("Staffing")
-    print("========") 
-    for e in employees:
-        print(f"{e.get_full_name()}, {e.job_title}")
+print()
 
-pring_accounting_report()
-print() # empty line
-print_staffing_report()
-print() # empty line
+staffing_report = StaffingReport(employees)
+staffing_report.print_staffing_report()
+
+
