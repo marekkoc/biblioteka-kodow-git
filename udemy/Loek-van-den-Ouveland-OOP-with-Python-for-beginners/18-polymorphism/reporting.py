@@ -1,19 +1,17 @@
-class AccountingReport:
+class Report:
     def __init__(self, emp_list):
         self._emp_list = emp_list # privat attribute, visible only within the class
 
-    def pring_accounting_report(self):
+class AccountingReport(Report):
+    def print_report(self):
         print('Accounting')
         print("==========")
         for e in self._emp_list:
             print(f"{e.get_full_name()}, ${e.salary}")
 
 
-class StaffingReport:
-    def __init__(self, emp_list):
-        self._emp_list = emp_list
-
-    def print_staffing_report(self):
+class StaffingReport(Report):
+    def print_report(self):
         print("Staffing")
         print("========")  
         for e in self._emp_list :

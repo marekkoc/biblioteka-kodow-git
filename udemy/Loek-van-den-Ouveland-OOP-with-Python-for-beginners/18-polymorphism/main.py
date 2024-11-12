@@ -5,10 +5,10 @@ Object Oriented Programming with Python for beginners.
 
 Skcja 6. Dependency Injection, Polymorphism
 
-17. Dependency Injection
+18. Polymorphism
 
 C: 2024.11.10
-M: 2024.11.10
+M: 2024.11.11
 """
 
 from employee import Manager
@@ -32,12 +32,11 @@ employees = [
     Mechanic("Chack", "Rainey", 1800)  
 ]
 
-accounting_report = AccountingReport(employees)
-accounting_report.pring_accounting_report()
+reports = [
+    AccountingReport(employees),
+    StaffingReport(employees)
+]
 
-print()
-
-staffing_report = StaffingReport(employees)
-staffing_report.print_staffing_report()
-
-
+for r in reports:
+    r.print_report()
+    print()
