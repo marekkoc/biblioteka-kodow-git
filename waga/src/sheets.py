@@ -1,5 +1,7 @@
 """
 Project: Daily weight analysis.
+Class ExcelSheet, to deal with Excel sheet, that contains my weight measuremetns since 2017.
+
 
 Copyright: Marek
 
@@ -12,7 +14,7 @@ import pandas as pd
 from folders import Folders
 
 
-class ExcelFile:    
+class ExcelSheet:    
 
     def __init__(self, pth_to_excel_file):
         self._pth_to_excel_file = pth_to_excel_file
@@ -48,9 +50,11 @@ class ExcelFile:
 
 
 
+
+
 if __name__ == "__main__":
     f = Folders()
-    e = ExcelFile(f.get_excel_file_path())
+    e = ExcelSheet(f.get_excel_file_path())
     print(e._year_dct.keys())
-    print(e.get_sheet(2017).shape)
+    print(e.get_sheet("2017").shape)
     

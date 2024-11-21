@@ -10,8 +10,6 @@ Modified: 2024.11.19
 """
 
 from pathlib import Path
-import pandas as pd
-import os
 
 class Folders:
     def __init__(self, excel_file_name = '20241113_waga.xlsx'):
@@ -36,6 +34,9 @@ class Folders:
     
     def get_excel_file_path(self):
         return self._excel_file_pth
+
+
+
 
 
 if __name__ == "__main__":
