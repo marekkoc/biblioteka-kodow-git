@@ -6,7 +6,7 @@ The main script.
 Copyright: Marek
 
 Created: 2024.11.17
-Modified: 2024.11.18
+Modified: 2024.11.22
 """
 from folders import Folders
 from sheets import ExcelSheet
