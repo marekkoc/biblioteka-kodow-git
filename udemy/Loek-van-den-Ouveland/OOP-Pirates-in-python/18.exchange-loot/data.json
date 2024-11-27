@@ -1,0 +1,19 @@
+{
+  "pirates": [
+    {"name": "Harry", "title": "Captain", "rank": 10},
+    {"name": "Isabel", "title": "Quartermaster", "rank": 9},
+    {"name": "Bootstrap Bill", "title": "Officer", "rank": 7},
+    {"name": "Powder Joe", "title": "Cannon Operator", "rank": 6},
+    {"name": "Four Finger Fritz", "title": "Officer", "rank": 7},
+    {"name": "Lady Joyce", "title": "Cannon Operator", "rank": 6},
+    {"name": "Calypso", "title": "Officer", "rank": 7},
+    {"name": "Moustache Mike", "title": "Cannon Operator", "rank": 6},
+    {"name": "Old Jacob", "title": "Cook", "rank": 3},
+    {"name": "Mc Scrubby", "title": "Deck Scrubber", "rank": 1},
+    {"name": "Doc Bone", "title": "Doctor", "rank": 5}
+  ],
+  "missions": [
+    {"name": "Sandy Mission", "crew": ["Harry", "Isabel", "Bootstrap Bill", "Lady Joyce"], "loot": 1080},
+    {"name": "Operation Moca", "crew": ["Harry", "Isabel", "Four Finger Fritz", "Moustache Mike", "Calypso", "Old Jacob"], "loot": 1920}
+  ]
+}

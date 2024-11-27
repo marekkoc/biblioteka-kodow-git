@@ -31,5 +31,5 @@ shares = payroll.calculate_shares(pirates, ducates)
 
 print("\n" + 45 * "*")
 for share in shares:
-    print(share)
+    print(f"{share.pirate.role.title} {share.pirate.name} rank {share.pirate.role.rank} gets share {share.ducats:.2f} Ducates.")
 print(45 * "*" , end="\n")
