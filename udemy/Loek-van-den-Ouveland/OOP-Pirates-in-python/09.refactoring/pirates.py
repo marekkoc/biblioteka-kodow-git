@@ -5,7 +5,7 @@ Object Oriented (Programming) Pirates in Python.
 
 Skcja 4. Inheritance
 
-8. Refactoring
+9. Refactoring
 
 C: 2024.11.24
 M: 2024.11.24

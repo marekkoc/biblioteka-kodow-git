@@ -24,8 +24,6 @@ from payroll import Payroll
 #loader = TestDataLoader()
 loader = JSONDataLoader()
 
-
-ducates = 100
 payroll = Payroll()
 missions = loader.load_missions()
 for mission in missions:

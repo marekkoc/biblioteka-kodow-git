@@ -39,4 +39,9 @@ class JSONDataLoader:
         with open("data.json") as file:
             data = json.load(file)
         pirates = self.load_pirates()
-        return [Mission(m['name'], [p for p in pirates if p.name in m["crew"]], m["loot"]) for m in data["missions"]]
+        return [Mission(m['name'], [p for p in pirates if p.name in m["crew"]], [LootItem(l["amount"], l["currency_key"]) for l in m["loot"]]) for m in data["missions"]]
+
+    def load_currencies(self):
+        with open("currencies.json") as file:
+            data = json.load(file)
+        return {k:Currency(v["name"], v["exchange_rate"]) for (k,v) in data["currencies"].items()}
