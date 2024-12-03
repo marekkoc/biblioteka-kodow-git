@@ -10,10 +10,8 @@ Created on Sun Dec  1 17:59:45 2024
 from typing import List
 import json
 
-from pirates import Capitan
-from pirates import Quartermaster
-from pirates import Officer
-from pirates import CannonOperator
+from pirates import Pirate
+from pirates import Role
 
 
 class DataLoader:
@@ -33,14 +31,5 @@ class JSONDataLoader:
     def load_pirates(self) -> List:
         with open("data.json") as file:
             data = json.load(file)
-        pirates = []
-        for pirate in data["pirates"]:
-            if pirate["title"] == "Capitan":
-                pirates.append(Capitan(pirate["name"]))
-            elif pirate["title"] == "Quartermaster":
-                pirates.append(Quartermaster(pirate["name"]))
-            elif pirate["title"] == "Officer":
-                pirates.append(Officer(pirate["name"]))
-            elif pirate["title"] == "Cannon Operator":
-                pirates.append(CannonOperator(pirate["name"]))
+        pirates = [Pirate(pirate["name"], Role(pirate["title"], pirate["rank"])) for pirate in data["pirates"]]
         return pirates

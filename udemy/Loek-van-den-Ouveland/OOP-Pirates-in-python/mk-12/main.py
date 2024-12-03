@@ -24,7 +24,7 @@ loader: JSONDataLoader = JSONDataLoader()
 pirates: List = loader.load_pirates()
 
 
-ducats: int= 1024
+ducats: int= 1430
 sum_of_ranks: int = sum(pirate.rank for pirate in pirates)
 
 print()
