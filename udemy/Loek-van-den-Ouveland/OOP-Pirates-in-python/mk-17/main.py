@@ -18,12 +18,11 @@ from data import JSONDataLoader
 from payroll import Payroll
 print()
 
-loader: TestDataLoader = TestDataLoader()
-#loader: JSONDataLoader = JSONDataLoader()
-pirates: List = loader.load_pirates()
-
-payroll: Payroll = Payroll()
+#loader: TestDataLoader = TestDataLoader()
+loader: JSONDataLoader = JSONDataLoader()
 missions = loader.load_missions()
+payroll: Payroll = Payroll()
+
 for mission in missions:
     print(mission)
     shares = payroll.calculate_shares(mission.crew, mission.loot)

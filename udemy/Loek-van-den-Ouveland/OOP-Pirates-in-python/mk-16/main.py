@@ -20,10 +20,9 @@ print()
 
 loader: TestDataLoader = TestDataLoader()
 #loader: JSONDataLoader = JSONDataLoader()
-pirates: List = loader.load_pirates()
-
-payroll: Payroll = Payroll()
 missions = loader.load_missions()
+payroll: Payroll = Payroll()
+
 for mission in missions:
     print(mission)
     shares = payroll.calculate_shares(mission.crew, mission.loot)
