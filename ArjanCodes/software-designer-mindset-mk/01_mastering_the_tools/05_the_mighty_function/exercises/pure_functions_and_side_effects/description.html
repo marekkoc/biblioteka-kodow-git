@@ -1,0 +1,86 @@
+<p>Consider the following Python program:</p>
+<div
+  style="
+    background-color: #272822;
+    color: #f8f8f2;
+    padding: 20px;
+    border-radius: 5px;
+    line-height: 1.5;
+    white-space: pre-wrap;
+    font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+  "
+>
+  <span style="color: #66d9ef">import</span>
+  <span style="color: #f8f8f2">random</span><br /><span style="color: #66d9ef"
+    >import</span
+  >
+  <span style="color: #f8f8f2">string</span><br /><span style="color: #66d9ef"
+    >from</span
+  >
+  <span style="color: #f8f8f2">datetime</span>
+  <span style="color: #66d9ef">import</span>
+  <span style="color: #f8f8f2">datetime</span><br /><br /><span
+    style="color: #66d9ef"
+    >def</span
+  >
+  <span style="color: #a6e22e">generate_id</span>(<span style="color: #f8f8f2"
+    >length</span
+  >: <span style="color: #a6e22e">int</span>) -&gt;
+  <span style="color: #a6e22e">str</span>:<br />&nbsp;&nbsp;<span
+    style="color: #66d9ef"
+    >return</span
+  >
+  <span style="color: #e6db74">""</span>.<span style="color: #a6e22e">join</span
+  >(<br />&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #f8f8f2"
+    >random.choice</span
+  >(<span style="color: #f8f8f2">string.ascii_uppercase</span> +
+  <span style="color: #f8f8f2">string.digits</span>)
+  <span style="color: #66d9ef">for</span> <span style="color: #66d9ef">_</span>
+  <span style="color: #66d9ef">in</span>
+  <span style="color: #f8f8f2">range</span>(<span style="color: #f8f8f2"
+    >length</span
+  >))<br /><br /><span style="color: #66d9ef">def</span>
+  <span style="color: #a6e22e">weekday</span>() -&gt;
+  <span style="color: #a6e22e">str</span>:<br />&nbsp;&nbsp;<span
+    style="color: #f8f8f2"
+    >today</span
+  >
+  = <span style="color: #f8f8f2">datetime.today</span>()<br />&nbsp;&nbsp;<span
+    style="color: #66d9ef"
+    >return</span
+  >
+  <span style="color: #e6db74">f</span
+  ><span style="color: #e6db74">"{today:%A}"</span><br /><br /><span
+    style="color: #66d9ef"
+    >def</span
+  >
+  <span style="color: #a6e22e">main</span>() -&gt;
+  <span style="color: #66d9ef">None</span>:<br />&nbsp;&nbsp;<span
+    style="color: #f8f8f2"
+    >print</span
+  >(<span style="color: #e6db74">f</span
+  ><span style="color: #e6db74">"Today is a {weekday()}"</span
+  >)<br />&nbsp;&nbsp;<span style="color: #f8f8f2">print</span>(<span
+    style="color: #e6db74"
+    >f</span
+  ><span style="color: #e6db74">"Your id = {generate_id(10)}"</span
+  >)<br /><br /><span style="color: #66d9ef">if</span>
+  <span style="color: #f8f8f2">__name__</span> ==
+  <span style="color: #e6db74">"__main__"</span>:<br />&nbsp;&nbsp;<span
+    style="color: #a6e22e"
+    >main</span
+  >()
+</div>
+<p>
+  a) Both <code>generate_id</code> and <code>weekday</code> are not pure
+  functions. Why not? How would you write tests for these functions?
+</p>
+<p>
+  b) Rewrite both functions so that they are pure functions. Observe what
+  happens to the <code>main</code> function after making this change. Are the
+  functions now easier to test? Are they easier to use as well?
+</p>
+<p>
+  <span style="text-decoration: underline">Compatible Python Versions:</span>
+  <strong>3.6+</strong>
+</p>

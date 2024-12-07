@@ -1,0 +1,141 @@
+<p>
+  You just landed a job at "SocialOverlord", a company developing a SaaS product
+  allowing you to write and schedule posts to a variety of social networks.
+</p>
+<p>
+  The whole backend is written in Python (yay!), but unfortunately, the person
+  you're replacing didn't know classes exist (ehrm...) and so they used tuples
+  to represent all the data in the system (not so yay...). Here's a code
+  example:
+</p>
+<div
+  style="
+    background-color: #272822;
+    color: #f8f8f2;
+    padding: 20px;
+    border-radius: 5px;
+    line-height: 1.5;
+    white-space: pre;
+    font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+  "
+>
+  <span style="color: #75715e"># each social channel has a type</span
+  ><br /><span style="color: #75715e"
+    ># and the current number of followers</span
+  ><br /><span style="color: #f8f8f2">SocialChannel</span> =
+  <span style="color: #a6e22e">tuple</span>[<span style="color: #a6e22e"
+    >str</span
+  >, <span style="color: #a6e22e">int</span>]<br /><br /><span
+    style="color: #75715e"
+    ># each post has a message <br /></span
+  ><span style="color: #75715e"
+    ># and the timestamp when it should be posted</span
+  ><br /><span style="color: #f8f8f2">Post</span> =
+  <span style="color: #a6e22e">tuple</span>[<span style="color: #a6e22e"
+    >str</span
+  >, <span style="color: #a6e22e">int</span>]<br /><br /><span
+    style="color: #66d9ef"
+    >def</span
+  >
+  <span style="color: #a6e22e">post_a_message</span>(<span
+    style="color: #f8f8f2"
+    >channel</span
+  >: <span style="color: #f8f8f2">SocialChannel</span>,
+  <span style="color: #f8f8f2">message</span>:
+  <span style="color: #a6e22e">str</span>) -&gt;
+  <span style="color: #66d9ef">None</span>:<br />&nbsp;&nbsp;<span
+    style="color: #f8f8f2"
+    >type</span
+  >, <span style="color: #f8f8f2">_</span> =
+  <span style="color: #f8f8f2">channel</span><br />&nbsp;&nbsp;<span
+    style="color: #66d9ef"
+    >if</span
+  >
+  <span style="color: #f8f8f2">type</span> ==
+  <span style="color: #e6db74">"youtube"</span
+  >:<br />&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #f8f8f2"
+    >post_to_youtube</span
+  >(<span style="color: #f8f8f2">channel</span>,
+  <span style="color: #f8f8f2">message</span>)<br />&nbsp;&nbsp;<span
+    style="color: #66d9ef"
+    >elif</span
+  >
+  <span style="color: #f8f8f2">type</span> ==
+  <span style="color: #e6db74">"facebook"</span
+  >:<br />&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #f8f8f2"
+    >post_to_facebook</span
+  >(<span style="color: #f8f8f2">channel</span>,
+  <span style="color: #f8f8f2">message</span>)<br />&nbsp;&nbsp;<span
+    style="color: #66d9ef"
+    >elif</span
+  >
+  <span style="color: #f8f8f2">type</span> ==
+  <span style="color: #e6db74">"twitter"</span
+  >:<br />&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #f8f8f2"
+    >post_to_twitter</span
+  >(<span style="color: #f8f8f2">channel</span>,
+  <span style="color: #f8f8f2">message</span>)<br /><br /><span
+    style="color: #66d9ef"
+    >def</span
+  >
+  <span style="color: #a6e22e">process_schedule</span>(<span
+    style="color: #f8f8f2"
+    >posts</span
+  >: <span style="color: #a6e22e">list</span>[<span style="color: #f8f8f2"
+    >Post</span
+  >], <br /><span style="color: #f8f8f2"> channels</span>:
+  <span style="color: #a6e22e">list</span>[<span style="color: #f8f8f2"
+    >SocialChannel</span
+  >]) -&gt; <span style="color: #66d9ef">None</span>:<br />&nbsp;&nbsp;<span
+    style="color: #66d9ef"
+    >for</span
+  >
+  <span style="color: #f8f8f2">post</span>
+  <span style="color: #66d9ef">in</span>
+  <span style="color: #f8f8f2">posts</span>:<br />&nbsp;&nbsp;&nbsp;&nbsp;<span
+    style="color: #f8f8f2"
+    >message</span
+  >, <span style="color: #f8f8f2">timestamp</span> =
+  <span style="color: #f8f8f2">post</span><br />&nbsp;&nbsp;&nbsp;&nbsp;<span
+    style="color: #66d9ef"
+    >for</span
+  >
+  <span style="color: #f8f8f2">channel</span>
+  <span style="color: #66d9ef">in</span>
+  <span style="color: #f8f8f2">channels</span
+  >:<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #66d9ef"
+    >if</span
+  >
+  <span style="color: #f8f8f2">timestamp</span> &lt;=
+  <span style="color: #f8f8f2">time</span>():<br />
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #f8f8f2"
+    >post_a_message</span
+  >(<span style="color: #f8f8f2">channel</span>,
+  <span style="color: #f8f8f2">message</span>)
+</div>
+<h2>&nbsp;</h2>
+<h2>a) From tuples to classes</h2>
+<p>
+  Refactor this code so that it uses classes instead of tuples to represent
+  social channels and posts. As a starting point, use the code download for this
+  exercise.
+</p>
+<h2>b) Improving the post_a_message function</h2>
+<p>
+  The <code>post_a_message</code> function isn't great. The if-statement has to
+  check for each different type of social network and then call a different
+  method. If you want to add support for a new social network, you'll need to
+  add an extra <code>elif</code> part, making the code harder and harder to
+  read.
+</p>
+<p>
+  Implement a new version of the code that uses <strong>abstraction</strong> to
+  solve the problem.
+</p>
+<p>
+  <em>Bonus challenge: is there a solution that doesn't need abstraction?</em>
+</p>
+<p>
+  <span style="text-decoration: underline">Compatible Python Versions:</span>
+  <strong>3.9+</strong>
+</p>

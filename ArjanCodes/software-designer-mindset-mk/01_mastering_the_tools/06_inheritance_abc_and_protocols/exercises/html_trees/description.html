@@ -1,0 +1,121 @@
+<p>Consider the following classes:&nbsp;</p>
+<div
+  style="
+    background-color: #272822;
+    color: #f8f8f2;
+    padding: 20px;
+    border-radius: 5px;
+    line-height: 1.5;
+    white-space: pre;
+    font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+  "
+>
+  <span style="color: #66d9ef">from</span>
+  <span style="color: #f8f8f2">dataclasses</span>
+  <span style="color: #66d9ef">import</span>
+  <span style="color: #f8f8f2">dataclass</span><br /><span
+    style="color: #66d9ef"
+    >from</span
+  >
+  <span style="color: #f8f8f2">typing</span>
+  <span style="color: #66d9ef">import</span>
+  <span style="color: #f8f8f2">Self</span><br /><br /><span
+    style="color: #66d9ef"
+    >@dataclass</span
+  ><br /><span style="color: #66d9ef">class</span>
+  <span style="color: #a6e22e">Div</span>:<br />
+  &nbsp;&nbsp;<span style="color: #f8f8f2">parent</span>:
+  <span style="color: #a6e22e">Self</span> |
+  <span style="color: #66d9ef">None</span> =
+  <span style="color: #66d9ef">None</span><br />
+  &nbsp;&nbsp;<span style="color: #f8f8f2">x</span>:
+  <span style="color: #a6e22e">int</span> = <span style="color: #f8f8f2">0</span
+  ><br />
+  &nbsp;&nbsp;<span style="color: #f8f8f2">y</span>:
+  <span style="color: #a6e22e">int</span> = <span style="color: #f8f8f2">0</span
+  ><br /><br />
+  &nbsp;&nbsp;<span style="color: #66d9ef">def</span>
+  <span style="color: #a6e22e">compute_screen_position</span>(<span
+    style="color: #f8f8f2"
+    >self</span
+  >) -&gt; <span style="color: #a6e22e">tuple</span>[<span
+    style="color: #a6e22e"
+    >int</span
+  >, <span style="color: #a6e22e">int</span>]:<br />
+  &nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #66d9ef">if</span>
+  <span style="color: #66d9ef">not</span>
+  <span style="color: #f8f8f2">self.parent</span>:<br />
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #66d9ef">return</span>
+  (<span style="color: #f8f8f2">self.x</span>,
+  <span style="color: #f8f8f2">self.y</span>)<br />
+  &nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #f8f8f2">parent_x</span>,
+  <span style="color: #f8f8f2">parent_y</span> =
+  <span style="color: #f8f8f2">self.parent</span>.<span style="color: #a6e22e"
+    >compute_screen_position</span
+  >()<br />
+  &nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #66d9ef">return</span> (<span
+    style="color: #f8f8f2"
+    >parent_x</span
+  >
+  + <span style="color: #f8f8f2">self.x</span>,
+  <span style="color: #f8f8f2">parent_y</span> +
+  <span style="color: #f8f8f2">self.y</span>)<br /><br /><span
+    style="color: #66d9ef"
+    >@dataclass</span
+  ><br /><span style="color: #66d9ef">class</span>
+  <span style="color: #a6e22e">Button</span>:<br />
+  &nbsp;&nbsp;<span style="color: #f8f8f2">parent</span>:
+  <span style="color: #a6e22e">Div</span><br />
+  &nbsp;&nbsp;<span style="color: #f8f8f2">x</span>:
+  <span style="color: #a6e22e">int</span><br />
+  &nbsp;&nbsp;<span style="color: #f8f8f2">y</span>:
+  <span style="color: #a6e22e">int</span><br /><br />
+  &nbsp;&nbsp;<span style="color: #66d9ef">def</span>
+  <span style="color: #a6e22e">click</span>(<span style="color: #f8f8f2"
+    >self</span
+  >) -&gt; <span style="color: #66d9ef">None</span>:<br />
+  &nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #f8f8f2">print</span>(<span
+    style="color: #e6db74"
+    >"Click!"</span
+  >)<br /><br /><span style="color: #66d9ef">@dataclass</span><br /><span
+    style="color: #66d9ef"
+    >class</span
+  >
+  <span style="color: #a6e22e">Span</span>:<br />
+  &nbsp;&nbsp;<span style="color: #f8f8f2">parent</span>:
+  <span style="color: #a6e22e">Div</span><br />
+  &nbsp;&nbsp;<span style="color: #f8f8f2">x</span>:
+  <span style="color: #a6e22e">int</span><br />
+  &nbsp;&nbsp;<span style="color: #f8f8f2">y</span>:
+  <span style="color: #a6e22e">int</span><br />
+  &nbsp;&nbsp;<span style="color: #f8f8f2">text</span>:
+  <span style="color: #a6e22e">str</span>
+</div>
+<p>
+  Of course, HTML has many more different elements. In the elements above, there
+  is some duplication (in particular, the parent, x and y instance variables).
+  Also, we'd like to be able to compute the position of any type of element, not
+  just divs and be able to combine different elements in a tree.
+</p>
+<h4>a) Abstraction</h4>
+<p>
+  Refactor the class hierarchy by introducing an abstract base class<span
+    >&nbsp;</span
+  ><code>HTMLElement</code><span>&nbsp;</span>that divs, buttons, and spans are
+  subclasses of. Minimize code duplication and make sure that each element is
+  able to compute its position on the screen.
+</p>
+<p>
+  In order to get started more quickly, download the code for this exercise
+  above (but don't look at the solution yet!).
+</p>
+<h4>b) Protocols</h4>
+<p>
+  Can you use a<span>&nbsp;</span><strong>protocol class</strong
+  ><span>&nbsp;</span>just as easily instead of an abstract base class? What
+  would need to be changed in the code for this to work?
+</p>
+<p>
+  <span style="text-decoration: underline">Compatible Python Versions:</span>
+  <strong>3.10+</strong>
+</p>

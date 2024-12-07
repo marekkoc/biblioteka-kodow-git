@@ -1,0 +1,119 @@
+<p>
+  <span>Add type hints t</span
+  ><span
+    >o the following functions. Make sure that no red squiggles appear in your
+    IDE with your type checker set to "strict".</span
+  >
+</p>
+<p>
+  <span
+    >Make sure that you have installed pylance or similar to get type hints in
+    your IDE.</span
+  >
+</p>
+<div
+  style="
+    background-color: #272822;
+    color: #f8f8f2;
+    padding: 20px;
+    border-radius: 5px;
+    line-height: 1.5;
+    white-space: pre-wrap;
+    font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+  "
+>
+  <span style="color: #66d9ef">def</span>
+  <span style="color: #a6e22e">add_book</span>(<span style="color: #f8f8f2"
+    >collection</span
+  >, <span style="color: #f8f8f2">title</span>,
+  <span style="color: #f8f8f2">author</span>):<br />
+  &nbsp;&nbsp;<span style="color: #f8f8f2">collection.append</span>({<span
+    style="color: #e6db74"
+    >"title"</span
+  >: <span style="color: #f8f8f2">title</span>,
+  <span style="color: #e6db74">"author"</span>:
+  <span style="color: #f8f8f2">author</span>})<br /><br /><span
+    style="color: #66d9ef"
+    >def</span
+  >
+  <span style="color: #a6e22e">display_books</span>(<span style="color: #f8f8f2"
+    >collection</span
+  >):<br />&nbsp;&nbsp;<span style="color: #66d9ef">for</span>
+  <span style="color: #f8f8f2">book</span>
+  <span style="color: #66d9ef">in</span>
+  <span style="color: #f8f8f2">collection</span
+  >:<br />&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #f8f8f2">print</span
+  >(<span style="color: #e6db74">f</span
+  ><span style="color: #e6db74"
+    >"Title: {book['title']}, Author: {book['author']}"</span
+  >)<br /><br /><span style="color: #66d9ef">def</span>
+  <span style="color: #a6e22e">find_book_by_title</span>(<span
+    style="color: #f8f8f2"
+    >collection</span
+  >, <span style="color: #f8f8f2">title</span>):<br />&nbsp;&nbsp;<span
+    style="color: #66d9ef"
+    >for</span
+  >
+  <span style="color: #f8f8f2">book</span>
+  <span style="color: #66d9ef">in</span>
+  <span style="color: #f8f8f2">collection</span
+  >:<br />&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #66d9ef">if</span>
+  <span style="color: #f8f8f2">book['title']</span> ==
+  <span style="color: #f8f8f2">title</span
+  >:<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #66d9ef"
+    >return</span
+  >
+  <span style="color: #f8f8f2">book</span><br /><br />&nbsp;&nbsp;<span
+    style="color: #66d9ef"
+    >return</span
+  >
+  <span style="color: #66d9ef">None</span><br /><br /><span
+    style="color: #66d9ef"
+    >def</span
+  >
+  <span style="color: #a6e22e">filter_even_numbers</span>(<span
+    style="color: #f8f8f2"
+    >numbers</span
+  >):<br />&nbsp;&nbsp;<span style="color: #66d9ef">return</span> [<span
+    style="color: #f8f8f2"
+    >num</span
+  >
+  <span style="color: #66d9ef">for</span>
+  <span style="color: #f8f8f2">num</span>
+  <span style="color: #66d9ef">in</span>
+  <span style="color: #f8f8f2">numbers</span>
+  <span style="color: #66d9ef">if</span>
+  <span style="color: #f8f8f2">num % 2</span> ==
+  <span style="color: #f8f8f2">0</span>]<br /><br /><span style="color: #66d9ef"
+    >def</span
+  >
+  <span style="color: #a6e22e">main</span>():<br />&nbsp;&nbsp;<span
+    style="color: #f8f8f2"
+    >my_books</span
+  >
+  = []<br />&nbsp;&nbsp;<span style="color: #f8f8f2">add_book</span>(<span
+    style="color: #f8f8f2"
+    >my_books</span
+  >, <span style="color: #e6db74">"1984"</span>,
+  <span style="color: #e6db74">"George Orwell"</span>)<br />&nbsp;&nbsp;<span
+    style="color: #f8f8f2"
+    >add_book</span
+  >(<span style="color: #f8f8f2">my_books</span>,
+  <span style="color: #e6db74">"To Kill a Mockingbird"</span>,
+  <span style="color: #e6db74">"Harper Lee"</span>)<br />&nbsp;&nbsp;<span
+    style="color: #f8f8f2"
+    >display_books</span
+  >(<span style="color: #f8f8f2">my_books</span>)<br /><br /><span
+    style="color: #66d9ef"
+    >if</span
+  >
+  <span style="color: #f8f8f2">__name__</span> ==
+  <span style="color: #e6db74">"__main__"</span>:<br />&nbsp;&nbsp;<span
+    style="color: #a6e22e"
+    >main</span
+  >()
+</div>
+<p>
+  <span style="text-decoration: underline">Compatible Python Versions:</span>
+  <strong>3.9+</strong>
+</p>
