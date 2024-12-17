@@ -12,7 +12,14 @@ employees: list[Employee] = [
     Employee("Dave", 2200),
     Employee("Tina", 2300),
     Employee("Ringo", 1900),
+    Employee("Wendy", 2200),
 ]
+"""
+1. Dodajemy nowetgo pracownika: Wendy, $2200
+2. Wendy nie ma na liscie -> Musimy dodac imię Wendy do bloku if/elese
+3. Naszk kod jest "fragile" bo musimy dokonać zmiany w dwóch miejscach: 1) utworzyć obiek i dodac do bliku if/else
+4. Fragile cod-: gdy zmieniamy coś w jedym miejscy, a w efekcie w drugim miejscu kod się psuje lub dziła nie tak jak powinien.
+"""
 
 for e in employees:
     if e.name == "Vera":
