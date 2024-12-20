@@ -5,9 +5,11 @@ class Employee:
         self.salary: int = salary
         self.shift = shift
 
-
     def get_full_name(self) -> str:
         return f"{self._first_name}, {self._last_name}"
+    
+    def raise_salary(self, amount):
+        self.salary += amount    
     
 class Mechanic(Employee):
     job_title = "Mechanic"

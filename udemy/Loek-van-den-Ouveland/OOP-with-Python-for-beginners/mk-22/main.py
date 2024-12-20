@@ -1,10 +1,19 @@
 """
-c: 2024.12.18
-M: 2024.12.18
+c: 2024.12.19
+M: 2024.12.19
 
 22. Unit testing
 
-1. 
+1. Testing code is important part of software engineering
+2. We can test if:
+    A. function woks
+    B. class works
+    C. the whole app works
+3. There are 3 types of tests:
+    A. Unit tests => test of individual part of the code (like functions and classes). Has two possible outcoms: SUCCESS or FAIL
+    B. INTEGRATION TESTS - combines modules and tests grups of functionality
+    C. SYSTEM TESTS ->> test complite system
+4. We'll look at unit tests
 
 """
 import datetime as dt
