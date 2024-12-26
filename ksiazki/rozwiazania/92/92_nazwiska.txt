@@ -1,0 +1,10 @@
+Kowalski;Kowalska
+Nowak;Nowak
+Pieczarkowski;Pieczarkowska
+Nowosielski;Nowosielska
+Bronowiecki;Bronowiecka
+Pancogitian;Pancogitian
+Materacjański;Materacjańska
+Naleśnikowicz;Naleśnikowicz
+Pytonowski;Pytonowska
+Pehapowiec;Pehapowiczowa

@@ -1,0 +1,339 @@
+1. Dane kategorii 3 dotarły na koniec kolejki (1).
+2. Dane kategorii 3 dotarły na koniec kolejki (2).
+3. Dane kategorii 2 dotarły na koniec kolejki (3).
+4. Dane kategorii 1 dotarły na koniec kolejki (4).
+5. Dane kategorii 3 dotarły na koniec kolejki (5).
+6. Dane kategorii 3 dotarły na koniec kolejki (6).
+7. Dane kategorii 3 dotarły na koniec kolejki (7).
+8. Dane kategorii 2 dotarły na koniec kolejki (8).
+9. Dane kategorii 1 dotarły na koniec kolejki (9).
+10. Dane kategorii 2 dotarły na koniec kolejki (10).
+11. Dane kategorii 2 dotarły na koniec kolejki (11).
+12. Dane kategorii 5 dotarły na koniec kolejki (12).
+	Dane kategorii 3 opuściły kolejkę.
+	Dane kategorii 3 opuściły kolejkę.
+13. Dane kategorii 1 dotarły na koniec kolejki (11).
+14. Dane kategorii 3 dotarły na koniec kolejki (12).
+	Dane kategorii 2 opuściły kolejkę.
+15. Dane kategorii 5 dotarły na koniec kolejki (12).
+16. Dane kategorii 4 dotarły na koniec kolejki (13).
+17. Dane kategorii 4 dotarły na koniec kolejki (14).
+18. Dane kategorii 1 dotarły na koniec kolejki (15).
+19. Dane kategorii 1 dotarły na koniec kolejki (16).
+20. Dane kategorii 4 dotarły na koniec kolejki (17).
+21. Dane kategorii 2 dotarły na koniec kolejki (18).
+	Dane kategorii 1 opuściły kolejkę.
+22. Dane kategorii 5 dotarły na koniec kolejki (18).
+	Dane kategorii 3 opuściły kolejkę.
+	Dane kategorii 3 opuściły kolejkę.
+	Dane kategorii 3 opuściły kolejkę.
+23. Dane kategorii 2 dotarły na koniec kolejki (16).
+24. Dane kategorii 1 dotarły na koniec kolejki (17).
+25. Dane kategorii 2 dotarły na koniec kolejki (18).
+26. Dane kategorii 4 dotarły na koniec kolejki (19).
+27. Dane kategorii 5 dotarły na koniec kolejki (20).
+28. Dane kategorii 3 dotarły na koniec kolejki (21).
+	Dane kategorii 2 opuściły kolejkę.
+29. Dane kategorii 1 dotarły na koniec kolejki (21).
+30. Dane kategorii 5 dotarły na koniec kolejki (22).
+31. Dane kategorii 2 dotarły na koniec kolejki (23).
+	Dane kategorii 1 opuściły kolejkę.
+32. Dane kategorii 1 dotarły na koniec kolejki (23).
+33. Dane kategorii 2 dotarły na koniec kolejki (24).
+34. Dane kategorii 2 dotarły na koniec kolejki (25).
+35. Dane kategorii 3 dotarły na koniec kolejki (26).
+	Dane kategorii 2 opuściły kolejkę.
+	Dane kategorii 2 opuściły kolejkę.
+36. Dane kategorii 1 dotarły na koniec kolejki (25).
+	Dane kategorii 5 opuściły kolejkę.
+37. Dane kategorii 3 dotarły na koniec kolejki (25).
+38. Dane kategorii 5 dotarły na koniec kolejki (26).
+39. Dane kategorii 5 dotarły na koniec kolejki (27).
+40. Dane kategorii 3 dotarły na koniec kolejki (28).
+41. Dane kategorii 5 dotarły na koniec kolejki (29).
+42. Dane kategorii 4 dotarły na koniec kolejki (30).
+43. Dane kategorii 1 dotarły na koniec kolejki (31).
+44. Dane kategorii 2 dotarły na koniec kolejki (32).
+	Dane kategorii 1 opuściły kolejkę.
+45. Dane kategorii 1 dotarły na koniec kolejki (32).
+46. Dane kategorii 5 dotarły na koniec kolejki (33).
+	Dane kategorii 3 opuściły kolejkę.
+47. Dane kategorii 2 dotarły na koniec kolejki (33).
+48. Dane kategorii 3 dotarły na koniec kolejki (34).
+49. Dane kategorii 2 dotarły na koniec kolejki (35).
+50. Dane kategorii 1 dotarły na koniec kolejki (36).
+	Dane kategorii 5 opuściły kolejkę.
+51. Dane kategorii 3 dotarły na koniec kolejki (36).
+52. Dane kategorii 4 dotarły na koniec kolejki (37).
+	Dane kategorii 4 opuściły kolejkę.
+	Dane kategorii 4 opuściły kolejkę.
+53. Dane kategorii 1 dotarły na koniec kolejki (36).
+54. Dane kategorii 2 dotarły na koniec kolejki (37).
+	Dane kategorii 1 opuściły kolejkę.
+	Dane kategorii 1 opuściły kolejkę.
+55. Dane kategorii 5 dotarły na koniec kolejki (36).
+	Dane kategorii 4 opuściły kolejkę.
+56. Dane kategorii 1 dotarły na koniec kolejki (36).
+57. Dane kategorii 1 dotarły na koniec kolejki (37).
+58. Dane kategorii 2 dotarły na koniec kolejki (38).
+59. Dane kategorii 2 dotarły na koniec kolejki (39).
+60. Dane kategorii 2 dotarły na koniec kolejki (40).
+61. Dane kategorii 5 dotarły na koniec kolejki (41).
+62. Dane kategorii 5 dotarły na koniec kolejki (42).
+63. Dane kategorii 2 dotarły na koniec kolejki (43).
+64. Dane kategorii 3 dotarły na koniec kolejki (44).
+	Dane kategorii 2 opuściły kolejkę.
+65. Dane kategorii 4 dotarły na koniec kolejki (44).
+66. Dane kategorii 3 dotarły na koniec kolejki (45).
+67. Dane kategorii 5 dotarły na koniec kolejki (46).
+68. Dane kategorii 2 dotarły na koniec kolejki (47).
+69. Dane kategorii 3 dotarły na koniec kolejki (48).
+70. Dane kategorii 5 dotarły na koniec kolejki (49).
+71. Dane kategorii 3 dotarły na koniec kolejki (50).
+72. Dane kategorii 4 dotarły na koniec kolejki (51).
+73. Dane kategorii 1 dotarły na koniec kolejki (52).
+	Dane kategorii 5 opuściły kolejkę.
+74. Dane kategorii 3 dotarły na koniec kolejki (52).
+	Dane kategorii 2 opuściły kolejkę.
+75. Dane kategorii 2 dotarły na koniec kolejki (52).
+	Dane kategorii 1 opuściły kolejkę.
+76. Dane kategorii 1 dotarły na koniec kolejki (52).
+77. Dane kategorii 4 dotarły na koniec kolejki (53).
+78. Dane kategorii 2 dotarły na koniec kolejki (54).
+79. Dane kategorii 4 dotarły na koniec kolejki (55).
+80. Dane kategorii 4 dotarły na koniec kolejki (56).
+81. Dane kategorii 5 dotarły na koniec kolejki (57).
+82. Dane kategorii 2 dotarły na koniec kolejki (58).
+83. Dane kategorii 5 dotarły na koniec kolejki (59).
+84. Dane kategorii 1 dotarły na koniec kolejki (60).
+85. Dane kategorii 4 dotarły na koniec kolejki (61).
+86. Dane kategorii 1 dotarły na koniec kolejki (62).
+87. Dane kategorii 5 dotarły na koniec kolejki (63).
+88. Dane kategorii 1 dotarły na koniec kolejki (64).
+89. Dane kategorii 4 dotarły na koniec kolejki (65).
+90. Dane kategorii 3 dotarły na koniec kolejki (66).
+	Dane kategorii 2 opuściły kolejkę.
+91. Dane kategorii 3 dotarły na koniec kolejki (66).
+92. Dane kategorii 5 dotarły na koniec kolejki (67).
+	Dane kategorii 4 opuściły kolejkę.
+93. Dane kategorii 2 dotarły na koniec kolejki (67).
+94. Dane kategorii 3 dotarły na koniec kolejki (68).
+95. Dane kategorii 5 dotarły na koniec kolejki (69).
+96. Dane kategorii 2 dotarły na koniec kolejki (70).
+97. Dane kategorii 1 dotarły na koniec kolejki (71).
+	Dane kategorii 5 opuściły kolejkę.
+98. Dane kategorii 3 dotarły na koniec kolejki (71).
+99. Dane kategorii 3 dotarły na koniec kolejki (72).
+100. Dane kategorii 4 dotarły na koniec kolejki (73).
+	Dane kategorii 3 opuściły kolejkę.
+101. Dane kategorii 4 dotarły na koniec kolejki (73).
+102. Dane kategorii 5 dotarły na koniec kolejki (74).
+103. Dane kategorii 5 dotarły na koniec kolejki (75).
+104. Dane kategorii 3 dotarły na koniec kolejki (76).
+105. Dane kategorii 1 dotarły na koniec kolejki (77).
+106. Dane kategorii 1 dotarły na koniec kolejki (78).
+107. Dane kategorii 5 dotarły na koniec kolejki (79).
+108. Dane kategorii 1 dotarły na koniec kolejki (80).
+109. Dane kategorii 4 dotarły na koniec kolejki (81).
+110. Dane kategorii 3 dotarły na koniec kolejki (82).
+111. Dane kategorii 4 dotarły na koniec kolejki (83).
+112. Dane kategorii 5 dotarły na koniec kolejki (84).
+113. Dane kategorii 3 dotarły na koniec kolejki (85).
+114. Dane kategorii 2 dotarły na koniec kolejki (86).
+	Dane kategorii 1 opuściły kolejkę.
+115. Dane kategorii 4 dotarły na koniec kolejki (86).
+116. Dane kategorii 1 dotarły na koniec kolejki (87).
+	Dane kategorii 5 opuściły kolejkę.
+117. Dane kategorii 3 dotarły na koniec kolejki (87).
+	Dane kategorii 2 opuściły kolejkę.
+118. Dane kategorii 1 dotarły na koniec kolejki (87).
+119. Dane kategorii 5 dotarły na koniec kolejki (88).
+120. Dane kategorii 4 dotarły na koniec kolejki (89).
+121. Dane kategorii 5 dotarły na koniec kolejki (90).
+122. Dane kategorii 4 dotarły na koniec kolejki (91).
+123. Dane kategorii 3 dotarły na koniec kolejki (92).
+124. Dane kategorii 5 dotarły na koniec kolejki (93).
+125. Dane kategorii 3 dotarły na koniec kolejki (94).
+126. Dane kategorii 1 dotarły na koniec kolejki (95).
+127. Dane kategorii 2 dotarły na koniec kolejki (96).
+	Dane kategorii 1 opuściły kolejkę.
+128. Dane kategorii 4 dotarły na koniec kolejki (96).
+129. Dane kategorii 4 dotarły na koniec kolejki (97).
+130. Dane kategorii 3 dotarły na koniec kolejki (98).
+	Dane kategorii 2 opuściły kolejkę.
+	Dane kategorii 2 opuściły kolejkę.
+131. Dane kategorii 3 dotarły na koniec kolejki (97).
+132. Dane kategorii 3 dotarły na koniec kolejki (98).
+133. Dane kategorii 3 dotarły na koniec kolejki (99).
+134. Dane kategorii 2 dotarły na koniec kolejki (100).
+135. Dane kategorii 4 dotarły na koniec kolejki (101).
+	Dane kategorii 3 opuściły kolejkę.
+136. Dane kategorii 5 dotarły na koniec kolejki (101).
+137. Dane kategorii 5 dotarły na koniec kolejki (102).
+138. Dane kategorii 1 dotarły na koniec kolejki (103).
+139. Dane kategorii 2 dotarły na koniec kolejki (104).
+	Dane kategorii 1 opuściły kolejkę.
+140. Dane kategorii 3 dotarły na koniec kolejki (104).
+141. Dane kategorii 2 dotarły na koniec kolejki (105).
+142. Dane kategorii 1 dotarły na koniec kolejki (106).
+143. Dane kategorii 2 dotarły na koniec kolejki (107).
+144. Dane kategorii 4 dotarły na koniec kolejki (108).
+	Dane kategorii 3 opuściły kolejkę.
+145. Dane kategorii 1 dotarły na koniec kolejki (108).
+	Dane kategorii 5 opuściły kolejkę.
+	Dane kategorii 5 opuściły kolejkę.
+146. Dane kategorii 3 dotarły na koniec kolejki (107).
+147. Dane kategorii 4 dotarły na koniec kolejki (108).
+	Dane kategorii 3 opuściły kolejkę.
+148. Dane kategorii 3 dotarły na koniec kolejki (108).
+149. Dane kategorii 5 dotarły na koniec kolejki (109).
+150. Dane kategorii 2 dotarły na koniec kolejki (110).
+151. Dane kategorii 5 dotarły na koniec kolejki (111).
+152. Dane kategorii 1 dotarły na koniec kolejki (112).
+	Dane kategorii 5 opuściły kolejkę.
+153. Dane kategorii 3 dotarły na koniec kolejki (112).
+154. Dane kategorii 4 dotarły na koniec kolejki (113).
+	Dane kategorii 4 opuściły kolejkę.
+155. Dane kategorii 4 dotarły na koniec kolejki (113).
+156. Dane kategorii 2 dotarły na koniec kolejki (114).
+	Dane kategorii 1 opuściły kolejkę.
+157. Dane kategorii 4 dotarły na koniec kolejki (114).
+158. Dane kategorii 3 dotarły na koniec kolejki (115).
+	Dane kategorii 2 opuściły kolejkę.
+159. Dane kategorii 5 dotarły na koniec kolejki (115).
+160. Dane kategorii 2 dotarły na koniec kolejki (116).
+	Dane kategorii 1 opuściły kolejkę.
+161. Dane kategorii 1 dotarły na koniec kolejki (116).
+	Dane kategorii 5 opuściły kolejkę.
+162. Dane kategorii 5 dotarły na koniec kolejki (116).
+163. Dane kategorii 2 dotarły na koniec kolejki (117).
+164. Dane kategorii 5 dotarły na koniec kolejki (118).
+165. Dane kategorii 4 dotarły na koniec kolejki (119).
+166. Dane kategorii 1 dotarły na koniec kolejki (120).
+167. Dane kategorii 3 dotarły na koniec kolejki (121).
+	Dane kategorii 2 opuściły kolejkę.
+168. Dane kategorii 4 dotarły na koniec kolejki (121).
+	Dane kategorii 3 opuściły kolejkę.
+169. Dane kategorii 5 dotarły na koniec kolejki (121).
+170. Dane kategorii 3 dotarły na koniec kolejki (122).
+	Dane kategorii 2 opuściły kolejkę.
+171. Dane kategorii 2 dotarły na koniec kolejki (122).
+	Dane kategorii 1 opuściły kolejkę.
+172. Dane kategorii 2 dotarły na koniec kolejki (122).
+173. Dane kategorii 1 dotarły na koniec kolejki (123).
+174. Dane kategorii 5 dotarły na koniec kolejki (124).
+	Dane kategorii 3 opuściły kolejkę.
+	Dane kategorii 4 opuściły kolejkę.
+175. Dane kategorii 2 dotarły na koniec kolejki (123).
+	Dane kategorii 1 opuściły kolejkę.
+176. Dane kategorii 4 dotarły na koniec kolejki (123).
+177. Dane kategorii 4 dotarły na koniec kolejki (124).
+178. Dane kategorii 5 dotarły na koniec kolejki (125).
+179. Dane kategorii 1 dotarły na koniec kolejki (126).
+180. Dane kategorii 2 dotarły na koniec kolejki (127).
+181. Dane kategorii 3 dotarły na koniec kolejki (128).
+	Dane kategorii 2 opuściły kolejkę.
+182. Dane kategorii 3 dotarły na koniec kolejki (128).
+183. Dane kategorii 5 dotarły na koniec kolejki (129).
+184. Dane kategorii 5 dotarły na koniec kolejki (130).
+185. Dane kategorii 2 dotarły na koniec kolejki (131).
+186. Dane kategorii 1 dotarły na koniec kolejki (132).
+	Dane kategorii 5 opuściły kolejkę.
+187. Dane kategorii 5 dotarły na koniec kolejki (132).
+188. Dane kategorii 4 dotarły na koniec kolejki (133).
+189. Dane kategorii 1 dotarły na koniec kolejki (134).
+190. Dane kategorii 1 dotarły na koniec kolejki (135).
+191. Dane kategorii 1 dotarły na koniec kolejki (136).
+192. Dane kategorii 4 dotarły na koniec kolejki (137).
+193. Dane kategorii 5 dotarły na koniec kolejki (138).
+194. Dane kategorii 4 dotarły na koniec kolejki (139).
+195. Dane kategorii 4 dotarły na koniec kolejki (140).
+196. Dane kategorii 3 dotarły na koniec kolejki (141).
+197. Dane kategorii 4 dotarły na koniec kolejki (142).
+198. Dane kategorii 4 dotarły na koniec kolejki (143).
+199. Dane kategorii 5 dotarły na koniec kolejki (144).
+200. Dane kategorii 1 dotarły na koniec kolejki (145).
+201. Dane kategorii 4 dotarły na koniec kolejki (146).
+202. Dane kategorii 1 dotarły na koniec kolejki (147).
+203. Dane kategorii 1 dotarły na koniec kolejki (148).
+204. Dane kategorii 2 dotarły na koniec kolejki (149).
+	Dane kategorii 1 opuściły kolejkę.
+	Dane kategorii 1 opuściły kolejkę.
+205. Dane kategorii 2 dotarły na koniec kolejki (148).
+206. Dane kategorii 5 dotarły na koniec kolejki (149).
+207. Dane kategorii 5 dotarły na koniec kolejki (150).
+208. Dane kategorii 1 dotarły na koniec kolejki (151).
+209. Dane kategorii 4 dotarły na koniec kolejki (152).
+210. Dane kategorii 1 dotarły na koniec kolejki (153).
+211. Dane kategorii 5 dotarły na koniec kolejki (154).
+212. Dane kategorii 1 dotarły na koniec kolejki (155).
+213. Dane kategorii 1 dotarły na koniec kolejki (156).
+214. Dane kategorii 5 dotarły na koniec kolejki (157).
+215. Dane kategorii 3 dotarły na koniec kolejki (158).
+	Dane kategorii 2 opuściły kolejkę.
+	Dane kategorii 2 opuściły kolejkę.
+	Dane kategorii 2 opuściły kolejkę.
+216. Dane kategorii 2 dotarły na koniec kolejki (156).
+217. Dane kategorii 2 dotarły na koniec kolejki (157).
+218. Dane kategorii 2 dotarły na koniec kolejki (158).
+219. Dane kategorii 2 dotarły na koniec kolejki (159).
+220. Dane kategorii 5 dotarły na koniec kolejki (160).
+221. Dane kategorii 1 dotarły na koniec kolejki (161).
+	Dane kategorii 5 opuściły kolejkę.
+	Dane kategorii 5 opuściły kolejkę.
+222. Dane kategorii 1 dotarły na koniec kolejki (160).
+223. Dane kategorii 5 dotarły na koniec kolejki (161).
+224. Dane kategorii 5 dotarły na koniec kolejki (162).
+225. Dane kategorii 1 dotarły na koniec kolejki (163).
+226. Dane kategorii 3 dotarły na koniec kolejki (164).
+	Dane kategorii 2 opuściły kolejkę.
+227. Dane kategorii 4 dotarły na koniec kolejki (164).
+	Dane kategorii 3 opuściły kolejkę.
+	Dane kategorii 4 opuściły kolejkę.
+	Dane kategorii 3 opuściły kolejkę.
+228. Dane kategorii 2 dotarły na koniec kolejki (162).
+229. Dane kategorii 2 dotarły na koniec kolejki (163).
+230. Dane kategorii 3 dotarły na koniec kolejki (164).
+231. Dane kategorii 2 dotarły na koniec kolejki (165).
+232. Dane kategorii 5 dotarły na koniec kolejki (166).
+233. Dane kategorii 2 dotarły na koniec kolejki (167).
+234. Dane kategorii 5 dotarły na koniec kolejki (168).
+235. Dane kategorii 3 dotarły na koniec kolejki (169).
+236. Dane kategorii 2 dotarły na koniec kolejki (170).
+237. Dane kategorii 4 dotarły na koniec kolejki (171).
+238. Dane kategorii 1 dotarły na koniec kolejki (172).
+	Dane kategorii 5 opuściły kolejkę.
+239. Dane kategorii 5 dotarły na koniec kolejki (172).
+240. Dane kategorii 2 dotarły na koniec kolejki (173).
+241. Dane kategorii 4 dotarły na koniec kolejki (174).
+242. Dane kategorii 3 dotarły na koniec kolejki (175).
+	Dane kategorii 2 opuściły kolejkę.
+243. Dane kategorii 1 dotarły na koniec kolejki (175).
+244. Dane kategorii 5 dotarły na koniec kolejki (176).
+	Dane kategorii 3 opuściły kolejkę.
+245. Dane kategorii 5 dotarły na koniec kolejki (176).
+246. Dane kategorii 3 dotarły na koniec kolejki (177).
+247. Dane kategorii 1 dotarły na koniec kolejki (178).
+	Dane kategorii 5 opuściły kolejkę.
+248. Dane kategorii 4 dotarły na koniec kolejki (178).
+	Dane kategorii 3 opuściły kolejkę.
+	Dane kategorii 4 opuściły kolejkę.
+249. Dane kategorii 1 dotarły na koniec kolejki (177).
+250. Dane kategorii 1 dotarły na koniec kolejki (178).
+251. Dane kategorii 2 dotarły na koniec kolejki (179).
+	Dane kategorii 1 opuściły kolejkę.
+252. Dane kategorii 1 dotarły na koniec kolejki (179).
+253. Dane kategorii 3 dotarły na koniec kolejki (180).
+254. Dane kategorii 4 dotarły na koniec kolejki (181).
+	Dane kategorii 3 opuściły kolejkę.
+255. Dane kategorii 2 dotarły na koniec kolejki (181).
+256. Dane kategorii 2 dotarły na koniec kolejki (182).
+257. Dane kategorii 4 dotarły na koniec kolejki (183).
+258. Dane kategorii 4 dotarły na koniec kolejki (184).
+259. Dane kategorii 2 dotarły na koniec kolejki (185).
+260. Dane kategorii 4 dotarły na koniec kolejki (186).
+17 -> największa liczba dodanych danych z rzędu niewywołująca opuszczania kolejki.
+[5, 4, 1, 1, 1, 4, 5, 4, 4, 3, 4, 4, 5, 1, 4, 1, 1]
+Przed dodaniem 41. danej kolejkę opuściło 12 danych.
+W kolejce zostało 186.
+[2, 1, 4, 2, 4, 4, 5, 2, 5, 1, 4, 1, 5, 1, 4, 3, 3, 5, 2, 3, 5, 2, 1, 3, 3, 4, 4, 5, 5, 3, 1, 1, 5, 1, 4, 3, 4, 5, 3, 2, 4, 1, 3, 1, 5, 4, 5, 4, 3, 5, 3, 1, 2, 4, 4, 3, 3, 3, 3, 2, 4, 5, 5, 1, 2, 3, 2, 1, 2, 4, 1, 3, 4, 3, 5, 2, 5, 1, 3, 4, 4, 2, 4, 3, 5, 2, 1, 5, 2, 5, 4, 1, 3, 4, 5, 3, 2, 2, 1, 5, 2, 4, 4, 5, 1, 2, 3, 3, 5, 5, 2, 1, 5, 4, 1, 1, 1, 4, 5, 4, 4, 3, 4, 4, 5, 1, 4, 1, 1, 2, 2, 5, 5, 1, 4, 1, 5, 1, 1, 5, 3, 2, 2, 2, 2, 5, 1, 1, 5, 5, 1, 3, 4, 2, 2, 3, 2, 5, 2, 5, 3, 2, 4, 1, 5, 2, 4, 3, 1, 5, 5, 3, 1, 4, 1, 1, 2, 1, 3, 4, 2, 2, 4, 4, 2, 4]
