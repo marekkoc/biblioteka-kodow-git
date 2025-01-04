@@ -1,0 +1,33 @@
+.help - getting help
+.quit - quitting
+.quit - quitting
+.open filename - open a database
+.databases - display at least one database with a name "main"
+attach database filename; - attach a new database 
+attach database filename; as nick - give a labe to a database (komendy bez kropki maja srednik na koncu)
+.tables - show tables in a database (liczba mnoga)
+.table "%es" - tabele ktorych nazwa konczy sie na "*es" (liczba pojedyncza)
+ (liczba mnoga)
+.schema - strukura tabeli (mozna podac nazwe tabeli, jesli jej nie podamy to wyswietli scheam wszystkich tabel)
+ (mozna podac nazwe tabeli, jesli jej nie podamy to wyswietli scheam wszystkich tabel)
+.fullschema - To show the schema and the content of the sqlite_stat tables,
+.indexes - show indexes of one or more/all tables
+ 
+EXECUTING SQL STATEMENT
+sqlite> select *
+   ...> from albums
+   ...> order by AlbumId
+   ...> limit 3;
+
+Formatting query output:
+.mode column
+.header on
+.nullvalue NULL
+
+.output filename - zapis wszystkich kolejnych zapytan do pliku
+.once filename - zapis tylko jednego zapytania do pliku
+
+SELECT albumid, title
+FROM albums
+ORDER BY title
+LIMIT 10;
