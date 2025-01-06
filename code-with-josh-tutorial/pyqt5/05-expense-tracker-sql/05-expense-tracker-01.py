@@ -1,5 +1,6 @@
 """
-expenses tracker
+
+Expenses tracker - kod oryginalny z tutorialu.
 
 based on code with Josh
 course: Python App Development: Build Modern GUIs in 7 Hours (Beginners Course)
