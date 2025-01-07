@@ -1569,3 +1569,504 @@ Dzięki relacjom między tabelami możemy w łatwy sposób łączyć dane, np.:
   ```
 
 Jeśli potrzebujesz dodatkowych przykładów lub szczegółowego wyjaśnienia, daj znać! 😊
+
+# Zapytanie 12
+
+Oto szczegółowe omówienie filtrowania, raportów oraz integracji z GUI w kontekście systemu zarządzania bazą danych książek:
+
+---
+
+## **Filtrowanie**
+
+Filtrowanie to proces wyodrębniania określonych danych z bazy w oparciu o kryteria, np. „wszystkie książki od danego autora” albo „książki czytane w 2023 roku”.
+
+### **Jak zaimplementować filtrowanie?**
+
+1. **Na poziomie SQL**  
+   Można wykonywać zapytania SQL z warunkami (`WHERE`), np.:
+   ```sql
+   SELECT * FROM Books WHERE author_id = 1 AND year = 2023;
+   ```
+   To podejście jest efektywne i dobrze integruje się z bazami danych.
+
+2. **Na poziomie kodu Python**  
+   Możesz załadować dane do obiektów w Pythonie i tam zastosować filtrowanie:
+   ```python
+   filtered_books = [book for book in books if book.year == 2023 and book.author_id == 1]
+   ```
+   To daje większą elastyczność w przypadku złożonych kryteriów.
+
+3. **Przykład GUI**  
+   W interfejsie użytkownika można dodać pola wyboru dla autora, roku wydania, czy gatunku. Wybory te będą przekształcane na zapytania SQL, np.:
+   - **Lista rozwijana**: Autor
+   - **Pole tekstowe**: Rok
+   - **Przycisk**: „Pokaż książki”  
+   Kod w PyQt5 mógłby wyglądać tak:
+   ```python
+   def filter_books(self):
+       author = self.author_dropdown.currentText()
+       year = self.year_input.text()
+       query = f"SELECT * FROM Books WHERE author='{author}' AND year={year}"
+       # Wykonaj zapytanie i załaduj wyniki do tabeli
+   ```
+
+---
+
+## **Raporty**
+
+Raporty pozwalają użytkownikowi generować podsumowania danych, np. „liczba książek przeczytanych w danym roku” albo „łączny koszt zakupionych książek”.
+
+### **Jak zaimplementować raporty?**
+
+1. **Prosty raport SQL**
+   Możesz używać zapytań agregujących, np.:
+   ```sql
+   SELECT year, COUNT(*) AS book_count FROM Books WHERE read_status = 'Read' GROUP BY year;
+   ```
+   Wynik:
+   ```
+   Rok | Liczba książek
+   --------------------
+   2022 | 5
+   2023 | 8
+   ```
+
+2. **Raporty w Pythonie**
+   Możesz również przetwarzać dane w Pythonie:
+   ```python
+   books = session.query(Book).all()
+   report = {}
+   for book in books:
+       year = book.year
+       report[year] = report.get(year, 0) + 1
+   print(report)
+   ```
+
+3. **Przykład GUI**
+   W aplikacji PyQt5 możesz dodać przycisk „Generuj raport”, który wyświetli wyniki w tabeli lub zapisze je do pliku PDF/CSV:
+   ```python
+   def generate_report(self):
+       query = "SELECT year, COUNT(*) FROM Books WHERE read_status='Read' GROUP BY year"
+       # Wykonaj zapytanie i wyświetl dane w tabeli lub zapisz do pliku
+   ```
+
+---
+
+## **Integracja z GUI**
+
+Interfejs graficzny (GUI) umożliwia użytkownikowi korzystanie z funkcji bazy danych w przyjazny sposób. Oto jak zintegrować filtrowanie i raporty z GUI:
+
+### **1. Dodanie filtrów**
+   - Pola tekstowe (np. wyszukiwanie po tytule)
+   - Listy rozwijane (np. wybór autora, gatunku)
+   - Data (np. przedział dat)
+
+   **Przykład PyQt5:**
+   ```python
+   self.filter_button = QPushButton("Filter Books")
+   self.filter_button.clicked.connect(self.filter_books)
+   self.layout.addWidget(self.filter_button)
+   ```
+
+### **2. Wyświetlanie wyników w tabeli**
+   Wyniki zapytań są ładowane do widżetu `QTableWidget`. Wykonujesz zapytanie SQL i wypełniasz tabelę wynikami:
+   ```python
+   def update_table(self, query):
+       self.table.clear()
+       for row in query:
+           self.table.insertRow(row)
+   ```
+
+### **3. Generowanie raportów**
+   Raporty mogą być wyświetlane w osobnym oknie lub eksportowane.  
+   **Przykład eksportu do CSV:**
+   ```python
+   def export_to_csv(self):
+       query = "SELECT year, COUNT(*) FROM Books WHERE read_status='Read' GROUP BY year"
+       with open("report.csv", "w") as file:
+           writer = csv.writer(file)
+           writer.writerow(["Year", "Book Count"])
+           for row in self.session.execute(query):
+               writer.writerow(row)
+   ```
+
+---
+
+### **Przykładowa Aplikacja PyQt5:**
+
+```python
+import sys
+from PyQt5.QtWidgets import QApplication, QWidget, QVBoxLayout, QPushButton, QTableWidget, QLineEdit, QLabel, QTableWidgetItem
+
+class BookManager(QWidget):
+    def __init__(self):
+        super().__init__()
+        self.setWindowTitle("Book Manager")
+        self.resize(800, 600)
+        
+        layout = QVBoxLayout()
+        self.setLayout(layout)
+
+        # Filtry
+        self.filter_input = QLineEdit()
+        layout.addWidget(QLabel("Filter by Author:"))
+        layout.addWidget(self.filter_input)
+        
+        self.filter_button = QPushButton("Apply Filter")
+        self.filter_button.clicked.connect(self.filter_books)
+        layout.addWidget(self.filter_button)
+        
+        # Tabela
+        self.table = QTableWidget()
+        layout.addWidget(self.table)
+
+    def filter_books(self):
+        author = self.filter_input.text()
+        # Simulate database query
+        data = [
+            {"title": "Book 1", "author": "Author A", "year": 2022},
+            {"title": "Book 2", "author": "Author B", "year": 2023},
+        ]
+        filtered_data = [book for book in data if book["author"] == author]
+
+        self.table.setRowCount(len(filtered_data))
+        self.table.setColumnCount(3)
+        self.table.setHorizontalHeaderLabels(["Title", "Author", "Year"])
+
+        for row, book in enumerate(filtered_data):
+            self.table.setItem(row, 0, QTableWidgetItem(book["title"]))
+            self.table.setItem(row, 1, QTableWidgetItem(book["author"]))
+            self.table.setItem(row, 2, QTableWidgetItem(str(book["year"])))
+
+if __name__ == "__main__":
+    app = QApplication(sys.argv)
+    manager = BookManager()
+    manager.show()
+    sys.exit(app.exec_())
+```
+
+---
+
+Jeśli chcesz, mogę zbudować pełną aplikację integrującą wszystkie te funkcjonalności (filtry, raporty, eksport danych) w PyQt5. 😊
+
+# Zapytanie 13
+
+
+System został zaktualizowany o funkcjonalność filtrowania książek po autorze, eksportowania raportów do plików CSV i wyświetlania przykładowych danych w GUI. Możesz uruchomić go i przetestować różne funkcje. Jeśli masz pytania dotyczące działania lub chcesz dodać kolejne funkcjonalności, daj znać!
+
+
+
+
+```python
+import sys
+import csv
+from PyQt5.QtWidgets import (
+    QApplication, QWidget, QVBoxLayout, QPushButton, QTableWidget, QTableWidgetItem, QLineEdit, QLabel, QFileDialog, QMessageBox
+)
+
+class BookManager(QWidget):
+    def __init__(self):
+        super().__init__()
+        self.setWindowTitle("Book Manager")
+        self.resize(800, 600)
+
+        # Layout główny
+        self.layout = QVBoxLayout()
+        self.setLayout(self.layout)
+
+        # Filtry
+        self.filter_input = QLineEdit()
+        self.layout.addWidget(QLabel("Filter by Author:"))
+        self.layout.addWidget(self.filter_input)
+
+        self.filter_button = QPushButton("Apply Filter")
+        self.filter_button.clicked.connect(self.filter_books)
+        self.layout.addWidget(self.filter_button)
+
+        # Przycisk eksportu
+        self.export_button = QPushButton("Export Report to CSV")
+        self.export_button.clicked.connect(self.export_to_csv)
+        self.layout.addWidget(self.export_button)
+
+        # Tabela wyświetlająca dane
+        self.table = QTableWidget()
+        self.layout.addWidget(self.table)
+
+        # Załadowanie przykładowych danych
+        self.load_sample_data()
+
+    def load_sample_data(self):
+        """Wczytuje przykładowe dane do aplikacji."""
+        self.data = [
+            {"title": "Book 1", "author": "Author A", "year": 2022, "read_status": "Read"},
+            {"title": "Book 2", "author": "Author B", "year": 2023, "read_status": "Unread"},
+            {"title": "Book 3", "author": "Author A", "year": 2023, "read_status": "Read"},
+        ]
+        self.update_table(self.data)
+
+    def update_table(self, data):
+        """Aktualizuje zawartość tabeli na podstawie podanych danych."""
+        self.table.setRowCount(len(data))
+        self.table.setColumnCount(4)
+        self.table.setHorizontalHeaderLabels(["Title", "Author", "Year", "Read Status"])
+
+        for row, book in enumerate(data):
+            self.table.setItem(row, 0, QTableWidgetItem(book["title"]))
+            self.table.setItem(row, 1, QTableWidgetItem(book["author"]))
+            self.table.setItem(row, 2, QTableWidgetItem(str(book["year"])))
+            self.table.setItem(row, 3, QTableWidgetItem(book["read_status"]))
+
+        self.table.resizeColumnsToContents()
+
+    def filter_books(self):
+        """Filtruje książki na podstawie autora."""
+        author_filter = self.filter_input.text().strip()
+        filtered_data = [book for book in self.data if author_filter.lower() in book["author"].lower()]
+        self.update_table(filtered_data)
+
+    def export_to_csv(self):
+        """Eksportuje dane z tabeli do pliku CSV."""
+        file_path, _ = QFileDialog.getSaveFileName(self, "Save Report", "", "CSV Files (*.csv);;All Files (*)")
+
+        if not file_path:
+            return  # Anulowano zapis pliku
+
+        try:
+            with open(file_path, "w", newline="", encoding="utf-8") as file:
+                writer = csv.writer(file)
+                writer.writerow(["Title", "Author", "Year", "Read Status"])
+
+                for row in range(self.table.rowCount()):
+                    row_data = []
+                    for col in range(self.table.columnCount()):
+                        item = self.table.item(row, col)
+                        row_data.append(item.text() if item else "")
+                    writer.writerow(row_data)
+
+            QMessageBox.information(self, "Success", "Report exported successfully!")
+        except Exception as e:
+            QMessageBox.critical(self, "Error", f"Failed to export report: {e}")
+
+if __name__ == "__main__":
+    app = QApplication(sys.argv)
+    manager = BookManager()
+    manager.show()
+    sys.exit(app.exec_())
+```
+
+
+# Zapytanie 14
+
+### Zaimplementujmy wszystko krok po kroku:
+
+1. **Dodanie obsługi bazy SQLite**:
+    
+    - Zmienimy przykładowe dane na dynamicznie ładowane z bazy SQLite.
+    - Utworzymy bazę z przykładowymi danymi i funkcje do interakcji z nią.
+2. **Rozwinięcie interfejsu GUI**:
+    
+    - Dodamy możliwość dodawania i usuwania książek.
+    - Umożliwimy edycję istniejących rekordów.
+3. **Poprawa struktury kodu**:
+    
+    - Wydzielimy logikę bazy danych do dedykowanej klasy.
+    - Ułatwimy późniejsze rozbudowywanie aplikacji.
+4. **Integracja z API i plikami JSON**:
+    
+    - Możemy na późniejszym etapie pobierać dane z API, np. o autorach, albo wczytywać/zapisywać dane w plikach JSON.
+
+### Zaktualizowany kod aplikacji:
+
+Poniżej prezentuję zaktualizowaną wersję aplikacji z obsługą SQLite i rozwiniętym interfejsem GUI:
+
+Zaimplementowano rozwiniętą aplikację z obsługą SQLite, w tym:
+
+1. Możliwość ładowania danych z bazy.
+2. Dodawanie i usuwanie książek.
+3. Eksportowanie do CSV.
+4. Filtrację książek po autorze.
+
+Spróbuj uruchomić kod i przetestować działanie interfejsu. Jeśli masz dodatkowe pytania lub chcesz coś zmienić, daj znać!
+
+
+```python
+
+import sys
+import csv
+import sqlite3
+from PyQt5.QtWidgets import (
+    QApplication, QWidget, QVBoxLayout, QPushButton, QTableWidget, QTableWidgetItem, QLineEdit, QLabel, QFileDialog, QMessageBox, QHBoxLayout
+)
+
+class BookManager(QWidget):
+    def __init__(self):
+        super().__init__()
+        self.setWindowTitle("Book Manager")
+        self.resize(800, 600)
+
+        # Połączenie z bazą danych SQLite
+        self.db_connection = sqlite3.connect("books.db")
+        self.db_cursor = self.db_connection.cursor()
+        self.setup_database()
+
+        # Layout główny
+        self.layout = QVBoxLayout()
+        self.setLayout(self.layout)
+
+        # Filtry
+        self.filter_input = QLineEdit()
+        self.layout.addWidget(QLabel("Filter by Author:"))
+        self.layout.addWidget(self.filter_input)
+
+        self.filter_button = QPushButton("Apply Filter")
+        self.filter_button.clicked.connect(self.filter_books)
+        self.layout.addWidget(self.filter_button)
+
+        # Przycisk eksportu
+        self.export_button = QPushButton("Export Report to CSV")
+        self.export_button.clicked.connect(self.export_to_csv)
+        self.layout.addWidget(self.export_button)
+
+        # Przyciski dodawania/usuwania
+        self.button_layout = QHBoxLayout()
+
+        self.add_button = QPushButton("Add Book")
+        self.add_button.clicked.connect(self.add_book)
+        self.button_layout.addWidget(self.add_button)
+
+        self.delete_button = QPushButton("Delete Selected Book")
+        self.delete_button.clicked.connect(self.delete_book)
+        self.button_layout.addWidget(self.delete_button)
+
+        self.layout.addLayout(self.button_layout)
+
+        # Tabela wyświetlająca dane
+        self.table = QTableWidget()
+        self.layout.addWidget(self.table)
+
+        # Załadowanie danych z bazy
+        self.load_data()
+
+    def setup_database(self):
+        """Tworzy tabelę książek, jeśli nie istnieje."""
+        self.db_cursor.execute('''
+            CREATE TABLE IF NOT EXISTS books (
+                id INTEGER PRIMARY KEY AUTOINCREMENT,
+                title TEXT,
+                author TEXT,
+                year INTEGER,
+                read_status TEXT
+            )
+        ''')
+        self.db_connection.commit()
+
+    def load_data(self):
+        """Wczytuje dane z bazy danych do tabeli."""
+        self.db_cursor.execute("SELECT id, title, author, year, read_status FROM books")
+        rows = self.db_cursor.fetchall()
+        self.update_table(rows)
+
+    def update_table(self, data):
+        """Aktualizuje zawartość tabeli na podstawie podanych danych."""
+        self.table.setRowCount(len(data))
+        self.table.setColumnCount(5)
+        self.table.setHorizontalHeaderLabels(["ID", "Title", "Author", "Year", "Read Status"])
+
+        for row, book in enumerate(data):
+            for col, value in enumerate(book):
+                self.table.setItem(row, col, QTableWidgetItem(str(value)))
+
+        self.table.resizeColumnsToContents()
+
+    def filter_books(self):
+        """Filtruje książki na podstawie autora."""
+        author_filter = self.filter_input.text().strip()
+        query = "SELECT id, title, author, year, read_status FROM books WHERE author LIKE ?"
+        self.db_cursor.execute(query, (f"%{author_filter}%",))
+        filtered_data = self.db_cursor.fetchall()
+        self.update_table(filtered_data)
+
+    def add_book(self):
+        """Dodaje nową książkę do bazy danych."""
+        title, ok1 = self.get_text_input("Enter Title:")
+        if not ok1 or not title:
+            return
+
+        author, ok2 = self.get_text_input("Enter Author:")
+        if not ok2 or not author:
+            return
+
+        year, ok3 = self.get_text_input("Enter Year:")
+        if not ok3 or not year.isdigit():
+            QMessageBox.warning(self, "Invalid Input", "Year must be a number.")
+            return
+
+        read_status, ok4 = self.get_text_input("Enter Read Status (Read/Unread):")
+        if not ok4 or read_status not in ["Read", "Unread"]:
+            QMessageBox.warning(self, "Invalid Input", "Read Status must be 'Read' or 'Unread'.")
+            return
+
+        self.db_cursor.execute(
+            "INSERT INTO books (title, author, year, read_status) VALUES (?, ?, ?, ?)",
+            (title, author, int(year), read_status)
+        )
+        self.db_connection.commit()
+        self.load_data()
+
+    def delete_book(self):
+        """Usuwa zaznaczoną książkę z bazy danych."""
+        selected_row = self.table.currentRow()
+        if selected_row == -1:
+            QMessageBox.warning(self, "No Selection", "Please select a book to delete.")
+            return
+
+        book_id = self.table.item(selected_row, 0).text()
+        self.db_cursor.execute("DELETE FROM books WHERE id = ?", (book_id,))
+        self.db_connection.commit()
+        self.load_data()
+
+    def export_to_csv(self):
+        """Eksportuje dane z tabeli do pliku CSV."""
+        file_path, _ = QFileDialog.getSaveFileName(self, "Save Report", "", "CSV Files (*.csv);;All Files (*)")
+
+        if not file_path:
+            return  # Anulowano zapis pliku
+
+        try:
+            with open(file_path, "w", newline="", encoding="utf-8") as file:
+                writer = csv.writer(file)
+                writer.writerow(["ID", "Title", "Author", "Year", "Read Status"])
+
+                for row in range(self.table.rowCount()):
+                    row_data = []
+                    for col in range(self.table.columnCount()):
+                        item = self.table.item(row, col)
+                        row_data.append(item.text() if item else "")
+                    writer.writerow(row_data)
+
+            QMessageBox.information(self, "Success", "Report exported successfully!")
+        except Exception as e:
+            QMessageBox.critical(self, "Error", f"Failed to export report: {e}")
+
+    def get_text_input(self, prompt):
+        """Pokazuje okno dialogowe dla tekstowego wejścia."""
+        text, ok = QInputDialog.getText(self, "Input", prompt)
+        return text, ok
+
+    def closeEvent(self, event):
+        """Zamyka połączenie z bazą danych przy zamykaniu aplikacji."""
+        self.db_connection.close()
+        event.accept()
+
+if __name__ == "__main__":
+    app = QApplication(sys.argv)
+    manager = BookManager()
+    manager.show()
+    sys.exit(app.exec_())
+
+```
+
+
+
+# Zapytanie 15
+
