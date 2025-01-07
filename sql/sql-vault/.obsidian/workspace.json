@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "system-klas-do-bazy-z-ksiazkami.md",
+                "file": "wyswietlanie-wiele-tabel.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "system-klas-do-bazy-z-ksiazkami"
+              "title": "wyswietlanie-wiele-tabel"
             }
           }
         ]
@@ -164,11 +164,11 @@
   },
   "active": "45a047485a6e7d38",
   "lastOpenFiles": [
-    "wyswietlanie-wiele-tabel.md",
     "wyswietlanie-1-tabela.md",
     "system-klas-do-bazy-z-ksiazkami.md",
     "sqlalchemy.md",
     "sql-for-beginners-SQLite.md",
+    "wyswietlanie-wiele-tabel.md",
     "templates/notatka-ogolna.md",
     "templates/algorytm-opis.md",
     "templates"
