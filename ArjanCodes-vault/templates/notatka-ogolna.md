@@ -1,7 +1,0 @@
----
-Utworzono: 
-Zmodyfikowano: 
-Źródło: 
-tags:
----
-
