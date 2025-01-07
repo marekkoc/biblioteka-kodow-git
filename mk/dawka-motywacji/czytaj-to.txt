@@ -1,6 +1,0 @@
-2024.11.13
-
-Zmiana nazwy katalogu: quotes na dawka-motywacji
-
-To jest kopia katalogu:	
-.... /no23/pasje/programowanie/quotes

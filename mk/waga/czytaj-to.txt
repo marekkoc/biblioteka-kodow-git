@@ -1,6 +1,0 @@
-2024.11.13
-
-Zmiana nazwy katalogu: my-weight na waga
-
-To jest kopia katalogu:	
-.... /no23/pasje/programowanie/my-weight
