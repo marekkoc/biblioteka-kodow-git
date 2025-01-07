@@ -1,0 +1,244 @@
+{
+  "main": {
+    "id": "4e96dd011bfa0bf8",
+    "type": "split",
+    "children": [
+      {
+        "id": "d992d7419e12fc40",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "a413d7ca3af86d24",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "python/operator-trojargumentowy.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "operator-trojargumentowy"
+            }
+          },
+          {
+            "id": "5fda65be0f81508d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "projekty/baza-danych-ksiazek.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "baza-danych-ksiazek"
+            }
+          },
+          {
+            "id": "ba431a467c15debf",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "bazy-danych/sqlalchemy.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "sqlalchemy"
+            }
+          }
+        ],
+        "currentTab": 2
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "724868f9e42b7121",
+    "type": "split",
+    "children": [
+      {
+        "id": "4288816576901df2",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "4d43bf17528105a4",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "3c09a87cafb7d0f4",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "2f1a1173bf5ca26e",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 414.50390243530273
+  },
+  "right": {
+    "id": "c99bb1052c9c3d6c",
+    "type": "split",
+    "children": [
+      {
+        "id": "6f30d751f040b3f9",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "7e3655e21d63b5bb",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "bash/wget.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for wget"
+            }
+          },
+          {
+            "id": "d09fd1b04987f598",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "bash/wget.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from wget"
+            }
+          },
+          {
+            "id": "3043dd214c8e237a",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "8548a8d3e4cf3f96",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "bash/wget.md"
+              },
+              "icon": "lucide-list",
+              "title": "Outline of wget"
+            }
+          }
+        ],
+        "currentTab": 2
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "ba431a467c15debf",
+  "lastOpenFiles": [
+    "bazy-danych/sql-for-beginners-SQLite.md",
+    "code-with-josh/python-desktop-app.md",
+    "code-with-josh/python-mobile-app.md",
+    "code-with-josh/ice-cream-never-use-print.md",
+    "code-with-josh/fitness-tracker.md",
+    "bazy-danych/sqlalchemy.md",
+    "projekty/money-manager-mk.md",
+    "projekty/baza-danych-ksiazek.md",
+    "github/laczenie-repozytoriow-github.md",
+    "github/gitignore.md",
+    "zrodla-ksiazki-kursy-filmy.md",
+    "python/dekoratory.md",
+    "bazy-danych",
+    "inzynieria-oprogramowania/scrapping.md",
+    "inzynieria-oprogramowania/().md",
+    "python/operator-przypisania.md",
+    "python/operator-trojargumentowy.md",
+    "python/try-except.md",
+    "udemy/OOP-Pirates-in-Python.md",
+    "inzynieria-oprogramowania/duck-typing-strukturalny-polimorfizm.md",
+    "inzynieria-oprogramowania/rigid-code-vs-fragile-code.md",
+    "inzynieria-oprogramowania/spaghetti-code-and-clean-code.md",
+    "code-with-josh/sql-for-beginners-SQLite.md",
+    "templates/notatka-ogolna.md",
+    "code-with-josh/figs/sql-for-beginners-SQLite.png",
+    "code-with-josh/figs/Screenshot from 2024-12-06 19-14-56.png",
+    "code-with-josh/figs",
+    "projekty/monitorowanie-cen-walut.md",
+    "projekty/szyfrowanie-hasel.md",
+    "projekty/waga-dashbord-www.md",
+    "yt-taylor-software",
+    "inzynieria-oprogramowania",
+    "bash/find",
+    "figs/udemy-Loek-OOPirates-20-1.png",
+    "figs/udemy-Loek-OOPirates-19-2.png",
+    "figs/udemy-Loek-OOPirates-19-1.png",
+    "figs/udemy-Loek-OOPirates-18-3.png",
+    "figs/udemy-Loek-OOPirates-18-2.png",
+    "figs/udemy-Loek-OOPirates-18-1.png",
+    "figs/udemy-Loek-OOPirates-17-5.png",
+    "figs/udemy-Loek-OOPirates-17-4.png",
+    "udemy",
+    "streamlit",
+    "aplikacje-mobilne",
+    "code-with-josh",
+    "python"
+  ]
+}

@@ -952,3 +952,612 @@ if __name__ == "__main__":
 - **Reużywalność**: Możesz wielokrotnie używać klas `Author`, `Publisher`, itp. w innych kontekstach.
 - **Rozszerzalność**: Łatwo dodać nowe właściwości lub funkcje (np. licznik czytelników dla książek).
 - **Złożona logika**: Możesz zaimplementować operacje takie jak filtrowanie książek według autora, serii, czy roku.
+
+# Zapytanie 8
+Oczywiście, możemy kontynuować! 😊 Jakie aspekty bazy danych książek chciałbyś omówić dalej? Możemy zgłębić:
+
+- Złożoną logikę aplikacji i operacje na danych.
+- Rozszerzenie struktury klas.
+- Interakcję z GUI (np. w PyQt5).
+- Wydajność zapytań do bazy danych.
+- Synchronizację danych z zewnętrznymi API (np. Goodreads, Open Library).
+- Praktyki związane z migracją danych lub backupem bazy danych.
+
+Daj znać, co Cię najbardziej interesuje!
+
+# Zapytanie 9
+
+Twoje pytanie o strukturę bazy danych jest bardzo istotne i kluczowe dla wydajności oraz elastyczności aplikacji. Rozważmy najpierw, jak można rozdzielić dane z bazy książek na różne tabele i jak je ze sobą powiązać.
+
+---
+
+### 1. **Czy jedna tabela wystarczy?**
+
+Jedna tabela może być wystarczająca dla prostych przypadków użycia, ale:
+
+- Trudno ją rozbudowywać w przyszłości.
+- Duplikujesz dane (np. ten sam autor czy wydawnictwo mogą występować wielokrotnie).
+- Trudniej unikać błędów, takich jak literówki w danych.
+
+Dlatego w bardziej rozbudowanych aplikacjach stosuje się podejście relacyjne, w którym dane dzielone są na wiele tabel.
+
+---
+
+### 2. **Propozycja struktury wielotabelowej**
+
+Możesz podzielić dane na logiczne części i utworzyć tabele z powiązaniami między nimi. Przykładowa struktura:
+
+#### a) **Tabela `books` (Książki)**
+Reprezentuje unikalne książki:
+- `id` (klucz główny, PRIMARY KEY)
+- `title` (tytuł książki)
+- `author_id` (klucz obcy do tabeli `authors`)
+- `publisher_id` (klucz obcy do tabeli `publishers`)
+- `series_id` (klucz obcy do tabeli `series`)
+- `year` (rok wydania)
+- `format` (np. "PDF", "EPUB", "Paperback")
+- `genre` (np. "Fiction", "Non-Fiction")
+- `is_read` (czy książka była czytana, boolean)
+- `notes` (uwagi)
+
+#### b) **Tabela `authors` (Autorzy)**
+Zawiera dane o autorach:
+- `id` (klucz główny)
+- `name` (imię i nazwisko autora)
+
+#### c) **Tabela `publishers` (Wydawnictwa)**
+Zawiera dane o wydawnictwach:
+- `id` (klucz główny)
+- `name` (nazwa wydawnictwa)
+
+#### d) **Tabela `series` (Serie książek)**
+Zawiera dane o seriach książkowych:
+- `id` (klucz główny)
+- `name` (nazwa serii)
+
+#### e) **Tabela `bookshops` (Księgarnie)**
+Rejestruje miejsca zakupu:
+- `id` (klucz główny)
+- `name` (nazwa księgarni)
+
+#### f) **Tabela `purchases` (Zakupy)**
+Łączy książki z informacjami o zakupach:
+- `id` (klucz główny)
+- `book_id` (klucz obcy do tabeli `books`)
+- `bookshop_id` (klucz obcy do tabeli `bookshops`)
+- `purchase_date` (data zakupu)
+- `price` (cena)
+
+#### g) **Tabela `reading_log` (Log czytania)**
+Zawiera dane o procesie czytania:
+- `id` (klucz główny)
+- `book_id` (klucz obcy do tabeli `books`)
+- `read_from` (data rozpoczęcia czytania)
+- `read_to` (data zakończenia czytania)
+
+---
+
+### 3. **Powiązania między tabelami**
+
+#### Relacje:
+- **`books` → `authors`**: Jeden autor może napisać wiele książek (relacja *wiele do jednego*).
+- **`books` → `publishers`**: Jedno wydawnictwo może opublikować wiele książek (relacja *wiele do jednego*).
+- **`books` → `series`**: Jedna seria może zawierać wiele książek, ale książka należy do jednej serii (relacja *wiele do jednego*).
+- **`purchases` → `books`**: Jedna książka może być kupiona w wielu miejscach, jeśli np. posiadasz różne wydania (relacja *wiele do jednego*).
+- **`reading_log` → `books`**: Dla jednej książki możesz mieć wiele logów czytania, np. przy powtórnym czytaniu (relacja *jeden do wielu*).
+
+---
+
+### 4. **Jak powinny współpracować tabele?**
+
+- **Unikanie duplikacji**: Dzięki podzieleniu na tabele np. `authors`, `publishers`, czy `series`, dane powtarzalne zapisujesz tylko raz.
+- **Optymalizacja zapytań**: Możesz pobrać szczegółowe dane np. o książkach i ich autorach jednym zapytaniem z JOIN:
+  ```sql
+  SELECT books.title, authors.name AS author, publishers.name AS publisher, series.name AS series
+  FROM books
+  JOIN authors ON books.author_id = authors.id
+  JOIN publishers ON books.publisher_id = publishers.id
+  LEFT JOIN series ON books.series_id = series.id;
+  ```
+- **Łatwość rozwijania**: Możesz dodawać nowe kolumny lub tabele bez zmiany logiki w już istniejących tabelach.
+
+---
+
+### 5. **Zalety podejścia wielotabelowego**
+- **Modularność**: Możesz łatwo dodawać nowe funkcjonalności, np. tabelę do oceniania książek.
+- **Redukcja błędów**: Literówki w nazwach autorów czy wydawnictw są wyeliminowane dzięki używaniu kluczy obcych.
+- **Wydajność**: Tabele są mniejsze i bardziej zrozumiałe, co przyspiesza operacje na danych.
+
+---
+
+Czy chciałbyś, abym zaprojektował SQL dla takiej struktury, a może przedstawił, jak zaimplementować klasy w Pythonie odzwierciedlające tę bazę danych? 😊
+
+# Zapytanie 10
+
+Świetnie! Oto szczegółowy plan na zaprojektowanie systemu zarządzania bazą danych książek z użyciem SQLite i klas w Pythonie.
+
+---
+
+## **1. Struktura bazy danych (SQL)**
+
+```sql
+-- Tabela autorów
+CREATE TABLE authors (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    name TEXT NOT NULL
+);
+
+-- Tabela wydawnictw
+CREATE TABLE publishers (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    name TEXT NOT NULL
+);
+
+-- Tabela serii książek
+CREATE TABLE series (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    name TEXT
+);
+
+-- Tabela księgarni
+CREATE TABLE bookshops (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    name TEXT NOT NULL
+);
+
+-- Tabela książek
+CREATE TABLE books (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    title TEXT NOT NULL,
+    author_id INTEGER,
+    publisher_id INTEGER,
+    series_id INTEGER,
+    year INTEGER,
+    format TEXT,
+    genre TEXT,
+    is_read BOOLEAN DEFAULT 0,
+    notes TEXT,
+    FOREIGN KEY (author_id) REFERENCES authors (id),
+    FOREIGN KEY (publisher_id) REFERENCES publishers (id),
+    FOREIGN KEY (series_id) REFERENCES series (id)
+);
+
+-- Tabela zakupów książek
+CREATE TABLE purchases (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    book_id INTEGER NOT NULL,
+    bookshop_id INTEGER NOT NULL,
+    purchase_date DATE,
+    price REAL,
+    FOREIGN KEY (book_id) REFERENCES books (id),
+    FOREIGN KEY (bookshop_id) REFERENCES bookshops (id)
+);
+
+-- Tabela logów czytania
+CREATE TABLE reading_log (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    book_id INTEGER NOT NULL,
+    read_from DATE,
+    read_to DATE,
+    FOREIGN KEY (book_id) REFERENCES books (id)
+);
+```
+
+---
+
+## **2. Klasy w Pythonie**
+
+W Pythonie zaimplementujemy klasy odzwierciedlające strukturę bazy danych. Wykorzystamy bibliotekę `sqlite3` do komunikacji z bazą danych.
+
+```python
+import sqlite3
+from datetime import date
+
+
+class Author:
+    def __init__(self, name, author_id=None):
+        self.id = author_id
+        self.name = name
+
+    @staticmethod
+    def create_table(connection):
+        with connection:
+            connection.execute("""
+                CREATE TABLE IF NOT EXISTS authors (
+                    id INTEGER PRIMARY KEY AUTOINCREMENT,
+                    name TEXT NOT NULL
+                )
+            """)
+
+    def save(self, connection):
+        with connection:
+            if self.id is None:
+                cursor = connection.execute(
+                    "INSERT INTO authors (name) VALUES (?)",
+                    (self.name,)
+                )
+                self.id = cursor.lastrowid
+            else:
+                connection.execute(
+                    "UPDATE authors SET name = ? WHERE id = ?",
+                    (self.name, self.id)
+                )
+
+
+class Book:
+    def __init__(self, title, author_id, publisher_id=None, series_id=None,
+                 year=None, book_format=None, genre=None, is_read=False, notes=None, book_id=None):
+        self.id = book_id
+        self.title = title
+        self.author_id = author_id
+        self.publisher_id = publisher_id
+        self.series_id = series_id
+        self.year = year
+        self.format = book_format
+        self.genre = genre
+        self.is_read = is_read
+        self.notes = notes
+
+    @staticmethod
+    def create_table(connection):
+        with connection:
+            connection.execute("""
+                CREATE TABLE IF NOT EXISTS books (
+                    id INTEGER PRIMARY KEY AUTOINCREMENT,
+                    title TEXT NOT NULL,
+                    author_id INTEGER,
+                    publisher_id INTEGER,
+                    series_id INTEGER,
+                    year INTEGER,
+                    format TEXT,
+                    genre TEXT,
+                    is_read BOOLEAN DEFAULT 0,
+                    notes TEXT,
+                    FOREIGN KEY (author_id) REFERENCES authors (id),
+                    FOREIGN KEY (publisher_id) REFERENCES publishers (id),
+                    FOREIGN KEY (series_id) REFERENCES series (id)
+                )
+            """)
+
+    def save(self, connection):
+        with connection:
+            if self.id is None:
+                cursor = connection.execute("""
+                    INSERT INTO books (
+                        title, author_id, publisher_id, series_id, year,
+                        format, genre, is_read, notes
+                    ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
+                """, (self.title, self.author_id, self.publisher_id, self.series_id,
+                      self.year, self.format, self.genre, self.is_read, self.notes))
+                self.id = cursor.lastrowid
+            else:
+                connection.execute("""
+                    UPDATE books
+                    SET title = ?, author_id = ?, publisher_id = ?, series_id = ?,
+                        year = ?, format = ?, genre = ?, is_read = ?, notes = ?
+                    WHERE id = ?
+                """, (self.title, self.author_id, self.publisher_id, self.series_id,
+                      self.year, self.format, self.genre, self.is_read, self.notes, self.id))
+
+
+class Purchase:
+    def __init__(self, book_id, bookshop_id, purchase_date=None, price=None, purchase_id=None):
+        self.id = purchase_id
+        self.book_id = book_id
+        self.bookshop_id = bookshop_id
+        self.purchase_date = purchase_date or date.today().isoformat()
+        self.price = price
+
+    @staticmethod
+    def create_table(connection):
+        with connection:
+            connection.execute("""
+                CREATE TABLE IF NOT EXISTS purchases (
+                    id INTEGER PRIMARY KEY AUTOINCREMENT,
+                    book_id INTEGER NOT NULL,
+                    bookshop_id INTEGER NOT NULL,
+                    purchase_date DATE,
+                    price REAL,
+                    FOREIGN KEY (book_id) REFERENCES books (id),
+                    FOREIGN KEY (bookshop_id) REFERENCES bookshops (id)
+                )
+            """)
+
+    def save(self, connection):
+        with connection:
+            if self.id is None:
+                cursor = connection.execute("""
+                    INSERT INTO purchases (book_id, bookshop_id, purchase_date, price)
+                    VALUES (?, ?, ?, ?)
+                """, (self.book_id, self.bookshop_id, self.purchase_date, self.price))
+                self.id = cursor.lastrowid
+            else:
+                connection.execute("""
+                    UPDATE purchases
+                    SET book_id = ?, bookshop_id = ?, purchase_date = ?, price = ?
+                    WHERE id = ?
+                """, (self.book_id, self.bookshop_id, self.purchase_date, self.price, self.id))
+```
+
+---
+
+## **3. Inicjalizacja bazy danych**
+
+```python
+def initialize_database(connection):
+    Author.create_table(connection)
+    Book.create_table(connection)
+    Purchase.create_table(connection)
+    # Dodaj funkcje dla innych klas, np. Publisher, Series
+```
+
+---
+
+## **4. Przykład użycia**
+
+```python
+def main():
+    connection = sqlite3.connect("books.db")
+
+    # Inicjalizacja bazy danych
+    initialize_database(connection)
+
+    # Dodanie autora
+    author = Author(name="George Orwell")
+    author.save(connection)
+
+    # Dodanie książki
+    book = Book(title="1984", author_id=author.id, year=1949, genre="Dystopia", is_read=True)
+    book.save(connection)
+
+    # Dodanie zakupu
+    purchase = Purchase(book_id=book.id, bookshop_id=1, price=25.99)
+    purchase.save(connection)
+
+    print(f"Book '{book.title}' by {author.name} saved with ID {book.id}")
+
+
+if __name__ == "__main__":
+    main()
+```
+
+---
+
+## **Podsumowanie**
+
+- **Struktura SQL** jest przejrzysta i pozwala na unikanie redundancji.
+- **Klasy w Pythonie** oferują prosty sposób na zarządzanie rekordami.
+- System można łatwo rozszerzać o dodatkowe funkcjonalności, takie jak logi czytania czy integracje z API.
+
+Czy chciałbyś coś jeszcze dopracować? 😊
+
+# Zapytanie 11
+Oczywiście! Oto uproszczona wersja systemu z trzema tabelami oraz szczegółowe wyjaśnienie działania i wstawiania rekordów.
+
+---
+
+## **1. Uproszczona Struktura Bazy Danych**
+
+Baza danych będzie zawierała:
+1. **Tabela `authors`** - przechowuje autorów książek.
+2. **Tabela `books`** - przechowuje książki i wskazuje autora (relacja jeden-do-wielu).
+3. **Tabela `purchases`** - przechowuje informacje o zakupach książek.
+
+### Struktura SQL:
+```sql
+-- Tabela autorów
+CREATE TABLE authors (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    name TEXT NOT NULL
+);
+
+-- Tabela książek
+CREATE TABLE books (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    title TEXT NOT NULL,
+    author_id INTEGER NOT NULL,
+    FOREIGN KEY (author_id) REFERENCES authors (id)
+);
+
+-- Tabela zakupów
+CREATE TABLE purchases (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    book_id INTEGER NOT NULL,
+    purchase_date DATE,
+    price REAL,
+    FOREIGN KEY (book_id) REFERENCES books (id)
+);
+```
+
+---
+
+## **2. Klasy w Pythonie**
+
+### Implementacja:
+
+```python
+import sqlite3
+from datetime import date
+
+class Author:
+    def __init__(self, name, author_id=None):
+        self.id = author_id
+        self.name = name
+
+    def save(self, connection):
+        """Zapisuje autora w bazie danych."""
+        with connection:
+            if self.id is None:
+                cursor = connection.execute(
+                    "INSERT INTO authors (name) VALUES (?)",
+                    (self.name,)
+                )
+                self.id = cursor.lastrowid
+            else:
+                connection.execute(
+                    "UPDATE authors SET name = ? WHERE id = ?",
+                    (self.name, self.id)
+                )
+
+class Book:
+    def __init__(self, title, author_id, book_id=None):
+        self.id = book_id
+        self.title = title
+        self.author_id = author_id
+
+    def save(self, connection):
+        """Zapisuje książkę w bazie danych."""
+        with connection:
+            if self.id is None:
+                cursor = connection.execute(
+                    "INSERT INTO books (title, author_id) VALUES (?, ?)",
+                    (self.title, self.author_id)
+                )
+                self.id = cursor.lastrowid
+            else:
+                connection.execute(
+                    "UPDATE books SET title = ?, author_id = ? WHERE id = ?",
+                    (self.title, self.author_id, self.id)
+                )
+
+class Purchase:
+    def __init__(self, book_id, purchase_date=None, price=None, purchase_id=None):
+        self.id = purchase_id
+        self.book_id = book_id
+        self.purchase_date = purchase_date or date.today().isoformat()
+        self.price = price
+
+    def save(self, connection):
+        """Zapisuje zakup w bazie danych."""
+        with connection:
+            if self.id is None:
+                cursor = connection.execute(
+                    "INSERT INTO purchases (book_id, purchase_date, price) VALUES (?, ?, ?)",
+                    (self.book_id, self.purchase_date, self.price)
+                )
+                self.id = cursor.lastrowid
+            else:
+                connection.execute(
+                    "UPDATE purchases SET book_id = ?, purchase_date = ?, price = ? WHERE id = ?",
+                    (self.book_id, self.purchase_date, self.price, self.id)
+                )
+```
+
+---
+
+## **3. Przykład działania**
+
+### Inicjalizacja bazy danych:
+```python
+def initialize_database(connection):
+    with connection:
+        connection.execute("""
+            CREATE TABLE IF NOT EXISTS authors (
+                id INTEGER PRIMARY KEY AUTOINCREMENT,
+                name TEXT NOT NULL
+            )
+        """)
+        connection.execute("""
+            CREATE TABLE IF NOT EXISTS books (
+                id INTEGER PRIMARY KEY AUTOINCREMENT,
+                title TEXT NOT NULL,
+                author_id INTEGER NOT NULL,
+                FOREIGN KEY (author_id) REFERENCES authors (id)
+            )
+        """)
+        connection.execute("""
+            CREATE TABLE IF NOT EXISTS purchases (
+                id INTEGER PRIMARY KEY AUTOINCREMENT,
+                book_id INTEGER NOT NULL,
+                purchase_date DATE,
+                price REAL,
+                FOREIGN KEY (book_id) REFERENCES books (id)
+            )
+        """)
+```
+
+### Dodawanie danych:
+Przykład wstawiania rekordów do bazy danych:
+
+```python
+def main():
+    connection = sqlite3.connect("simple_books.db")
+    initialize_database(connection)
+
+    # Dodajemy autora
+    author = Author(name="George Orwell")
+    author.save(connection)
+    print(f"Author added with ID: {author.id}")
+
+    # Dodajemy książkę
+    book = Book(title="1984", author_id=author.id)
+    book.save(connection)
+    print(f"Book added with ID: {book.id}")
+
+    # Dodajemy zakup
+    purchase = Purchase(book_id=book.id, price=29.99)
+    purchase.save(connection)
+    print(f"Purchase added with ID: {purchase.id}")
+
+if __name__ == "__main__":
+    main()
+```
+
+---
+
+## **4. Wyjaśnienie Działania**
+
+### 1. Dodanie autora
+- Kiedy wywołujemy `author.save(connection)`, system wykonuje SQL:
+  ```sql
+  INSERT INTO authors (name) VALUES ('George Orwell');
+  ```
+- SQLite generuje unikalny `id` dla tego autora, który jest dostępny jako `author.id`.
+
+### 2. Dodanie książki
+- Gdy dodajemy książkę `1984`, wskazujemy, że należy do autora o `id=1`:
+  ```sql
+  INSERT INTO books (title, author_id) VALUES ('1984', 1);
+  ```
+- Klasa `Book` przechowuje odniesienie do `author_id`, co tworzy powiązanie.
+
+### 3. Dodanie zakupu
+- Tworzymy zakup książki `1984` (z `id=1`):
+  ```sql
+  INSERT INTO purchases (book_id, purchase_date, price) VALUES (1, '2025-01-06', 29.99);
+  ```
+
+---
+
+## **5. Przykład w bazie danych**
+
+### Tabela `authors`:
+| id  | name           |
+|-----|----------------|
+| 1   | George Orwell  |
+
+### Tabela `books`:
+| id  | title  | author_id |
+|-----|--------|-----------|
+| 1   | 1984   | 1         |
+
+### Tabela `purchases`:
+| id  | book_id | purchase_date | price |
+|-----|---------|---------------|-------|
+| 1   | 1       | 2025-01-06    | 29.99 |
+
+---
+
+Dzięki relacjom między tabelami możemy w łatwy sposób łączyć dane, np.:
+- Lista wszystkich książek autorów:
+  ```sql
+  SELECT books.title, authors.name
+  FROM books
+  JOIN authors ON books.author_id = authors.id;
+  ```
+- Suma wydatków:
+  ```sql
+  SELECT SUM(price) FROM purchases;
+  ```
+
+Jeśli potrzebujesz dodatkowych przykładów lub szczegółowego wyjaśnienia, daj znać! 😊
