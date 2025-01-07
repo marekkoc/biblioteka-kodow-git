@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "a3d8b8299414f81b",
+        "id": "8a8c3fd91148e23c",
         "type": "tabs",
         "children": [
           {
-            "id": "6d6af0dc03a098d3",
+            "id": "9b5b2e68b0478214",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -159,7 +159,7 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "6d6af0dc03a098d3",
+  "active": "9b5b2e68b0478214",
   "lastOpenFiles": [
     "aplikacje-mobilne/technologie-aplikacji-mobilnych.md",
     "projekty/baza-danych-ksiazek.md",

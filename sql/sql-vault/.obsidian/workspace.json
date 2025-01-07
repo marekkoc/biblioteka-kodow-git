@@ -11,14 +11,10 @@
             "id": "45a047485a6e7d38",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "wyswietlanie-wiele-tabel.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "wyswietlanie-wiele-tabel"
+              "title": "New tab"
             }
           }
         ]
@@ -164,11 +160,15 @@
   },
   "active": "45a047485a6e7d38",
   "lastOpenFiles": [
+    "wyswietlanie-wiele-tabel.md",
+    "baza-danych-ksiazek-wyswietlanie-wiele-tabel.md",
+    "baza-danych-ksiazek-wyswietlanie-jednej-tabeli.md",
+    "baza-danych-ksiazek-wyswietlanie-1-tabela.md",
+    "baza-danych-ksiazek9system-klas.md",
     "wyswietlanie-1-tabela.md",
     "system-klas-do-bazy-z-ksiazkami.md",
     "sqlalchemy.md",
     "sql-for-beginners-SQLite.md",
-    "wyswietlanie-wiele-tabel.md",
     "templates/notatka-ogolna.md",
     "templates/algorytm-opis.md",
     "templates"
