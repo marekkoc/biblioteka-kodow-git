@@ -1,20 +1,24 @@
 {
   "main": {
-    "id": "4e96dd011bfa0bf8",
+    "id": "b336d5e519c4abe0",
     "type": "split",
     "children": [
       {
-        "id": "8a8c3fd91148e23c",
+        "id": "fcfd22b370da2dde",
         "type": "tabs",
         "children": [
           {
-            "id": "9b5b2e68b0478214",
+            "id": "1fc9dafe839df842",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "baza-danych-ksiazek/baza-danych-ksiazek-wyswietlanie-jednej-tabeli.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "baza-danych-ksiazek-wyswietlanie-jednej-tabeli"
             }
           }
         ]
@@ -23,15 +27,15 @@
     "direction": "vertical"
   },
   "left": {
-    "id": "724868f9e42b7121",
+    "id": "9e134a3045605804",
     "type": "split",
     "children": [
       {
-        "id": "4288816576901df2",
+        "id": "91b4cd6c2cedc93b",
         "type": "tabs",
         "children": [
           {
-            "id": "4d43bf17528105a4",
+            "id": "c5cbed7e37ae18c7",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -43,7 +47,7 @@
             }
           },
           {
-            "id": "3c09a87cafb7d0f4",
+            "id": "e9d87e5628b5d4d2",
             "type": "leaf",
             "state": {
               "type": "search",
@@ -60,7 +64,7 @@
             }
           },
           {
-            "id": "2f1a1173bf5ca26e",
+            "id": "90f3f7eacbeb3c1f",
             "type": "leaf",
             "state": {
               "type": "bookmarks",
@@ -73,23 +77,24 @@
       }
     ],
     "direction": "horizontal",
-    "width": 414.50390243530273
+    "width": 374.5,
+    "collapsed": true
   },
   "right": {
-    "id": "c99bb1052c9c3d6c",
+    "id": "ed1e016695835ccd",
     "type": "split",
     "children": [
       {
-        "id": "6f30d751f040b3f9",
+        "id": "49a8575bdeb3e6a7",
         "type": "tabs",
         "children": [
           {
-            "id": "7e3655e21d63b5bb",
+            "id": "b71d41258baf5164",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
-                "file": "bash/wget.md",
+                "file": "baza-danych-ksiazek/baza-danych-ksiazek-wyswietlanie-jednej-tabeli.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -99,25 +104,25 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for wget"
+              "title": "Backlinks for baza-danych-ksiazek-wyswietlanie-jednej-tabeli"
             }
           },
           {
-            "id": "d09fd1b04987f598",
+            "id": "56d87932a2135aa4",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "bash/wget.md",
+                "file": "baza-danych-ksiazek/baza-danych-ksiazek-wyswietlanie-jednej-tabeli.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from wget"
+              "title": "Outgoing links from baza-danych-ksiazek-wyswietlanie-jednej-tabeli"
             }
           },
           {
-            "id": "3043dd214c8e237a",
+            "id": "0a98c14dfc593296",
             "type": "leaf",
             "state": {
               "type": "tag",
@@ -130,19 +135,18 @@
             }
           },
           {
-            "id": "8548a8d3e4cf3f96",
+            "id": "d88062dd31fa1b36",
             "type": "leaf",
             "state": {
               "type": "outline",
               "state": {
-                "file": "bash/wget.md"
+                "file": "baza-danych-ksiazek/baza-danych-ksiazek-wyswietlanie-jednej-tabeli.md"
               },
               "icon": "lucide-list",
-              "title": "Outline of wget"
+              "title": "Outline of baza-danych-ksiazek-wyswietlanie-jednej-tabeli"
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "horizontal",
@@ -159,53 +163,14 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "4d43bf17528105a4",
+  "active": "1fc9dafe839df842",
   "lastOpenFiles": [
-    "python-programmer/figs",
-    "aplikacje-mobilne/technologie-aplikacji-mobilnych.md",
-    "projekty/baza-danych-ksiazek.md",
-    "projekty/waga-dashbord-www.md",
-    "projekty/monitorowanie-cen-walut.md",
-    "projekty/money-manager-mk.md",
-    "python/operator-trojargumentowy.md",
-    "bazy-danych/sql-for-beginners-SQLite.md",
-    "code-with-josh/python-desktop-app.md",
-    "code-with-josh/python-mobile-app.md",
-    "code-with-josh/ice-cream-never-use-print.md",
-    "code-with-josh/fitness-tracker.md",
-    "bazy-danych/sqlalchemy.md",
-    "github/laczenie-repozytoriow-github.md",
-    "github/gitignore.md",
-    "zrodla-ksiazki-kursy-filmy.md",
-    "python/dekoratory.md",
-    "bazy-danych",
-    "inzynieria-oprogramowania/scrapping.md",
-    "inzynieria-oprogramowania/().md",
-    "python/operator-przypisania.md",
-    "python/try-except.md",
-    "udemy/OOP-Pirates-in-Python.md",
-    "inzynieria-oprogramowania/duck-typing-strukturalny-polimorfizm.md",
-    "inzynieria-oprogramowania/rigid-code-vs-fragile-code.md",
-    "inzynieria-oprogramowania/spaghetti-code-and-clean-code.md",
-    "code-with-josh/sql-for-beginners-SQLite.md",
-    "code-with-josh/figs/sql-for-beginners-SQLite.png",
-    "code-with-josh/figs/Screenshot from 2024-12-06 19-14-56.png",
-    "code-with-josh/figs",
-    "yt-taylor-software",
-    "inzynieria-oprogramowania",
-    "bash/find",
-    "figs/udemy-Loek-OOPirates-20-1.png",
-    "figs/udemy-Loek-OOPirates-19-2.png",
-    "figs/udemy-Loek-OOPirates-19-1.png",
-    "figs/udemy-Loek-OOPirates-18-3.png",
-    "figs/udemy-Loek-OOPirates-18-2.png",
-    "figs/udemy-Loek-OOPirates-18-1.png",
-    "figs/udemy-Loek-OOPirates-17-5.png",
-    "figs/udemy-Loek-OOPirates-17-4.png",
-    "udemy",
-    "streamlit",
-    "aplikacje-mobilne",
-    "code-with-josh",
-    "python"
+    "baza-danych-ksiazek/baza-danych-ksiazek.md",
+    "Netum-NT-1228BL/01-tryb-klawiatury.md",
+    "templates/notatka-ogolna.md",
+    "templates/algorytm-opis.md",
+    "templates",
+    "baza-danych-ksiazek/baza-danych-ksiazek-system-klas.md",
+    "Netum-NT-1228BL"
   ]
 }

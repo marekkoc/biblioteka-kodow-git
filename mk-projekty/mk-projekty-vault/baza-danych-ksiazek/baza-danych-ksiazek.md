@@ -4,11 +4,12 @@ Zmodyfikowano: 2024-12-01T01:32:00
 Źródło: 
 tags:
 ---
+# Założenia projektowe
 
 Baza danych 
-1. książek
+1. książek (z uwzględnieniem formatu, rodzaju itp.)
 2. kursów
-3. czasopism?
+3. czasopism
 
 Projekt na podstawie kursu z Udemy  OOP -Pirates (Loek). 
 System może zawierać:

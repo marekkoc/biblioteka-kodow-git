@@ -1082,6 +1082,9 @@ Czy chciałbyś, abym zaprojektował SQL dla takiej struktury, a może przedstaw
 
 # Zapytanie 10
 
+
+
+
 Świetnie! Oto szczegółowy plan na zaprojektowanie systemu zarządzania bazą danych książek z użyciem SQLite i klas w Pythonie.
 
 ---
@@ -1340,6 +1343,8 @@ if __name__ == "__main__":
 Czy chciałbyś coś jeszcze dopracować? 😊
 
 # Zapytanie 11
+
+
 Oczywiście! Oto uproszczona wersja systemu z trzema tabelami oraz szczegółowe wyjaśnienie działania i wstawiania rekordów.
 
 ---
@@ -1571,6 +1576,8 @@ Dzięki relacjom między tabelami możemy w łatwy sposób łączyć dane, np.:
 Jeśli potrzebujesz dodatkowych przykładów lub szczegółowego wyjaśnienia, daj znać! 😊
 
 # Zapytanie 12
+
+
 
 Oto szczegółowe omówienie filtrowania, raportów oraz integracji z GUI w kontekście systemu zarządzania bazą danych książek:
 
@@ -2070,6 +2077,7 @@ if __name__ == "__main__":
 
 
 # Zapytanie 15
+
 
 
 Aby dodać obsługę skanera kodów kreskowych do aplikacji, możemy wykorzystać fakt, że skanery USB działają jak klawiatury. Skaner po zeskanowaniu kodu wprowadza odczytany ciąg znaków w miejscu, gdzie znajduje się aktualnie kursor.
@@ -2579,6 +2587,186 @@ Przetestuj program z właściwym portem USB i daj znać, czy działa zgodnie z o
 
 # Zapytanie 18
 
+Aby dodać obsługę skanera kodów kreskowych Netume NT-1228B do obecnego systemu, możemy rozszerzyć implementację o obsługę urządzenia USB. Ponieważ skaner działa jak klawiatura USB (wprowadza zeskanowany kod bezpośrednio do pola tekstowego), nie potrzebujemy bezpośrednio korzystać z niskopoziomowych bibliotek USB. Wystarczy obsłużyć dane wprowadzane przez pole `QLineEdit`.
 
+Jednak jeśli chcemy dokładniej obsługiwać USB, np. wykrywać konkretne urządzenie, można użyć biblioteki takiej jak `pyusb` lub `hid`. Dodajmy te zmiany:
+
+### Kluczowe kroki:
+1. **Podstawowa obsługa kodów kreskowych:**
+   - Skaner automatycznie wprowadza kod do pola tekstowego `barcode_input`.
+
+2. **Zaawansowana obsługa USB (opcjonalna):**
+   - Możemy monitorować konkretne urządzenie USB, upewniając się, że dane pochodzą od skanera.
+
+3. **Przetwarzanie kodu po jego wprowadzeniu:**
+   - Po zeskanowaniu kodu, książka może być automatycznie dodana do listy.
+
+Oto zaktualizowany kod z obsługą skanera:
+
+```python
+import sys
+import csv
+from PyQt5.QtWidgets import (
+    QApplication, QWidget, QVBoxLayout, QPushButton, QTableWidget, QTableWidgetItem, QLineEdit, QLabel, QFileDialog, QMessageBox
+)
+from PyQt5.QtCore import Qt, QTimer
+# (Opcjonalne) Do obsługi USB, jeśli jest wymagane.
+# import usb.core
+# import usb.util
+
+class BookManager(QWidget):
+    def __init__(self):
+        super().__init__()
+        self.setWindowTitle("Book Manager with Barcode Support")
+        self.resize(800, 600)
+
+        # Layout główny
+        self.layout = QVBoxLayout()
+        self.setLayout(self.layout)
+
+        # Pole na kod kreskowy
+        self.barcode_input = QLineEdit()
+        self.barcode_input.setPlaceholderText("Scan or enter barcode here")
+        self.barcode_input.returnPressed.connect(self.process_barcode)
+        self.layout.addWidget(QLabel("Barcode:"))
+        self.layout.addWidget(self.barcode_input)
+
+        # Filtry
+        self.filter_input = QLineEdit()
+        self.layout.addWidget(QLabel("Filter by Author:"))
+        self.layout.addWidget(self.filter_input)
+
+        self.filter_button = QPushButton("Apply Filter")
+        self.filter_button.clicked.connect(self.filter_books)
+        self.layout.addWidget(self.filter_button)
+
+        # Przycisk eksportu
+        self.export_button = QPushButton("Export Report to CSV")
+        self.export_button.clicked.connect(self.export_to_csv)
+        self.layout.addWidget(self.export_button)
+
+        # Tabela wyświetlająca dane
+        self.table = QTableWidget()
+        self.layout.addWidget(self.table)
+
+        # Przycisk dodawania książki
+        self.add_button = QPushButton("Add Book")
+        self.add_button.clicked.connect(self.add_book)
+        self.layout.addWidget(self.add_button)
+
+        # Załadowanie przykładowych danych
+        self.load_sample_data()
+
+    def load_sample_data(self):
+        """Wczytuje przykładowe dane do aplikacji."""
+        self.data = [
+            {"title": "Book 1", "author": "Author A", "year": 2022, "read_status": "Read", "barcode": "9781234567890"},
+            {"title": "Book 2", "author": "Author B", "year": 2023, "read_status": "Unread", "barcode": "9780987654321"},
+            {"title": "Book 3", "author": "Author A", "year": 2023, "read_status": "Read", "barcode": "9781122334455"},
+        ]
+        self.update_table(self.data)
+
+    def update_table(self, data):
+        """Aktualizuje zawartość tabeli na podstawie podanych danych."""
+        self.table.setRowCount(len(data))
+        self.table.setColumnCount(5)
+        self.table.setHorizontalHeaderLabels(["Title", "Author", "Year", "Read Status", "Barcode"])
+
+        for row, book in enumerate(data):
+            self.table.setItem(row, 0, QTableWidgetItem(book["title"]))
+            self.table.setItem(row, 1, QTableWidgetItem(book["author"]))
+            self.table.setItem(row, 2, QTableWidgetItem(str(book["year"])))
+            self.table.setItem(row, 3, QTableWidgetItem(book["read_status"]))
+            self.table.setItem(row, 4, QTableWidgetItem(book["barcode"]))
+
+        self.table.resizeColumnsToContents()
+
+    def filter_books(self):
+        """Filtruje książki na podstawie autora."""
+        author_filter = self.filter_input.text().strip()
+        filtered_data = [book for book in self.data if author_filter.lower() in book["author"].lower()]
+        self.update_table(filtered_data)
+
+    def export_to_csv(self):
+        """Eksportuje dane z tabeli do pliku CSV."""
+        file_path, _ = QFileDialog.getSaveFileName(self, "Save Report", "", "CSV Files (*.csv);;All Files (*)")
+
+        if not file_path:
+            return  # Anulowano zapis pliku
+
+        try:
+            with open(file_path, "w", newline="", encoding="utf-8") as file:
+                writer = csv.writer(file)
+                writer.writerow(["Title", "Author", "Year", "Read Status", "Barcode"])
+
+                for row in range(self.table.rowCount()):
+                    row_data = []
+                    for col in range(self.table.columnCount()):
+                        item = self.table.item(row, col)
+                        row_data.append(item.text() if item else "")
+                    writer.writerow(row_data)
+
+            QMessageBox.information(self, "Success", "Report exported successfully!")
+        except Exception as e:
+            QMessageBox.critical(self, "Error", f"Failed to export report: {e}")
+
+    def process_barcode(self):
+        """Przetwarza kod kreskowy wprowadzony w polu."""
+        barcode = self.barcode_input.text().strip()
+        if barcode:
+            # Automatycznie dodaj książkę z zeskanowanym kodem kreskowym.
+            new_book = {
+                "title": f"Book {len(self.data) + 1}",
+                "author": "Unknown Author",
+                "year": 2023,
+                "read_status": "Unread",
+                "barcode": barcode,
+            }
+            self.data.append(new_book)
+            self.update_table(self.data)
+            self.barcode_input.clear()
+
+            QMessageBox.information(self, "Success", f"Book with barcode {barcode} added!")
+
+    def add_book(self):
+        """Dodaje książkę na podstawie danych wprowadzonych w polu kodu kreskowego."""
+        barcode = self.barcode_input.text().strip()
+
+        if not barcode:
+            QMessageBox.warning(self, "Warning", "Please scan or enter a barcode!")
+            return
+
+        # Dodanie książki z przykładowymi danymi i wprowadzonym kodem kreskowym
+        new_book = {
+            "title": f"Book {len(self.data) + 1}",
+            "author": "Unknown Author",
+            "year": 2023,
+            "read_status": "Unread",
+            "barcode": barcode,
+        }
+        self.data.append(new_book)
+        self.update_table(self.data)
+        self.barcode_input.clear()
+
+        QMessageBox.information(self, "Success", "Book added successfully!")
+
+
+if __name__ == "__main__":
+    app = QApplication(sys.argv)
+    manager = BookManager()
+    manager.show()
+    sys.exit(app.exec_())
+```
+
+### Działanie:
+1. **Skanowanie kodów:**
+   - Po zeskanowaniu kodu kreskowego zostanie on automatycznie wprowadzony do pola `barcode_input`.
+   - Naciśnięcie Enter (`returnPressed`) doda książkę z tym kodem.
+
+2. **Integracja USB (opcjonalna):**
+   - Możesz dodatkowo obsługiwać konkretne urządzenie USB, jeśli jest to wymagane, za pomocą biblioteki `pyusb`.
+
+
+# Zapytanie 19 
 
 
