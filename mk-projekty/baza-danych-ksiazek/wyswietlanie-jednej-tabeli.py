@@ -116,7 +116,7 @@ class DatabaseViewer(QWidget):
         # Dodaj wywołanie adjustSize()
         # do głównego widżetu i tabeli po załadowaniu danych:        
         self.table.resizeColumnsToContents()
-
+        
         # Dopasowanie rozmiaru okna
         # Dopasowanie kolumn do zawartości
         self.adjust_table_and_window_size()
