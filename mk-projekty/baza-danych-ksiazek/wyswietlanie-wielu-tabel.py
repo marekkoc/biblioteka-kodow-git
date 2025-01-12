@@ -5,7 +5,7 @@ Kod wygenerowany przez ChatGPT.
 
 
 Created: 2025.01.09
-Modified: 2025.01.09
+Modified: 2025.01.10
 """
 
 
@@ -37,6 +37,7 @@ class DatabaseViewer(QWidget):
         self.table_selector: QComboBox = QComboBox()
         self.table_selector.currentIndexChanged.connect(self.change_table)
         self.table_selector.hide()
+        self.layout.addWidget(self.table_selector)
 
         # Tabela wyswietlajaca dane
         self.table:QTableWidget = QTableWidget()
@@ -44,10 +45,89 @@ class DatabaseViewer(QWidget):
 
 
     def open_database(self):
-        pass
+        """
+        Otwiera plik bazy danych SQLite i wyświetal jego zawartość
+        """
+        file_path: str
+        filters: str
+        def_folder: str = "/home/marek/biblioteka-repozytoriow-git/biblioteka-kodow-git/mk-projekty/baza-danych-ksiazek"
+        file_path, filters = QFileDialog.getOpenFileName(self, "Select Database File", def_folder, "SQLite Files (*.db *.sqlite *.sqlite3);;All Files (*)")
+
+        if not file_path:
+            return # Anulowano wybór pliku
+        
+        # Połączenie z bazą danych
+        database: QSqlDatabase = QSqlDatabase().addDatabase("QSQLITE")
+        database.setDatabaseName(file_path)
+
+        if not database.open():
+            QMessageBox.critcal(self, "Error", f"Failed to open database: {database.lastError().text()}")
+            return
+        
+        # Pobieranie tabel z bazy danych
+        query: QSqlQuery = QSqlQuery("SELECT name FROM sqlite_master WHERE type='table'")
+
+        if not query.exec_():
+            QMessageBox.critical(self, "Error", f"Failed to fetch tables: {query.lastError().text()}")
+            return
+        
+        tables: list[str] = []
+        while query.next():
+            tables.append(query.value(0))
+
+        if not tables:
+            QMessageBox.information(self, "No Tables", "The selected database contains no tables.")
+            return
+        
+        # Wypełnienie listy rozwijanej nazwami tabel
+        self.table_selector.clear()
+        self.table_selector.addItems(tables)
+        self.table_selector.show()
+
+        # Załadowanie pierwszej tabeli - wartość domyślna
+        self.load_table_data(tables[0])
+
 
     def change_table(self):
-        pass
+        """Zmienia tabelę wyświetlaną w widoku tabeli"""
+        table_name:str = self.table_selector.currentText()
+        if table_name:
+            self.load_table_data(table_name)
+
+       
+
+
+    def load_table_data(self, table_name):
+        "Ładuje dane z wybranej tabeli do widoku tabeli."
+
+        query: QSqlQuery = QSqlQuery(f"SELECT * FROM {table_name}")
+        
+        if not query.exec_():
+            QMessageBox.critical(self, "Error", f"Failed to fetch data: {query.lastError().text()}")
+            return
+
+        # Pobieranie nagłówków kolumn
+        column_count: int = query.record().count()
+        headers: list[str] = [query.record().fieldName(i) for i in range(column_count)]
+
+        # Czyszczenie tabeli i ustawianie nazw kolumn
+        self.table.clear()
+        self.table.setColumnCount(column_count)
+        self.table.setHorizontalHeaderLabels(headers)
+
+        # Wypełnianie tabeli danymi
+        self.table.setRowCount(0)
+        row = 0    
+
+        while query.next():
+            self.table.insertRow(row)
+            for col in range(column_count):
+                value = query.value(col)
+                self.table.setItem(row, col, QTableWidgetItem(str(value)))
+            row += 1
+
+        self.table.resizeColumnsToContents()
+
 
 
 if  __name__ == '__main__':
@@ -55,3 +135,4 @@ if  __name__ == '__main__':
     viewer: DatabaseViewer = DatabaseViewer()
     viewer.show()
     sys.exit(app.exec_())
+
