@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "qt/QFileDialog.getOpenFileName.md",
+                "file": "OOP/oop-zrodla.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "QFileDialog.getOpenFileName"
+              "title": "oop-zrodla"
             }
           },
           {
@@ -27,16 +27,15 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "fastAPI-vs-RestAPI/fastAPI-vs-RestAPI.md",
+                "file": "sql/sqlalchemy.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "fastAPI-vs-RestAPI"
+              "title": "sqlalchemy"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -178,17 +177,19 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "6de5d5c56e359eb1",
+  "active": "9b5b2e68b0478214",
   "lastOpenFiles": [
-    "2025-01-09.md",
+    "qt/QFileDialog.getOpenFileName.md",
+    "sql/sqlalchemy.md",
+    "OOP/oop-zrodla.md",
     "fastAPI-vs-RestAPI/fastAPI-vs-RestAPI.md",
+    "OOP",
+    "2025-01-09.md",
     "sql/pobieranie-nazw-tabel-z-bazy-danych.md",
     "fastAPI-vs-RestAPI",
     "qt/QMessageBox.critical.md",
     "sql/sql-for-beginners-SQLite.md",
-    "sql/sqlalchemy.md",
     "sql",
-    "qt/QFileDialog.getOpenFileName.md",
     "2025-01-08.md",
     "qt",
     "python-programmer/figs",
@@ -210,7 +211,6 @@
     "python/dekoratory.md",
     "bazy-danych",
     "inzynieria-oprogramowania/scrapping.md",
-    "inzynieria-oprogramowania/().md",
     "code-with-josh/figs/sql-for-beginners-SQLite.png",
     "code-with-josh/figs/Screenshot from 2024-12-06 19-14-56.png",
     "code-with-josh/figs",
@@ -224,7 +224,6 @@
     "figs/udemy-Loek-OOPirates-18-2.png",
     "figs/udemy-Loek-OOPirates-18-1.png",
     "figs/udemy-Loek-OOPirates-17-5.png",
-    "figs/udemy-Loek-OOPirates-17-4.png",
-    "udemy"
+    "figs/udemy-Loek-OOPirates-17-4.png"
   ]
 }
