@@ -3,19 +3,51 @@ Udemy.com
 Kurs: Python GUI programming Recipies using PyQt5
 url: https://www.udemy.com/course/python-gui-programming-recipes-using-pyqt5/?couponCode=KEEPLEARNING
 
-Sekcja 1: Introduction to PyQt5 Framework
-4: Layout of Widgets
-    url: https://www.udemy.com/course/python-gui-programming-recipes-using-pyqt5/learn/lecture/8486484#overview
+       
+        
+Sekcja 2: Designing Python GUIs wieth QtDesigner
+6. Install the PyQt5 Designer (7 minut)
+        url: https://www.udemy.com/course/python-gui-programming-recipes-using-pyqt5/learn/lecture/8486496#overview
+7. Create our first GUI (7 minut)
+        url: https://www.udemy.com/course/python-gui-programming-recipes-using-pyqt5/learn/lecture/8486502#overview
+        A. add menu and submenu with menu items
+        B. add icons to our menu items
+        C. display a text in a status bar
+        D. save the UI design
+8. Add controls/widgets to our GUI (8 minut)
+        url: https://www.udemy.com/course/python-gui-programming-recipes-using-pyqt5/learn/lecture/8486550#overview
+        A. add widgets to the GUI
+        B. set the window title via proprty
+        C. update the status bar while moving mouce over menu item
+        D. close the application via menu item (SIGNALs & SLOTs)
+        E. add tab, button and dial widgets.
+9. Use Designer for widget layout (17 minut)
+        url: https://www.udemy.com/course/python-gui-programming-recipes-using-pyqt5/learn/lecture/8486552#overview
+        A. Vertical layout
+        B. Horizontal layout
+        C. Grod layotu
+        D. Use spacers
+        E. Define a tab order
+        F. Use "Buddies" to connect labes with widgets
+10. Convert Designer code to Python code (!)
+        url: https://www.udemy.com/course/python-gui-programming-recipes-using-pyqt5/learn/lecture/8486558#overview
+        A. Look into Qt Designer generated UI code
+        B. See the UI code in the Designer
+        C. Convert UI Designer code to Python code with "pyuic5" tool
+
+        # ZAMIANA UI NA SKRYPT PYTHONA
+        pyuic5 -o Designer_GUI_4.py Designer_GUI_4.ui 
+
+        # dodanie opcji aby pskrypt byl wykonywalny jako skropt pythona (tworzy funkcje main)
+         pyuic5 -x -o Designer_GUI_4.py Designer_GUI_4.ui
+    
 
 
 We will:  
-    1. add many widgets to GUI,
-    2. lay out the widgets,
-    3. learn several lauout techniques,
-    4. learn about: 
-        - positional layout,
-        - box layout (horizontal and vertical boxes),
-        - grid layout.
+    
+
+Zmiany:
+    1. 
 
 Zmiany:
     1. hvboxes
