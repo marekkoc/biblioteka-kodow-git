@@ -18,6 +18,15 @@ Sekcja 3: Enhancing the Qt5 GUI Functionality
     B. convert Designer UI code to Python code,
     C. call the dialog window from the main window (!)
 
+12. Decoupling Python Code from Generated UI Code (10 minuts)
+    url: https://www.udemy.com/course/python-gui-programming-recipes-using-pyqt5/learn/lecture/8486566#overview
+    A. create GUI with Qt Designer,
+    B. add several widgets,
+    C. converting UI to Python code,
+    D. create a separate Python module that invokes the GUI widgets
+
+13. 
+
     
 
 Zmiany:
