@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "OOP/oop-zrodla.md",
+                "file": "qt/QThread.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "oop-zrodla"
+              "title": "QThread"
             }
           },
           {
@@ -179,9 +179,10 @@
   },
   "active": "9b5b2e68b0478214",
   "lastOpenFiles": [
+    "OOP/oop-zrodla.md",
+    "qt/QThread.md",
     "qt/QFileDialog.getOpenFileName.md",
     "sql/sqlalchemy.md",
-    "OOP/oop-zrodla.md",
     "fastAPI-vs-RestAPI/fastAPI-vs-RestAPI.md",
     "OOP",
     "2025-01-09.md",
@@ -210,7 +211,6 @@
     "zrodla-ksiazki-kursy-filmy.md",
     "python/dekoratory.md",
     "bazy-danych",
-    "inzynieria-oprogramowania/scrapping.md",
     "code-with-josh/figs/sql-for-beginners-SQLite.png",
     "code-with-josh/figs/Screenshot from 2024-12-06 19-14-56.png",
     "code-with-josh/figs",
