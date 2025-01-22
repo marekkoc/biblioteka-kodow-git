@@ -3,7 +3,7 @@ Utworzono: 2025-01-20T17:35:00
 Zmodyfikowano: 2025-01-20T17:35:00
 Źródło: chatGPT
 tags: 
-Katalog:
+Katalog: /biblioteka-kodow/mk-projekty/watki
 ---
 
 # Watki w Pythonie
@@ -227,7 +227,7 @@ Wydajność obliczeń jest ograniczona, ponieważ GIL uniemożliwia równoległe
 
 Jeśli masz dodatkowe pytania, chętnie wyjaśnię! 😊
 
-# Ten sam program z PyQt5
+# Ten sam program z PyQt5 - threding(!)
 
 Poniżej znajdziesz kompletny przykład programu z wykorzystaniem **PyQt5**, który spełnia Twoje wymagania. Program tworzy trzy przyciski sterujące trzema wątkami. Każdy wątek ma osobny licznik, którego aktualna wartość jest wyświetlana na ekranie za pomocą kontrolki **QLCDNumber**.
 
@@ -453,8 +453,7 @@ Bez `join()` główny wątek aplikacji (czyli GUI PyQt5) może kontynuować dzia
 Jeśli coś wymaga dodatkowego objaśnienia, daj znać! 😊
 
 
-# napisz teraz dokladnie ten sam program z pyQt5 ale z zastosowaniem QThread. Wyjasnij różnice napisz teraz dokladnie ten sam program z pyQt5 ale z zastosowaniem QThread. Wyjasnij różnice
-
+# Ten sam program z zastosowaniem QThread. []()
 
 Poniżej znajdziesz kompletną wersję programu, który wykorzystuje **QThread** zamiast klasycznego modułu `threading`. Wersja ta jest bardziej zgodna z filozofią PyQt, ponieważ **QThread** integruje zarządzanie wątkami z pętlą zdarzeń Qt, co pozwala uniknąć potencjalnych problemów z synchronizacją między GUI a wątkami.
 
