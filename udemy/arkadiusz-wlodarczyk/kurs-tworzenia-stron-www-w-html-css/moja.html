@@ -3,7 +3,7 @@
         <title>Strona domowa.</title>
     </head>
 
-    <body>
+    <body style="">
         <p>Cześć! <i><b>To jest moja</b></i> strona <i>domowa</i>.</p>
         
         <p>Tutaj pokażę Ci, żę jestem fajny i że mam wiele zalet, że warto ze mną pracować!!!</p>
@@ -20,26 +20,84 @@
             </ul>
         </p>
 
-        <p><b>13. Tag pusty vs. tag z początkiem:</b> Są tagi które nie potrzebują zakończenia, np: <br>
+        <p><b>13. Tag pusty vs. tag z początkiem:</b><br>Są tagi które nie potrzebują zakończenia, np: <br>
         br : break, złamanie wiersza</p>
 
-        <p><b>14. Atrybut <i>title</i> i <i>lang</i></b>:<br> Atrybut to dodatkowa informacja o tagu. 
+        <p><b>14. Atrybuty <i>title</i> i <i>lang</i></b>:<br> Atrybut to dodatkowa informacja o tagu. 
             <ul>
-                <li>Atrybut br</li>
-                <li>Atrybut title. Ten atrybut jest do jakiegoś/dowolnego tagu, np. <b title="od 2009 do 2019">adiunkt</b>
+                <li>Atrybut <b>br</b> to jest złamanie wiersza, linii.</li>
+                <li>Atrybut <b>title</b>. Ten atrybut jest do jakiegoś/dowolnego tagu, np. <b title="od 2009 do 2019">adiunkt</b>
                     Gdy najedziemy kursorem na tekst otoczony tagiem z atrubutem <i>title</i> to wartość tego atrubutu 
-                    wyświetli się pod myszką, czyli zostanie utworzony tzw. <i>dymek</i></li>
-                <li>Atrybut lang: określa język: np język polskiL w tagu html: lang="pl"</li>
-                <li>Sktót dodający atrybut z <i>Emmet</i> Możemy wpisać w okinie Emmet np. b[title]</li>
-                <li>wewnątrz tagu wciskamy <i>Ctrl+spacja</i> wtedy pojawia się sugesita wielu atrybutów</li>
-                
-                <p lang="pl">To jest tekst w języku polskim.</p>                
-                <p lang="no">Dette er tekst på norsk.</p>
-                <p lang="en">This is text in English.</p>
+                    wyświetli się pod myszką, czyli zostanie utworzony tzw. <b><i>dymek</i></b></li>
+                <li>Atrybut <b>lang</b>: określa język: np język polskiL w tagu html: lang="pl"</li>
+                <li><b>Sktót</b> dodający atrybut z <i><b>Emmet</b></i> Możemy wpisać w okinie <b title="to jest dymek">Emmet</b> np. b[title]. Wewnątrz tagu wciskamy <i>Ctrl+spacja</i> wtedy pojawia się sugesita wielu atrybutów. Ten dymek wpisujem do 
+                <i title="ctrl+shift+alt+e">Emmet Wrap abbreviation, czyli w moim przypadku dla skrótów </i>
+                <ol>
+                    <li lang="pl" title="polski">To jest tekst w języku polskim.</li>
+                    <li lang="no" title="norweski">Dette er tekst på norsk.</li>
+                    <li lang="en" title="angielski">This is text in English.</li>
+                </ol></li>            
+                <li>Można wpisać tag z atrubutem i powielić go kilka razy: <b>p[title]*3</b></li>   
             </ul>
+
+
+
+
         </p>
 
 
+        <p title="2025.01.24">
+            <b>15. Neutralny tag: span.</b><br>Ten tag nic nie robi. Z tego tagu korzysamy gdy
+             chcemy dodać jakiś atrubut, ale nie chcemy korzystać z jakiegoś tagu, który ma przypisaną funkcję:
+             np z <b></b>. Nie chcemy pogrubiać, ale chcemy dodać atrybut <i>title</i>, czyli dymek. Tak jak na tym 
+             przykładzie: <span title="dymek1">dymek1</span>, <span title="dymek2">dymek2</span>, 
+             <span title="dymek3">dymek3</span>. Czyli span jest <i>neutralnym</i> tagiem, który nie zmienia zawartości.
+            </p>
+
+        <p title="2025.01.24">
+            <b>16. Ćwiczenie: Stwórz szablon strony i...</b><br></p>
+
+        <p title="2025.01.24">
+            <b>17. Instalowanie rozszerzeń w VSC: Auto rename tag</b> <br>
+            Rozszerzenie-> <b>Auto rename tag</b>. Rozszerzenie zmienia wybrany tag zarówno otwierający jak i zamykający.
+            Nie trzeba zmieniać osobno tagu otwirającego i zamykającego. Robi się to automatycznie. 
+        </p>
+
+        <p title="2025.01.24">
+            <b>18. Spis rozszerzeń używanych w kursie!</b><br>
+            <ol>
+                <li><b>HTML:</b>
+                    <ul>
+                        <li>Lekcja 16: Auto Rename Tag</li>
+                        <li>Lekcja 27: Live Server</li>
+                    </ul></li>
+                <li><b>CSS:</b>
+                    <ul>
+                        <li>Lekcja 63: HTML CSS Support</li>
+                        <li>Lekcja 63: CSS PEAK</li>
+                    </ul></li>
+                <li><b>JavaScript:</b>
+                    <ul>
+                        <li> ESLint - podpowiedzi odnośnie kodu</li>
+                    </ul></li>
+                <li><b>Edytor:</b>
+                    <ul>
+                        <li>Lekcja 30: vscode-icons</li>
+                        <li>Prettier - automatyczne upiększanie kodu</li>
+                    </ul></li>               
+            </ol>           
+        </p>
+
+        <p title="2025.01.24"><b>19. Atrybut <i>style</i> - zmiana koloru tła strony - teoria kolorów -> WAŻNA LEKCJA1!!!</b><br>
+            <ol>
+                <li>Jak zmienić <b>tło strony:</b> Tag <i>body</i> odpoiwada za wygląd strony www i w nim stosujemy atrybut <b>bgcolor</b></li>
+                <li>Atrybut <b>bgcolor (jest przestażały): </b> Kolory można wziąć ze strony <a href="https://www.w3schools.com/colors/colors_names.asp">HTML color names</a></li>
+                <li>Atrybut <b>style: </p>
+                </li>
+            </ol>
+
+
+        </p>
 
     </body>
 
