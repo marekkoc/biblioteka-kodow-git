@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Przepisy na nastrój</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-gray-100 min-h-screen">
+    <div class="container mx-auto px-4 py-8">
+        <h1 class="text-3xl font-bold text-center mb-8">Jak się dziś czujesz?</h1>
+        
+        <div class="flex justify-center gap-4 mb-8">
+            <button class="mood-btn" data-mood="happy">😊 Szczęśliwy</button>
+            <button class="mood-btn" data-mood="sad">😢 Smutny</button>
+            <button class="mood-btn" data-mood="energetic">⚡ Energiczny</button>
+            <button class="mood-btn" data-mood="tired">😴 Zmęczony</button>
+        </div>
+
+        <div id="recipe-container" class="hidden bg-white p-6 rounded-lg shadow-lg max-w-2xl mx-auto">
+            <h2 id="recipe-name" class="text-2xl font-bold mb-4"></h2>
+            <div class="mb-4">
+                <h3 class="font-bold">Składniki:</h3>
+                <p id="recipe-ingredients"></p>
+            </div>
+            <div class="mb-4">
+                <h3 class="font-bold">Instrukcje:</h3>
+                <p id="recipe-instructions"></p>
+            </div>
+            <button id="new-recipe" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">
+                Pokaż inny przepis
+            </button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html> 
