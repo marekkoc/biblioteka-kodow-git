@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Menedżer Zadań</title>
+    <style>
+        .task-done {
+            text-decoration: line-through;
+            color: gray;
+        }
+        .high-priority {
+            color: red;
+        }
+        .task-list {
+            margin: 20px;
+            padding: 10px;
+        }
+        .task-item {
+            margin: 5px;
+            padding: 10px;
+            border: 1px solid #ddd;
+            display: flex;
+            justify-content: space-between;
+        }
+    </style>
+</head>
+<body>
+    <div id="app">
+        <h1>Menedżer Zadań</h1>
+        
+        <div class="task-form">
+            <input type="text" id="taskInput" placeholder="Wpisz zadanie">
+            <select id="priorityInput">
+                <option value="normalny">Normalny</option>
+                <option value="wysoki">Wysoki</option>
+                <option value="niski">Niski</option>
+            </select>
+            <button onclick="menadzerZadan.dodajZadanie()">Dodaj zadanie</button>
+        </div>
+
+        <div id="taskList" class="task-list">
+            <!-- Tu będą wyświetlane zadania -->
+        </div>
+    </div>
+    <script src="task.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

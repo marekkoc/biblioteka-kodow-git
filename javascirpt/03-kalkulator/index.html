@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Kalkulator</title>
+    <style>
+        .calculator {
+            width: 300px;
+            margin: 50px auto;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        #display {
+            width: 100%;
+            height: 40px;
+            margin-bottom: 10px;
+            text-align: right;
+            font-size: 24px;
+        }
+        .buttons {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 5px;
+        }
+        button {
+            padding: 15px;
+            font-size: 18px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            background: #f9f9f9;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #e9e9e9;
+        }
+    </style>
+</head>
+<body>
+    <div class="calculator">
+        <input type="text" id="display" readonly>
+        <div class="buttons">
+            <button onclick="wyczyscWyswietlacz()">C</button>
+            <button onclick="dodajDoWyswietlacza('(')">(</button>
+            <button onclick="dodajDoWyswietlacza(')')">)</button>
+            <button onclick="dodajDoWyswietlacza('/')">/</button>
+            
+            <button onclick="dodajDoWyswietlacza('7')">7</button>
+            <button onclick="dodajDoWyswietlacza('8')">8</button>
+            <button onclick="dodajDoWyswietlacza('9')">9</button>
+            <button onclick="dodajDoWyswietlacza('*')">*</button>
+            
+            <button onclick="dodajDoWyswietlacza('4')">4</button>
+            <button onclick="dodajDoWyswietlacza('5')">5</button>
+            <button onclick="dodajDoWyswietlacza('6')">6</button>
+            <button onclick="dodajDoWyswietlacza('-')">-</button>
+            
+            <button onclick="dodajDoWyswietlacza('1')">1</button>
+            <button onclick="dodajDoWyswietlacza('2')">2</button>
+            <button onclick="dodajDoWyswietlacza('3')">3</button>
+            <button onclick="dodajDoWyswietlacza('+')">+</button>
+            
+            <button onclick="dodajDoWyswietlacza('0')">0</button>
+            <button onclick="dodajDoWyswietlacza('.')">.</button>
+            <button onclick="usunOstatni()">←</button>
+            <button onclick="oblicz()">=</button>
+        </div>
+    </div>
+    <script src="calculator.js"></script>
+</body>
+</html>
