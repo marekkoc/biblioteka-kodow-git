@@ -1,0 +1,28 @@
+{
+    "produkty_spozywcze": [
+        {
+            "nazwa": "Jabłko",
+            "kategoria": "Owoce",
+            "cena": 2.5,
+            "jednostka": "kg",
+            "wartosci_odzywcze": {
+                "kalorie": 52,
+                "bialko": 0.3,
+                "weglowodany": 14,
+                "tluszcze": 0.2
+            }
+        },
+        {
+            "nazwa": "Chleb pszenny",
+            "kategoria": "Pieczywo",
+            "cena": 4.99,
+            "jednostka": "szt",
+            "wartosci_odzywcze": {
+                "kalorie": 265,
+                "bialko": 8.5,
+                "weglowodany": 49,
+                "tluszcze": 3.2
+            }
+        }
+    ]
+}
