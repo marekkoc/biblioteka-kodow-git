@@ -1,0 +1,44 @@
+{
+    "product_name": "Yoghurt VANILLA",
+    "manufacturer": "Q-Meieriene",
+    "store_chain": "Kiwi",
+    "weight_volume": "800g",
+    "ingredients": ["Yogurt, pasteurized and homogenized for visible INGREDIENTS:", "MILK (3% fat), 5.5% vanilla, 3.8% sugar, MILK protein", "aroma, vanilla, lactase"],
+    "nutrition_facts": {
+        "per_100g": {
+            "energy": "72 kcal",
+            "fats": {
+                "total": "2.7 g",
+                "saturated": "1.8 g",
+                "unsaturated": null,
+                "trans": null
+            },
+            "carbohydrates": {
+                "total": "7.5 g",
+                "sugars": {
+                    "total": "7.7 g",
+                    "simple": null,
+                    "complex": null
+                },
+                "fiber": null,
+                "starch": null
+            },
+            "protein": "4.4 g",
+            "salt": "0.1 g"
+        }
+    },
+    "vitamins_and_minerals": {
+        "vitamin_B12": "0.4 μg",
+        "vitamin_B2": "130 mg",
+        "calcium": "130 mg",
+        "iodine": "17 %"
+    },
+    "allergens": ["MILK"],
+    "barcode": "7048840005468",
+    "expiry_date": null,
+    "storage_conditions": null,
+    "country_of_origin": "Norway",
+    "categories": ["Dairy", "Yogurt", "Vanilla Yogurt", "Desserts"],
+    "price": null,
+    "notes": "Norwegian product. Package shows certificates/markings: EFTA, recycling symbol."
+}

@@ -1,0 +1,50 @@
+Proszę przeanalizuj zdjęcie produktu spożywczego i wygeneruj plik JSON zawierający następujące informacje w języku angielskim:
+
+{
+    "product_name": "",
+    "manufacturer": "",
+    "store_chain": "",
+    "weight_volume": "",
+    "ingredients": [],
+    "nutrition_facts": {
+        "per_100g": {
+            "energy": "",
+            "fats": {
+                "total": "",
+                "saturated": "",
+                "unsaturated": null,
+                "trans": null
+            },
+            "carbohydrates": {
+                "total": "",
+                "sugars": {
+                    "total": "",
+                    "simple": null,
+                    "complex": null
+                },
+                "fiber": null,
+                "starch": null
+            },
+            "protein": "",
+            "salt": ""
+        }
+    },
+    "vitamins_and_minerals": {
+        // wszystkie witaminy i minerały znalezione na etykiecie
+    },
+    "allergens": [],
+    "barcode": "",
+    "expiry_date": "",
+    "storage_conditions": "",
+    "country_of_origin": "",
+    "categories": [],
+    "price": null,
+    "notes": ""
+}
+
+Proszę:
+1. Wypełnij wszystkie pola na podstawie informacji widocznych na zdjęciu
+2. Użyj null dla wartości, których nie ma na etykiecie
+3. Dodaj do "notes" wszelkie dodatkowe obserwacje dotyczące certyfikatów, oznaczeń specjalnych itp.
+4. W "categories" umieść listę kategorii od ogólnych do szczegółowych
+5. Wszystkie wartości liczbowe podaj wraz z jednostkami (g, mg, kcal itp.)
