@@ -1,24 +1,24 @@
 {
   "main": {
-    "id": "f5d751a5de081f76",
+    "id": "767d3fa9d10aeff0",
     "type": "split",
     "children": [
       {
-        "id": "38ea8dcf2b8c92ef",
+        "id": "27af3131becec947",
         "type": "tabs",
         "children": [
           {
-            "id": "e9c3de2af908293d",
+            "id": "36f2d69f47cfdea9",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "firebase-1.md",
+                "file": "json1/json1.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "firebase-1"
+              "title": "json1"
             }
           }
         ]
@@ -27,15 +27,15 @@
     "direction": "vertical"
   },
   "left": {
-    "id": "878b09f35d817a7f",
+    "id": "cd0dec82bfc150c6",
     "type": "split",
     "children": [
       {
-        "id": "4b497228ddd9295d",
+        "id": "6a7235093b0a6431",
         "type": "tabs",
         "children": [
           {
-            "id": "58df95411f2b2666",
+            "id": "9029683c440a62fa",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -48,7 +48,7 @@
             }
           },
           {
-            "id": "25e992df1225ac26",
+            "id": "0cdbc51adf2961e0",
             "type": "leaf",
             "state": {
               "type": "search",
@@ -65,7 +65,7 @@
             }
           },
           {
-            "id": "60ada780b6fd63fb",
+            "id": "81d0f62809c6cec8",
             "type": "leaf",
             "state": {
               "type": "bookmarks",
@@ -81,20 +81,20 @@
     "width": 300
   },
   "right": {
-    "id": "778165949b692e53",
+    "id": "4aa95a0b3e3fa837",
     "type": "split",
     "children": [
       {
-        "id": "e686fb97ce835a61",
+        "id": "3dce5963ff0dc265",
         "type": "tabs",
         "children": [
           {
-            "id": "564df723390fe9b2",
+            "id": "af2e2fe373b47c7a",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
-                "file": "firebase-1.md",
+                "file": "json1/json1.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,25 +104,25 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for firebase-1"
+              "title": "Backlinks for json1"
             }
           },
           {
-            "id": "df00bbe171cd668f",
+            "id": "229e6c4799737fa8",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "firebase-1.md",
+                "file": "json1/json1.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from firebase-1"
+              "title": "Outgoing links from json1"
             }
           },
           {
-            "id": "24f4955abc1a39b1",
+            "id": "9c2e7dbf7b737420",
             "type": "leaf",
             "state": {
               "type": "tag",
@@ -137,18 +137,18 @@
             }
           },
           {
-            "id": "77fded8aac6354ee",
+            "id": "28736c994ec5473f",
             "type": "leaf",
             "state": {
               "type": "outline",
               "state": {
-                "file": "firebase-1.md",
+                "file": "json1/json1.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of firebase-1"
+              "title": "Outline of json1"
             }
           }
         ]
@@ -168,9 +168,9 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "e9c3de2af908293d",
+  "active": "36f2d69f47cfdea9",
   "lastOpenFiles": [
-    "firebase-2.md",
-    "firebase-1.md"
+    "json1/json1.md",
+    "opis.md"
   ]
 }
