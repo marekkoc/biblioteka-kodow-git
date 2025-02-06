@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "wielowatkowosc/watki-1.md",
+                "file": "OOP/oop-zrodla.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "watki-1"
+              "title": "oop-zrodla"
             }
           }
         ]
@@ -166,8 +166,9 @@
   },
   "active": "998283cd38ed8c0d",
   "lastOpenFiles": [
-    "sql/sqlalchemy.md",
+    "zrodla-ksiazki-kursy-filmy.md",
     "wielowatkowosc/watki-1.md",
+    "sql/sqlalchemy.md",
     "qt/QThread.md",
     "wielowatkowosc",
     "OOP/oop-zrodla.md",
@@ -197,7 +198,6 @@
     "bazy-danych/sqlalchemy.md",
     "github/laczenie-repozytoriow-github.md",
     "github/gitignore.md",
-    "zrodla-ksiazki-kursy-filmy.md",
     "bazy-danych",
     "code-with-josh/figs/sql-for-beginners-SQLite.png",
     "code-with-josh/figs/Screenshot from 2024-12-06 19-14-56.png",
