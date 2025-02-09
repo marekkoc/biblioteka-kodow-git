@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "OOP/oop-zrodla.md",
+                "file": "mini-languate/mini-languate.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "oop-zrodla"
+              "title": "mini-languate"
             }
           }
         ]
@@ -166,12 +166,16 @@
   },
   "active": "998283cd38ed8c0d",
   "lastOpenFiles": [
+    "parsowanie/parsowanie.md",
+    "mini-languate/mini-languate.md",
+    "mini-languate",
+    "OOP/oop-zrodla.md",
+    "parsowanie",
     "zrodla-ksiazki-kursy-filmy.md",
     "wielowatkowosc/watki-1.md",
     "sql/sqlalchemy.md",
     "qt/QThread.md",
     "wielowatkowosc",
-    "OOP/oop-zrodla.md",
     "qt/QFileDialog.getOpenFileName.md",
     "fastAPI-vs-RestAPI/fastAPI-vs-RestAPI.md",
     "OOP",
@@ -196,14 +200,10 @@
     "code-with-josh/ice-cream-never-use-print.md",
     "code-with-josh/fitness-tracker.md",
     "bazy-danych/sqlalchemy.md",
-    "github/laczenie-repozytoriow-github.md",
-    "github/gitignore.md",
     "bazy-danych",
     "code-with-josh/figs/sql-for-beginners-SQLite.png",
     "code-with-josh/figs/Screenshot from 2024-12-06 19-14-56.png",
     "code-with-josh/figs",
-    "yt-taylor-software",
-    "inzynieria-oprogramowania",
     "figs/udemy-Loek-OOPirates-20-1.png",
     "figs/udemy-Loek-OOPirates-19-2.png",
     "figs/udemy-Loek-OOPirates-19-1.png",
