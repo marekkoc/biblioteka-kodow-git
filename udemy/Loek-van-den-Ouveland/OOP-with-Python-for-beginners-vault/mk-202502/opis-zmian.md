@@ -77,3 +77,14 @@ Gdy część kodu nie może być odseparowana od drugiej cześci kodu, to mówim
 1. Chcemy mieć kilka raportów w liście i drukować wyniki za pomocę jednej pętli for.
 
 1. Polimrfizm poznawal współdzielić wspólną nazwę metod w różnych klasach, ale te klasy mogą mieć różne implementacje i zachowywać się inaczej.
+
+### 19. Schedule Report - Composition (ważne-dokonczyc opis)
+
+1. Composition to mechanizm, który pozwala nam tworzyć złożone obiekty z prostych obiektów. Nie jest to dziedziczenie. Nie jest to też agregacja. Jest to **kompozycja**.
+
+1. Chcemy dodać do raporty godziny pracy pracowników.
+
+
+### 20. Composition - Schedule Report
+
+1. 

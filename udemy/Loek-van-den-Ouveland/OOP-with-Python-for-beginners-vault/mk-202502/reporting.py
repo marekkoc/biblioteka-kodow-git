@@ -20,3 +20,10 @@ class StaffingReport(Report):
         for emp in self._emp_list:
             print(f"{emp.get_full_name()},  {emp.job_title}")
 
+class ScheduleReport(Report):
+    def print_report(self):
+        print("Schedule report")
+        print("-" * 40)
+        for emp in self._emp_list:
+            print(f"{emp.get_full_name()}, {emp.start_time:%H:%M} to {emp.end_time:%H:%M}")
+
