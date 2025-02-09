@@ -1,10 +1,14 @@
-#!/usr/bin/env conda run -n py312 
+#!/usr/bin/env python3
 from employee import (
     Employee,
     Manager, 
     StationAttendant, 
     Cook, 
     Mechanic
+)
+from reporting import(
+    AccountingReport,
+    StaffingReport
 )
 
 
@@ -19,22 +23,11 @@ if __name__ == "__main__":
         Mechanic("Ringo", "Rama", 1900),
         Mechanic("Chuck", "Rainey", 1800)
     ]
-
-    def print_accounting_report(employees: list[Employee]):
-        print("Accounting report")
-        print("-" * 40)
-        for emp in employees:
-            print(f"{emp.get_full_name()}, ${emp.salary}")
-
-    def print_staffing_report(employees: list[Employee]):
-        print("Staffing report")
-        print("-" * 40)
-        for emp in employees:
-            print(f"{emp.get_full_name()},  {emp.job_title}")
-
-    print()
-    print_accounting_report(employees)
-    print()
-    print_staffing_report(employees)
-
+    reports = [
+        AccountingReport(employees),
+        StaffingReport(employees)
+    ]
+    for r in reports:
+        r.print_report()
+        print()
 

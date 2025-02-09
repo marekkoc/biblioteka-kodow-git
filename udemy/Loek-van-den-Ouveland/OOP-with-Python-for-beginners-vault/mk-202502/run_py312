@@ -1,0 +1,2 @@
+#!/bin/bash
+conda run -n py312 python main.py

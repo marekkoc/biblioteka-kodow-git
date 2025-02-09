@@ -59,4 +59,21 @@ Dostaliśmy inforację o fukcji każdego pracownika na stacji w osobnym pliku. A
 
 ### 17. Dependency injection
 
+1. Czas abyt dokonaś spokojnej ewaluacji naszego kodu. Trzeba zastanowić się co do tej pory zrobiliśmy i co osiągnęliśmy.
 
+1. Mam klssy związane z pracownikami w osobnych plikach. Jedank nadal w main.py tworzymy dwie funkcje które są odpowiedzialne za wydrukowanie raportów. **Funkcja main nie powinna tworzyć i drukować raportów**. Powinna tylko przyjmować funkcje drukujące raporty.
+
+1. Przenieśmy funkcje drukujące raporty do osobnego modułu. Każdy z raportów bedzie osobnym obiektem. Zatem musimy stworzyć dwie klasy.
+
+1. Jednak klasy raportów zależą od listy pracwników, która jest zdefiniowana w main.py. Gdy jedna część kodu zależy od drugiej, to mówimy, że istnieje **zależność (dependency)**.
+Gdy część kodu nie może być odseparowana od drugiej cześci kodu, to mówimy że **kod jest powiązany (coupled)**. A to jest symptomem **rigid code**. Gdy mamy rygid code to nie możemy zmieniać jednej części kodu bez zmiany o drugiej części kodu.
+
+1. Zatem mysimy przekazać liste pracowników do obiektów raportów. Jest to **dependency injection**. Dependency injection jest to mechanizm, który pozwala nam przekazać obiekt do obiektu drugiego i jest świetnym narzędziem które zapobiega powiązaniu kodu (coupling)
+
+### 18. Polymorphism
+
+1. Obie klasy raportów mają wspólną funkcję __init__(). Zatem jest to **powtarzalność kodu (duplicate code)**. Zatem jest to **wspólny kod który można wyciągnąć do wspólnej klasy**. W tym przpadku mamy klasy dziedziczące i potrzebujemy zaimplementować klasę nadrzędną. 
+
+1. Chcemy mieć kilka raportów w liście i drukować wyniki za pomocę jednej pętli for.
+
+1. Polimrfizm poznawal współdzielić wspólną nazwę metod w różnych klasach, ale te klasy mogą mieć różne implementacje i zachowywać się inaczej.
