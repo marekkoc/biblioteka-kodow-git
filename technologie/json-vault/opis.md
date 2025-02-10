@@ -29,3 +29,4 @@ Struktura JSON mogłaby wyglądać tak:
 ```
 
 Jestem gotowy do analizy zdjęcia produktu i zapisania informacji zgodnie z tą strukturą. Będę odczytywać tylko tekst widoczny na zdjęciu, a dodatkowe obserwacje umieszczę w polu "uwagi".
+

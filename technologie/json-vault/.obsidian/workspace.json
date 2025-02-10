@@ -13,15 +13,30 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "json1/json1.md",
+                "file": "opis.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "json1"
+              "title": "opis"
+            }
+          },
+          {
+            "id": "69d5aa3b98c6630a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "format-json.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "format-json"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -168,9 +183,22 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "36f2d69f47cfdea9",
+  "active": "69d5aa3b98c6630a",
   "lastOpenFiles": [
-    "json1/json1.md",
-    "opis.md"
+    "json2-image-processing/polecenie-do-generacji-json.txt",
+    "json2-image-processing/4.analiza-danych.md",
+    "json2-image-processing/3.baza-danych.md",
+    "json2-image-processing/2.gui.md",
+    "json2-image-processing/1.skrypt-automatyczne-przetwarzanie-zdjec.md",
+    "json2-image-processing/1.kolejne-kroki.txt",
+    "json2-image-processing",
+    "json1-ogolne/produkty.json",
+    "json1-ogolne/json1.py",
+    "json1-ogolne/json1.md",
+    "json1-ogolne/json1.ipynb",
+    "json1-ogolne",
+    "opis.md",
+    "format-json.md",
+    "json1/json1.md"
   ]
 }
