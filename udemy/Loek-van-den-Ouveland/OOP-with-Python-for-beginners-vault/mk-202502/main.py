@@ -7,29 +7,63 @@ from employee import (
     Mechanic
 )
 from reporting import(
-    AccountingReport,
-    StaffingReport,
-    ScheduleReport
+    AccountingReportPDF,
+    StaffingReportPDF,
+    ScheduleReportPDF
 )
-from datetime import time
+from shift import(
+    MorningShift,
+    AfternoonShift,
+    NightShift
+)
+from reportlab.lib import colors
+from reportlab.lib.styles import ParagraphStyle
+from reportlab.platypus import SimpleDocTemplate, Paragraph, Spacer
+from reportlab.lib.pagesizes import A4
+
+custom_style = ParagraphStyle(
+    'CustomStyle',
+    fontSize=12,
+    leading=14,
+    textColor=colors.black,
+    spaceAfter=6
+)
+
+def header(canvas, doc):
+    canvas.saveState()
+    canvas.setFont('Helvetica', 10)
+    canvas.drawString(30, 750, "Company Report")
+    canvas.restoreState()
 
 if __name__ == "__main__":
     employees: list[Employee]   = [
-        Manager("Vera", "Schmidt", 2000, time(8,00), time(14,00)),
-        StationAttendant("Chuck", "Norris", 1800, time(8,00), time(14,00)),
-        StationAttendant("Samantha", "Carrginton", 1800, time(12,00), time(20,00)),
-        Cook("Roberto", "Jacketti", 2100, time(8,00), time(14,00)),
-        Mechanic("Dave", "Drebig", 2200, time(8,00), time(14,00)),
-        Mechanic("Tina", "River", 2300, time(8,00), time(14,00)),
-        Mechanic("Ringo", "Rama", 1900, time(12,00), time(20,00)),
-        Mechanic("Chuck", "Rainey", 1800, time(12,00), time(20,00)),
+        Manager("Vera", "Schmidt", 2000, MorningShift()),
+        StationAttendant("Chuck", "Norris", 1800, MorningShift()),
+        StationAttendant("Samantha", "Carrginton", 1800, AfternoonShift()),
+        Cook("Roberto", "Jacketti", 2100, MorningShift()),
+        Mechanic("Dave", "Drebig", 2200, MorningShift()),
+        Mechanic("Tina", "River", 2300, MorningShift()),
+        Mechanic("Ringo", "Rama", 1900, AfternoonShift()),
+        Mechanic("Chuck", "Rainey", 1800, NightShift()),
+        
     ]
-    reports = [
-        AccountingReport(employees),
-        StaffingReport(employees),
-        ScheduleReport(employees)
-    ]
-    for r in reports:
-        r.print_report()
-        print()
+    
+    # Tworzymy jeden dokument PDF
+    doc = SimpleDocTemplate("combined_report.pdf", pagesize=A4)
+    
+    # Zbieramy zawartość ze wszystkich raportów
+    all_content = []
+    
+    # Generujemy raporty i zbieramy ich zawartość
+    accounting_report = AccountingReportPDF(employees)
+    staffing_report = StaffingReportPDF(employees)
+    schedule_report = ScheduleReportPDF(employees)
+    
+    # Dodajemy zawartość każdego raportu do wspólnej listy
+    all_content.extend(accounting_report.generate_content())
+    all_content.extend(staffing_report.generate_content())
+    all_content.extend(schedule_report.generate_content())
+    
+    # Budujemy jeden dokument ze wszystkimi raportami
+    doc.build(all_content)
 
