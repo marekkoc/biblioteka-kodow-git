@@ -1,0 +1,98 @@
+{
+    "report_date": "2025-02-10 15:48",
+    "company_stats": {
+        "total_employees": 8,
+        "departments": {
+            "managers": {
+                "count": 1,
+                "average_salary": 2000.0
+            },
+            "station_attendants": {
+                "count": 2,
+                "average_salary": 1800.0
+            },
+            "cooks": {
+                "count": 1,
+                "average_salary": 2100.0
+            },
+            "mechanics": {
+                "count": 4,
+                "average_salary": 2050.0
+            }
+        }
+    },
+    "staff_details": {
+        "managers": [
+            {
+                "name": "Vera Schmidt",
+                "salary": 2000,
+                "contact": {
+                    "email": "vera.schmidt@company.com",
+                    "phone": "N/A"
+                }
+            }
+        ],
+        "station_attendants": [
+            {
+                "name": "Chuck Norris",
+                "salary": 1800,
+                "contact": {
+                    "email": "chuck.norris@company.com",
+                    "phone": "N/A"
+                }
+            },
+            {
+                "name": "Samantha Carrginton",
+                "salary": 1800,
+                "contact": {
+                    "email": "samantha.carrginton@company.com",
+                    "phone": "N/A"
+                }
+            }
+        ],
+        "cooks": [
+            {
+                "name": "Roberto Jacketti",
+                "salary": 2100,
+                "contact": {
+                    "email": "roberto.jacketti@company.com",
+                    "phone": "N/A"
+                }
+            }
+        ],
+        "mechanics": [
+            {
+                "name": "Dave Drebig",
+                "salary": 2200,
+                "contact": {
+                    "email": "dave.drebig@company.com",
+                    "phone": "N/A"
+                }
+            },
+            {
+                "name": "Tina River",
+                "salary": 2300,
+                "contact": {
+                    "email": "tina.river@company.com",
+                    "phone": "N/A"
+                }
+            },
+            {
+                "name": "Ringo Rama",
+                "salary": 1900,
+                "contact": {
+                    "email": "ringo.rama@company.com",
+                    "phone": "N/A"
+                }
+            },
+            {
+                "name": "Chuck Rainey",
+                "salary": 1800,
+                "contact": {
+                    "email": "chuck.rainey@company.com",
+                    "phone": "N/A"
+                }
+            }
+        ]
+    }
+}
