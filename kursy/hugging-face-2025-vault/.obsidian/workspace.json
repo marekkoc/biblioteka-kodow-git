@@ -1,0 +1,185 @@
+{
+  "main": {
+    "id": "27c8336d5c67b47f",
+    "type": "split",
+    "children": [
+      {
+        "id": "2e2f54e9151bced3",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "dcba54117b5eddea",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "unit-1.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "unit-1"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "13805592f66b84ec",
+    "type": "split",
+    "children": [
+      {
+        "id": "3abec1af3eb062de",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "3c2d059542ae74f4",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "8adfdf890b5de2c7",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "5f007a3768b6119a",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "1cf131a432f2a08b",
+    "type": "split",
+    "children": [
+      {
+        "id": "eb8a9e9a0f87cad1",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "a57f8144f6c641fa",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "kurs-informacje.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for kurs-informacje"
+            }
+          },
+          {
+            "id": "5b4f446d7bf78e4b",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "kurs-informacje.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from kurs-informacje"
+            }
+          },
+          {
+            "id": "851225e291201003",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "4feb1c3d7f4745b2",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "kurs-informacje.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline of kurs-informacje"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "dcba54117b5eddea",
+  "lastOpenFiles": [
+    "().md",
+    "unit-1.md",
+    "kurs-informacje.md",
+    "figs/share/png.md",
+    "figs/share",
+    "figs/share.png",
+    "figs",
+    "2025-02-12.md",
+    "templates/notatka-ogolna.md",
+    "templates/algorytm-opis.md",
+    "templates"
+  ]
+}
