@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "zrodla-ksiazki-kursy-filmy.md",
+                "file": "dotfiles/dotfiles.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "zrodla-ksiazki-kursy-filmy"
+              "title": "dotfiles"
             }
           }
         ]
@@ -166,10 +166,14 @@
   },
   "active": "998283cd38ed8c0d",
   "lastOpenFiles": [
+    "token/token.md",
+    "dotfiles/dotfiles.md",
+    "dotfiles",
+    "zrodla-ksiazki-kursy-filmy.md",
+    "token",
     "sql/sqlalchemy.md",
     "sql/sql-for-beginners-SQLite.md",
     "sql/pobieranie-nazw-tabel-z-bazy-danych.md",
-    "zrodla-ksiazki-kursy-filmy.md",
     "OOP/oop-zrodla.md",
     "python-programmer/python-programmer-best-data-science-book.md",
     "mini-language/mini-languate.md",
@@ -198,12 +202,8 @@
     "bazy-danych/sql-for-beginners-SQLite.md",
     "code-with-josh/python-desktop-app.md",
     "code-with-josh/python-mobile-app.md",
-    "code-with-josh/ice-cream-never-use-print.md",
-    "code-with-josh/fitness-tracker.md",
-    "bazy-danych",
     "code-with-josh/figs/sql-for-beginners-SQLite.png",
     "code-with-josh/figs/Screenshot from 2024-12-06 19-14-56.png",
-    "code-with-josh/figs",
     "figs/udemy-Loek-OOPirates-20-1.png",
     "figs/udemy-Loek-OOPirates-19-2.png",
     "figs/udemy-Loek-OOPirates-19-1.png",
