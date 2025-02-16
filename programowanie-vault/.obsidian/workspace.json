@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "callback-call-functions/callback-call-functions.md",
+                "file": "python/dunder-method.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "callback-call-functions"
+              "title": "dunder-method"
             }
           }
         ]
@@ -53,7 +53,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "magi",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -74,7 +74,8 @@
               "title": "Bookmarks"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -166,8 +167,10 @@
   },
   "active": "998283cd38ed8c0d",
   "lastOpenFiles": [
-    "hasla-szyforwanie/przechowywanie-hasel.md",
     "callback-call-functions/callback-call-functions.md",
+    "python/operacje-asynchroniczne.md",
+    "python/metoda-klasowa-vs-statyczna.md",
+    "hasla-szyforwanie/przechowywanie-hasel.md",
     "callback-call-functions",
     "dotfiles/dotfiles.md",
     "hasla-szyforwanie",
@@ -200,8 +203,6 @@
     "projekty/waga-dashbord-www.md",
     "projekty/monitorowanie-cen-walut.md",
     "projekty/money-manager-mk.md",
-    "python/operator-trojargumentowy.md",
-    "bazy-danych/sql-for-beginners-SQLite.md",
     "code-with-josh/figs/sql-for-beginners-SQLite.png",
     "code-with-josh/figs/Screenshot from 2024-12-06 19-14-56.png",
     "figs/udemy-Loek-OOPirates-20-1.png",

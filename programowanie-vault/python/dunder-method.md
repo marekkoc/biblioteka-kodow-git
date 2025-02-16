@@ -1,10 +1,11 @@
 ---
 Utworzono: 2024-10-30T09:51:00
-Zmodyfikowano: 2024-10-30T09:51:00
+Zmodyfikowano: 2025-02-15T09:51:00
 Źródło: chatGPT
 tags:
   - "#dunder-method"
 ---
+#metody-magiczne  #magic-method
 
 Dunder methods, znane również jako "**metody magiczne**" w Pythonie, to specjalne metody, które mają **podwójne podkreślenia** na początku i końcu nazwy, np. `__init__`, `__str__`, `__len__`. Skrót "dunder" pochodzi od *double underscore* (podwójnego podkreślenia). Te metody pozwalają na **specjalne zachowanie obiektów** i pozwalają na dostosowanie wbudowanych funkcji i operatorów do własnych potrzeb.
 
@@ -18,6 +19,7 @@ Dunder methods, znane również jako "**metody magiczne**" w Pythonie, to specja
   
 Dunder methods umożliwiają tworzenie czytelniejszego, bardziej "pythonicznego" kodu przez integrację obiektów z wbudowanymi funkcjami Pythona oraz operacjami na obiektach.
 
+# metody magiczne - wyjaśnienie 2
 
 Oto przykład implementacji klasy `Vector`, która korzysta z różnych metod "dunder" (magic methods), by dostosować działanie typowych operacji na wektorach, takich jak dodawanie, mnożenie skalarne, wyznaczanie długości wektora czy porównywanie wektorów.
 
@@ -131,3 +133,105 @@ print(abs(v1))             # 5.0
 
 ### Działanie i zalety
 Te metody sprawiają, że klasa `Vector` zachowuje się intuicyjnie i „naturalnie” w kodzie. Można dodawać wektory, porównywać je, a także wygodnie wyświetlać, co znacząco ułatwia korzystanie z obiektu klasy.
+
+
+Chętnie wyjaśnię metody magiczne w Pythonie. Są to specjalne metody, które pozwalają na dostosowanie zachowania obiektów klasy.
+
+Metody magiczne są otoczone podwójnymi podkreślnikami (__) i są wywoływane automatycznie w określonych sytuacjach. Oto najważniejsze z nich:
+
+Inicjalizacja i tworzenie obiektów:
+```python
+class Przykład:
+    def __init__(self, wartość):  # Konstruktor, wywoływany przy tworzeniu obiektu
+        self.wartość = wartość
+        
+    def __new__(cls, *args):      # Kontroluje tworzenie nowej instancji
+        return super().__new__(cls)
+        
+    def __del__(self):            # Wywoływana przy usuwaniu obiektu
+        print("Obiekt usunięty")
+```
+
+Reprezentacja obiektu:
+```python
+class Liczba:
+    def __init__(self, x):
+        self.x = x
+    
+    def __str__(self):            # Czytelna reprezentacja dla użytkownika
+        return f"Liczba: {self.x}"
+        
+    def __repr__(self):           # Techniczna reprezentacja dla programisty
+        return f"Liczba({self.x})"
+```
+
+Operatory matematyczne:
+```python
+class Wektor:
+    def __init__(self, x, y):
+        self.x = x
+        self.y = y
+    
+    def __add__(self, other):     # Dodawanie: v1 + v2
+        return Wektor(self.x + other.x, self.y + other.y)
+        
+    def __sub__(self, other):     # Odejmowanie: v1 - v2
+        return Wektor(self.x - other.x, self.y - other.y)
+        
+    def __mul__(self, scalar):    # Mnożenie: v1 * 2
+        return Wektor(self.x * scalar, self.y * scalar)
+```
+
+Porównania:
+```python
+class Osoba:
+    def __init__(self, wiek):
+        self.wiek = wiek
+    
+    def __eq__(self, other):      # Równość: a == b
+        return self.wiek == other.wiek
+        
+    def __lt__(self, other):      # Mniejsze niż: a < b
+        return self.wiek < other.wiek
+        
+    def __gt__(self, other):      # Większe niż: a > b
+        return self.wiek > other.wiek
+```
+
+Zachowanie kontenerowe:
+```python
+class MojaLista:
+    def __init__(self):
+        self.dane = []
+    
+    def __len__(self):            # Długość: len(obj)
+        return len(self.dane)
+        
+    def __getitem__(self, idx):   # Dostęp przez indeks: obj[idx]
+        return self.dane[idx]
+        
+    def __setitem__(self, idx, val):  # Ustawianie wartości: obj[idx] = val
+        self.dane[idx] = val
+        
+    def __contains__(self, item): # Sprawdzanie zawierania: item in obj
+        return item in self.dane
+```
+
+Metody kontekstowe:
+```python
+class Plik:
+    def __enter__(self):          # Rozpoczęcie bloku with
+        print("Otwieranie pliku")
+        return self
+        
+    def __exit__(self, exc_type, exc_val, exc_tb):  # Zakończenie bloku with
+        print("Zamykanie pliku")
+```
+
+Metody magiczne są potężnym mechanizmem, który pozwala na:
+- Dostosowanie zachowania obiektów do standardowych operacji Pythona
+- Tworzenie klas, które zachowują się jak wbudowane typy danych
+- Implementację własnych protokołów i interfejsów
+- Zwiększenie czytelności i intuicyjności kodu
+
+Warto pamiętać, że metody magiczne są wywoływane automatycznie przez interpreter Pythona w odpowiednich sytuacjach, nie powinno się ich wywoływać bezpośrednio (z wyjątkiem niektórych specyficznych przypadków).
