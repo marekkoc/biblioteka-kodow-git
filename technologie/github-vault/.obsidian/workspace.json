@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "rozne/wspoldzielenie-repozytorium.md",
+                "file": "rozne/kurs-repozytorium-niezmienialne.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "wspoldzielenie-repozytorium"
+              "title": "kurs-repozytorium-niezmienialne"
             }
           }
         ]
@@ -170,13 +170,15 @@
   },
   "active": "ec16c259301df04f",
   "lastOpenFiles": [
-    "2025-02-08.md",
+    "rozne/usuniecie-plikow-z-add.md",
+    "rozne/kurs-repozytorium-niezmienialne.md",
+    "rozne/gitignore.md",
     "rozne/wspoldzielenie-repozytorium.md",
+    "2025-02-08.md",
     "templates/notatka-ogolna.md",
     "templates/algorytm-opis.md",
     "templates",
     "rozne/laczenie-repozytoriow-github.md",
-    "rozne/gitignore.md",
     "rozne"
   ]
 }
