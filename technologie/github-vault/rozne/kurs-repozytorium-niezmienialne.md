@@ -165,3 +165,125 @@ Blokowanie push'a przez `NO_PUSH` jest bardziej przydatne gdy:
 
 W Twoim przypadku, pracując na osobnej gałęzi, takie dodatkowe zabezpieczenie nie jest potrzebne.
 
+
+# co mam zrobic gdy dodam moje nowe pliki? czy mam je dodac do galezi moje_rozwiazania? Jak postepowac z nowymi plikami?
+
+Tak, wszystkie nowe pliki powinieneś/powinnaś dodawać do gałęzi `moje_rozwiazania`. Oto standardowa procedura:
+
+```bash
+# Upewnij się, że jesteś na swojej gałęzi
+git checkout moje_rozwiazania
+
+# Dodaj nowe pliki
+# możesz dodać konkretny plik:
+git add moj_nowy_plik.py
+
+# lub wszystkie nowe pliki:
+git add .
+
+# Zrób commit swoich zmian
+git commit -m "Dodano rozwiązanie zadania X"
+```
+
+Ważne zasady:
+1. Zawsze sprawdź na jakiej jesteś gałęzi przed dodaniem plików (`git status` pokaże Ci aktualną gałąź)
+2. Nowe pliki dodawaj tylko będąc na `moje_rozwiazania`
+3. Gałąź `main` zostawiaj czystą - tylko do pobierania aktualizacji z kursu
+
+Jeśli przez przypadek dodasz pliki będąc na `main`:
+```bash
+# Wycofaj zmiany z main
+git reset
+
+# Przejdź na właściwą gałąź
+git checkout moje_rozwiazania
+
+# Teraz możesz dodać pliki tutaj
+git add .
+git commit -m "Moje zmiany"
+```
+
+# Czyli uzywam tylko komendy add, nie uzywam komend update i push?
+
+Dokładnie. W tym scenariuszu używasz głównie:
+
+```bash
+git add .          # lub git add nazwapliku.py
+git commit -m "opis zmian"
+```
+
+NIE używasz:
+- `git push` - bo nie wysyłamy nic do zdalnego repozytorium
+- `git update` - (tak naprawdę nie ma takiej komendy w Git)
+
+Jedyne komendy `push/pull` jakich będziesz używać to:
+```bash
+git checkout main  # przełącz na główną gałąź
+git pull          # pobierz nowe materiały z kursu
+```
+
+A potem wracasz do swojej gałęzi:
+```bash
+git checkout moje_rozwiazania
+```
+
+To wszystko! Proste i bezpieczne rozwiązanie, gdzie:
+- Twoje zmiany są śledzone lokalnie
+- Możesz pobierać aktualizacje kursu
+- Nie ma ryzyka wysłania czegoś do oryginalnego repozytorium
+
+# jak sprawdzic jakie galezie istnieje? wylistowac istniejace galezie?
+
+Aby wylistować gałęzie, użyj komendy:
+
+```bash
+git branch
+```
+
+Zobaczysz listę wszystkich lokalnych gałęzi, gdzie aktywna gałąź będzie oznaczona gwiazdką (*), na przykład:
+```
+* moje_rozwiazania
+  main
+```
+
+Jeśli chcesz zobaczyć więcej informacji, w tym gałęzie zdalne, użyj:
+```bash
+git branch -a
+```
+
+Wtedy zobaczysz coś takiego:
+```
+* moje_rozwiazania
+  main
+  remotes/origin/main
+```
+
+Gdzie:
+- gałęzie bez przedrostka są lokalne
+- gałęzie z `remotes/origin/` to gałęzie w zdalnym repozytorium
+
+# jak zmienic nazwe istniejacej galezi?
+
+Aby zmienić nazwę gałęzi, masz dwie opcje:
+
+1. Jeśli chcesz zmienić nazwę gałęzi, na której aktualnie jesteś:
+```bash
+git branch -m nowa_nazwa
+```
+
+2. Jeśli chcesz zmienić nazwę innej gałęzi:
+```bash
+git branch -m stara_nazwa nowa_nazwa
+```
+
+Na przykład, jeśli chcesz zmienić `moje_rozwiazania` na `moje_zadania`:
+```bash
+git branch -m moje_rozwiazania moje_zadania
+```
+
+Możesz sprawdzić efekt komendą:
+```bash
+git branch
+```
+
+Pamiętaj, że zmiana nazwy gałęzi jest operacją lokalną - wpływa tylko na Twoje lokalne repozytorium.
