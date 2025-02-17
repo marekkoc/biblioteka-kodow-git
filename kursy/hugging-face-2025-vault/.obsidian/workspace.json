@@ -11,14 +11,12 @@
             "id": "dcba54117b5eddea",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "pdf",
               "state": {
-                "file": "unit-1.md",
-                "mode": "source",
-                "source": false
+                "file": "tokeny/token.pdf"
               },
-              "icon": "lucide-file",
-              "title": "unit-1"
+              "icon": "lucide-file-text",
+              "title": "token"
             }
           }
         ]
@@ -170,8 +168,8 @@
   },
   "active": "dcba54117b5eddea",
   "lastOpenFiles": [
-    "().md",
     "unit-1.md",
+    "().md",
     "kurs-informacje.md",
     "figs/share/png.md",
     "figs/share",
