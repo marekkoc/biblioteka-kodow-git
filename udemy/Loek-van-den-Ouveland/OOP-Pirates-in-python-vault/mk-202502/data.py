@@ -1,17 +1,22 @@
+import json
+
 from pirates import (
-    Capitan,
-    QuarterMaster,
-    Officer,
-    CannonOperator
+    Pirate,
+    Role,
 )
 
-class DataLoader:
-    def load_pirates(self) -> list[Capitan | QuarterMaster | Officer | CannonOperator]:
+class TestDataLoader:
+    def load_pirates(self) -> list[Pirate]:
         return  [
-                Capitan("Harry"),
-                QuarterMaster("Isabel"),
-                Officer("Bootstrap Bill"),
-                CannonOperator("Powder Joe"),
-                Officer("Four Finger Fritz"),
-                CannonOperator("Lady Joyce")
+                Pirate("Zork", Role("Grand Nagus", 10)),
+                Pirate("Wonka Tonka", Role("Snow Queen", 8)),
+                Pirate("Spartacus", Role("Gladiator", 2))
                 ]
+    
+class JSONDataLoader:
+    def load_pirates(self):
+        with open("data.json", "r") as file:
+            data = json.load(file)
+                
+        pirates = [Pirate(pirate["name"], Role(pirate["title"], pirate["rank"])) for pirate in data["pirates"]]
+        return pirates

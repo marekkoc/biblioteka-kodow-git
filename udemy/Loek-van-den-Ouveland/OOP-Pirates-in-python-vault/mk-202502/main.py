@@ -1,14 +1,18 @@
-from data import DataLoader
+from data import ( TestDataLoader,
+                   JSONDataLoader)
 
-data_loader = DataLoader()
+#data_loader = TestDataLoader()
+data_loader = JSONDataLoader()
+
 pirates = data_loader.load_pirates()
 
-ducats = 920
+ducats = 200
 
-sum_of_ranks = sum([pirate.rank for pirate in pirates])
+sum_of_ranks = sum([pirate.role.rank for pirate in pirates])
 
 print()
 for pirate in pirates:
-    share: float = pirate.rank / sum_of_ranks * ducats
-    print(f"{pirate.title}: {pirate.name} gets {share:.1f} Ducats.")
+    share: float = pirate.role.rank / sum_of_ranks * ducats
+    print(f"{pirate.role.title}: {pirate.name} gets {share:.1f} Ducats.")
 print()
+
