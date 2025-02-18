@@ -54,4 +54,48 @@ Modified: 2025.02.14
 3. Teraz gdy pojawi sie nowy pirat to dodajemy go **TYLKO** w pliku JSON!!!
 
 ## 14. Test with TestDataLoader
-1. 
+
+
+# Sekcja 7. Payroll
+
+## 15. Payroll
+
+1. Diagram zależności (dependency diagram) pokazuje logiczny podzial funkcjonalności systemu. main -> data -> piraci
+2. **Czystość i przejrzystość** kodu daje nam założenie przestrzeganie **pojedyńczej odpowiedzialności (single responsibility)** 
+3. Moduły i klasy powinny mieć jasno zdefionowane swoje **zadanie (single responsibility**:
+	-  main:
+		1. kotroluje wykonywanie zadań w aplikacji (the flow in the app)
+		2. tworzy drzwo obiektów używanych w aplikacji (object tree)
+		3. wywołuje kolejne funkcje i działania aplikacji(triggers functionality)
+		4. wyświetla wyniki (outputs the results)
+5.  Nietety obecnie main.py oblicza również udziały pieniężne poszczególnych piratów (pirate shares)
+6.  Zrefaktoryzowanie tego nie jest łatwym zadaniem, bo kod który oblicza udziały piratów i który wyświetla wyniki jest ściśle ze sobą powiązany (tight togeter).
+7.  Powinniśmy oddzielić tę funkcjonalność: moduł do obliczania udziałów powinien być odpowiedzialny tylko za obliczenia, a moduł odpowiedzialny za drukowanie raportu, powinien być odpowiedzialny tylko za drukowanie raportu.
+8.  Ogólna zasada: <br><br>
+  **NIGDY NIE ZAMIESZCZAJ FUNKCJI print()  WEWNĄTRZ KALAS ANI WEWNĄTRZ FUNKCJI!!!** <br><br> **KLASY I FUNKCJE WYKONUJA OBLICZENIA I ZWARACAJA WYNIK (TYLKO WYNIK)!!! NIC NIE DRUKUJĄ**<br><br>
+9.  Zatem tworzymy klase **Payroll** która oblicza udziały piratów, oraz metodę która to wyliczy 
+10.  Potrzebujemy też klasę, która obliczy kombinację Pirata i jego udziałów: **Share**
+11.  Teraz main jest opowiedzialny za:
+	1.  importowanie i inicjalizowanie klas
+	2.  użycie klas
+	3.  wykruk wyników w terminalu
+	4.  NIE MA: wczytywania danych ani żadnych obliczeń w funkcji/pliku main.
+5.  Wszystkie tutaj dokonane zmiany były w plikach **main** i **payrol**, pliki data i prates zostały nieznienione -> zadziałała zasada single responsibility.
+6.  Wprowadzenie pojecia **Agregacji**
+
+## 16. Missions
+1. Zwiększa się lista piratów, nie wszyscy uczestniczą w każdej misji. Dltatego chcemy zrobić podział.
+2. System potrzebuje **misji (Missjons)**, które określą zarówno nazwe misji, łup oraz lisę piratów.
+3. Zacznijmy to porojektować od danych testowych.
+4. Tworzymy moduł i klasę związaną z miją.
+5. W TestDataLoader tworzymy metode która zwaraca misję testową.
+6. Pomimo, że main ma sporo kodu, to nie ma tam zawartej żadnej logiki. Jest tam tylko iterowanie po misjach i wydruk wyników.
+
+## 17. Missions JSON
+1. Mamy dane misji w pliku JSON
+2. Aktualizujemy klasę JSONDataLoader
+3. Teraz możemy zaktualizować diagram zależności kodu (Dependency Diagram), w tym celu podążamy za importami w kodzie
+
+# Sekcja 8: Bank Exhange
+
+## 18. Exhange Loot.

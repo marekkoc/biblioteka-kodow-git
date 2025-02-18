@@ -12,8 +12,4 @@
         {"name":"Mc Scrubby", "title":"Deck Scrubber", "rank": 1},
         {"name":"Doc Bone", "title":"Doctor", "rank": 5}      
     ],
-    "missions": [
-        {"name":"Sandy Mission", "crew": ["Harry", "Isabel", "Bootstrap Bill", "Lady Joyce"], "loot": 1080},
-        {"name":"Operation Moca", "crew": ["Harry", "Isabel",  "Four Finger Fritz",  "Moustache Mike", "Calypso", "Old Jackob" ], "loot": 1920}
-    ]
 }   
