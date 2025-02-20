@@ -3,7 +3,11 @@ from pirates import (
     Pirate,
     Role,
 )
-from mission import Mission
+from mission import (
+    Mission,
+    LootItem
+)
+from exchange import Currency
 
 
 class TestDataLoader:
@@ -16,9 +20,14 @@ class TestDataLoader:
     def load_missions(self) -> list[Mission]:
         pirates = self.load_pirates()
         return [
-            Mission("Sea Battle 1", pirates[:2], 100),
-            Mission("Sea Battle 2", pirates, 200)
+            Mission("Sea Battle 1", pirates[:2], [LootItem(100, "DCT"), LootItem(10, "GCH")]),
+            Mission("Sea Battle 2", pirates, [LootItem(50, "DCT"), LootItem(20, "GCH")])
             ]
+    def load_currencies(self):
+        return {
+            "DCT": Currency("Ducats", 1),
+            "GCH": Currency("Gold Chain", 16)
+        }
 
 
 class JSONDataLoader:

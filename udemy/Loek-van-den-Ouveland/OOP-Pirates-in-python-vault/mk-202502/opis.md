@@ -99,3 +99,4 @@ Modified: 2025.02.14
 # Sekcja 8: Bank Exhange
 
 ## 18. Exhange Loot.
+1. 
