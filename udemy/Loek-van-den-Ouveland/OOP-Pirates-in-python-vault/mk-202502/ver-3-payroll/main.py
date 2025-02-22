@@ -2,13 +2,13 @@ from data import ( TestDataLoader,
                    JSONDataLoader)
 from payroll import Payroll
 
+
 #data_loader = TestDataLoader()
 data_loader = JSONDataLoader()
 
+missions = data_loader.load_missions()
 
 payroll = Payroll()
-
-missions = data_loader.load_missions()
 
 for mission in missions:
     print(80*"*")

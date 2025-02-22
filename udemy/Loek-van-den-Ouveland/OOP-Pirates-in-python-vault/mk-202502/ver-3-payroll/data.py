@@ -14,10 +14,10 @@ class TestDataLoader:
                 Pirate("Spartacus", Role("Gladiator", 2))
                 ]
     def load_missions(self) -> list[Mission]:
-        pirates = self.load_pirates()
+        pirates = self.load_pirates() # lista wszystkich piratów wszystkich misji
         return [
-            Mission("Sea Battle 1", pirates[:2], 100),
-            Mission("Sea Battle 2", pirates, 200)
+            Mission("Sea Battle 1", pirates[:2], 100), # misja z 2 piratami i 100 ducatów
+            Mission("Sea Battle 2", pirates, 200) # misja z wszystkimi piratami i 200 ducatami 
             ]
 
 
