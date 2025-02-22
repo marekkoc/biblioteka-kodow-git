@@ -1,54 +1,37 @@
 {
   "main": {
-    "id": "4e96dd011bfa0bf8",
+    "id": "17deed2e68697fdc",
     "type": "split",
     "children": [
       {
-        "id": "7cf2c0d36f1510eb",
+        "id": "8706ababcf099b84",
         "type": "tabs",
         "children": [
           {
-            "id": "998283cd38ed8c0d",
+            "id": "76267789b3084b5a",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "token/token.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "token"
-            }
-          },
-          {
-            "id": "6d34aa77d3e25c6e",
-            "type": "leaf",
-            "state": {
-              "type": "release-notes",
-              "state": {
-                "currentVersion": "1.8.7"
-              },
-              "icon": "lucide-book-up",
-              "title": "Release Notes 1.8.7"
+              "title": "New tab"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
   },
   "left": {
-    "id": "724868f9e42b7121",
+    "id": "fdde1e7751397ee3",
     "type": "split",
     "children": [
       {
-        "id": "4288816576901df2",
+        "id": "e2235f1348880275",
         "type": "tabs",
         "children": [
           {
-            "id": "4d43bf17528105a4",
+            "id": "fd071059a58a3dde",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -61,7 +44,7 @@
             }
           },
           {
-            "id": "3c09a87cafb7d0f4",
+            "id": "b3afed1b99161d23",
             "type": "leaf",
             "state": {
               "type": "search",
@@ -78,7 +61,7 @@
             }
           },
           {
-            "id": "2f1a1173bf5ca26e",
+            "id": "a74f3eaa14787ca3",
             "type": "leaf",
             "state": {
               "type": "bookmarks",
@@ -91,23 +74,22 @@
       }
     ],
     "direction": "horizontal",
-    "width": 269.5
+    "width": 300
   },
   "right": {
-    "id": "c99bb1052c9c3d6c",
+    "id": "921f95c18ff85777",
     "type": "split",
     "children": [
       {
-        "id": "6f30d751f040b3f9",
+        "id": "de19b54d4b077b14",
         "type": "tabs",
         "children": [
           {
-            "id": "7e3655e21d63b5bb",
+            "id": "b1b463463fa20569",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
-                "file": "bash/wget.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -117,50 +99,52 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for wget"
+              "title": "Backlinks"
             }
           },
           {
-            "id": "d09fd1b04987f598",
+            "id": "57c3afdc0ec01c8f",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "bash/wget.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from wget"
+              "title": "Outgoing links"
             }
           },
           {
-            "id": "3043dd214c8e237a",
+            "id": "878d1525b822d878",
             "type": "leaf",
             "state": {
               "type": "tag",
               "state": {
                 "sortOrder": "frequency",
-                "useHierarchy": true
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
               },
               "icon": "lucide-tags",
               "title": "Tags"
             }
           },
           {
-            "id": "8548a8d3e4cf3f96",
+            "id": "d8754df02c319c3e",
             "type": "leaf",
             "state": {
               "type": "outline",
               "state": {
-                "file": "bash/wget.md"
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of wget"
+              "title": "Outline"
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "horizontal",
@@ -177,53 +161,6 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "6d34aa77d3e25c6e",
-  "lastOpenFiles": [
-    "python/dunder-method.md",
-    "callback-call-functions/callback-call-functions.md",
-    "python/operacje-asynchroniczne.md",
-    "python/metoda-klasowa-vs-statyczna.md",
-    "hasla-szyforwanie/przechowywanie-hasel.md",
-    "callback-call-functions",
-    "dotfiles/dotfiles.md",
-    "hasla-szyforwanie",
-    "token/token.md",
-    "dotfiles",
-    "zrodla-ksiazki-kursy-filmy.md",
-    "token",
-    "sql/sqlalchemy.md",
-    "sql/sql-for-beginners-SQLite.md",
-    "sql/pobieranie-nazw-tabel-z-bazy-danych.md",
-    "OOP/oop-zrodla.md",
-    "python-programmer/python-programmer-best-data-science-book.md",
-    "mini-language/mini-languate.md",
-    "parsowanie/parsowanie.md",
-    "mini-language",
-    "parsowanie",
-    "wielowatkowosc/watki-1.md",
-    "qt/QThread.md",
-    "wielowatkowosc",
-    "qt/QFileDialog.getOpenFileName.md",
-    "fastAPI-vs-RestAPI/fastAPI-vs-RestAPI.md",
-    "OOP",
-    "2025-01-09.md",
-    "fastAPI-vs-RestAPI",
-    "qt/QMessageBox.critical.md",
-    "sql",
-    "2025-01-08.md",
-    "aplikacje-mobilne/technologie-aplikacji-mobilnych.md",
-    "projekty/baza-danych-ksiazek.md",
-    "projekty/waga-dashbord-www.md",
-    "projekty/monitorowanie-cen-walut.md",
-    "code-with-josh/figs/sql-for-beginners-SQLite.png",
-    "code-with-josh/figs/Screenshot from 2024-12-06 19-14-56.png",
-    "figs/udemy-Loek-OOPirates-20-1.png",
-    "figs/udemy-Loek-OOPirates-19-2.png",
-    "figs/udemy-Loek-OOPirates-19-1.png",
-    "figs/udemy-Loek-OOPirates-18-3.png",
-    "figs/udemy-Loek-OOPirates-18-2.png",
-    "figs/udemy-Loek-OOPirates-18-1.png",
-    "figs/udemy-Loek-OOPirates-17-5.png",
-    "figs/udemy-Loek-OOPirates-17-4.png"
-  ]
+  "active": "76267789b3084b5a",
+  "lastOpenFiles": []
 }
