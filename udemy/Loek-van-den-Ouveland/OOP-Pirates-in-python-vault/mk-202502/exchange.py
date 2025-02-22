@@ -1,3 +1,5 @@
+from mission import LootItem
+
 class Currency:
     def __init__(self, name: str, exchange_rate: float):
         self.name = name
@@ -14,7 +16,7 @@ class Bank:
     def __init__(self, loader):
         self.loader = loader
 
-    def exchange(self, loot) -> float:
+    def exchange(self, loot: list[LootItem]) -> float:
         currencies = self.loader.load_currencies()
         total_ducats = 0
         for loot_item in loot:

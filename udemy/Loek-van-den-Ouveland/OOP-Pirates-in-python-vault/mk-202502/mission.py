@@ -10,7 +10,7 @@ class LootItem:
 
 
 class Mission:
-    def __init__(self, name: str, crew: list[Pirate], loot: int):
+    def __init__(self, name: str, crew: list[Pirate], loot: list[LootItem]):
         self.name = name
         self.crew = crew
         self.loot = loot

@@ -3,14 +3,15 @@ from data import ( TestDataLoader,
 from payroll import Payroll
 from exchange import Bank
 
-data_loader = TestDataLoader()
-#data_loader = JSONDataLoader()
+# data_loader = TestDataLoader()
+data_loader = JSONDataLoader()
 
-bank = Bank(data_loader)
+missions = data_loader.load_missions()
 
 payroll = Payroll()
 
-missions = data_loader.load_missions()
+bank = Bank(data_loader)
+
 
 for mission in missions:
     print(80*"*")

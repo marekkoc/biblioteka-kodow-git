@@ -25,7 +25,7 @@ class TestDataLoader:
             ]
     def load_currencies(self):
         return {
-            "DCT": Currency("Ducats", 1),
+            "DKT": Currency("Ducats", 1),
             "GCH": Currency("Gold Chain", 16)
         }
 
@@ -43,5 +43,10 @@ class JSONDataLoader:
             data = json.load(file)
         pirates = self.load_pirates()
         
-        missions = [Mission(m["name"], [p for p in pirates if p.name in m["crew"]], m["loot"]) for m in data["missions"]]
+        missions = [Mission(m["name"], [p for p in pirates if p.name in m["crew"]], [LootItem(l["amount"], l["currency_key"]) for l in m["loot"]]) for m in data["missions"]]
         return missions
+    
+    def load_currencies(self):
+        with open("currencies.json", "r") as file:
+            data = json.load(file)
+        return {k: Currency(v["name"], v["exchange_rate"]) for (k,v) in data["currencies"].items()}

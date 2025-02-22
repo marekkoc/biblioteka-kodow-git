@@ -96,7 +96,17 @@ Modified: 2025.02.14
 2. Aktualizujemy klasę JSONDataLoader
 3. Teraz możemy zaktualizować diagram zależności kodu (Dependency Diagram), w tym celu podążamy za importami w kodzie
 
-# Sekcja 8: Bank Exhange
+# Sekcja 8: Bank Exchange
 
-## 18. Exhange Loot.
-1. 
+## 18. Exchange Loot.
+1. Teraz łup jest zapisywany jako liczba int. Musimy to zminić, aby to była lista różnych typów 'zdobyczy' razem z ich ilością.
+2. Dodajemy klasę LootItem do modułu z misjami. 
+2. Potem musimy dodac przelicznik tych zdobyczy np. łańcuchów ze złota na dukaty.
+
+## 19. Currency real data
+
+## 20. The reaward
+
+## 23. Bonus Section
+
+## NEXT: ADVANCED OOP WITH PYTHON. BEYOND THE BASICS. 
