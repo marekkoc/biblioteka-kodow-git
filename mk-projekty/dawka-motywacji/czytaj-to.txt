@@ -1,6 +1,17 @@
+2025.02.22
+
+Skasowałem katalog .../no23/pasje/programowanie/quotes.
+Obecnie pozostał tylko katalog: /biblioteka-repozytoriow/biblioteka-kodow/mk-projekty/dawka-motywacji.
+
+2025.02.21
+Plik ze wszystkimi cytatmi został skopiowany do: /home/marek/programy/skrypty-git/dawka-motywacji/
+Od tej pory w tym kataogu znajduje sie oryginał wszystkich cytatów z dawki motywacji, oraz będą inne pliku z cytatami z innych książęk oraz pliku ewentualnych programów i skryptów np. cowsay.py
+
 2024.11.13
-
 Zmiana nazwy katalogu: quotes na dawka-motywacji
+To jest kopia katalogu:	.... /no23/pasje/programowanie/quotes   
 
-To jest kopia katalogu:	
-.... /no23/pasje/programowanie/quotes
+
+
+
+
