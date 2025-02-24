@@ -1,8 +1,10 @@
 2025.02.22
 1. Skasowałem katalog .../no23/pasje/programowanie/quotes.
-2. Obecnie pozostał tylko katalog: /biblioteka-repozytoriow/biblioteka-kodow/mk-projekty/dawka-motywacji.
-3. Oryginał wszystkich cytatów znajduje się w /home/marek/programy/skrypty-git/dawka-motywacji/dawka_motywacji.odt !!!!
-4. W bieżącym katalogu znajdują się TYLKO KODY i ewentualnie kopia skryptów!!!
+2. W bieżącym katalogu znajdują się TYLKO KODY i ewentualnie kopia skryptów!!!
+2. KATALOGI:
+	-  /biblioteka-repozytoriow/biblioteka-kodow/mk-projekty/dawka-motywacji.
+	- /home/marek/programy/skrypty-git/dawka-motywacji/dawka_motywacji.odt  (Oryginalny plik: dawka_motywacji.odt)
+
 
 
 
