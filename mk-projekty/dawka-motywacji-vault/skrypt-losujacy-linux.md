@@ -1,6 +1,6 @@
 ---
 Utworzono: 2025-02-22T18:46:00
-Zmodyfikowano: 2025-02-23T09:05:00
+Zmodyfikowano: 2025-02-24T12:59:00
 Źródło: Claude
 tags: 
 Katalog:
@@ -821,3 +821,111 @@ Program będzie działał w tle, pokazując okno co 5 minut. Możesz też:
 - Wylosować nowy cytat przyciskiem "Losuj nowy cytat"
 
 Daj znać, jeśli chcesz dostosować czasy lub dodać inne funkcje!
+
+# MK
+Swietnie! Działa idealnie. Tylko mam dwie kolejne kwestie:
+1. Jak pojawia się nowy, długi cytat to rozmiar okna się nie aktualizuje. W efekcie nie widać dużej części tekstu. Czy mozesz prosze to naprawić.
+2. Czy możemy dodać dwa interwały czasowe ktore są ustawiane w okienku. Chce zrobić coś na kształt Pomodoro, gdzie mamy czas pracy (np 25 minut) oraz czas przerwy (np. 5 minut). :)
+
+Pokaż prosze twoj tok myślenia krok po kroku! :)
+
+Dobrze, rozwiążmy te problemy krok po kroku! 
+
+1. Problem z rozmiarem okna:
+- Musimy upewnić się, że okno dostosowuje się do długości tekstu
+- Obecnie używamy `adjustSize()`, ale może to nie wystarczać
+- Sprawdźmy najpierw jak wygląda label z tekstem i dodajmy minimalne wymiary
+- Musimy też uwzględnić zawijanie tekstu
+
+1. Dodanie interwałów Pomodoro:
+- Potrzebujemy dwóch timerów: dla czasu pracy i przerwy
+- Musimy dodać możliwość konfiguracji tych czasów w interfejsie
+- Warto dodać wizualne rozróżnienie między trybem pracy a przerwą
+- Dobrze byłoby zapisywać ustawienia, żeby nie trzeba było ich wprowadzać za każdym razem
+
+Oto rozwiązanie:
+```python
+import sys
+import random
+from pathlib import Path
+​￼from PyQt5.QtWidgets import (QApplication, QMainWindow, QWidget, QVBoxLayout, 
+                            QLabel, QPushButton, QSizePolicy, QHBoxLayout,
+                            QSystemTrayIcon, QMenu, QSpinBox, QFormLayout,
+                            QGroupBox)
+from PyQt5.QtCore import Qt, QTimer
+from PyQt5.QtGui import QFont, QIcon
+
+​￼class QuoteWindow(QMainWindow):
+    ​￼def __init__(self, filename):
+        super().__init__()
+        self.filename = filename
+        self.quotes = self.read_quotes()
+        self.shown_quotes = set()
+        
+        # Domyślne czasy (w minutach)
+        self.work_time = 25
+        self.break_time = 5
+        
+        # Flagi dla trybu pracy
+        self.is_work_mode = True
+        
+        self.initUI()
+        self.setupSystemTray()
+        
+        # Inicjalizacja timerów
+        self.work_timer = QTimer(self)
+        self.work_timer.timeout.connect(self.switch_to_break)
+        
+        self.break_timer = QTimer(self)
+        self.break_timer.timeout.connect(self.switch_to_work)
+        
+        # Rozpocznij od trybu pracy
+        self.start_work_mode()
+        
+    def read_quotes(self):
+    ​￼try:
+        content = Path(self.filename).read_text(encoding='utf-8').split('\n')
+        quotes = []
+        i = 0
+            
+        ​￼while i < len(content):
+            ​￼if content[i].strip():
+                quote = content[i]
+                author = content[i+1] if i+1 < len(content) else "Nieznany"
+                quotes.append((quote, author))
+                i += 3
+            ​￼else:
+                i += 1
+                    
+        print(f"Wczytano {len(quotes)} cytatów")  # debug
+```
+
+Wprowadzone zmiany:
+
+1. Problem z rozmiarem okna:
+- Dodano minimalną wysokość dla quote_label
+- Ustawiono policy size na Expanding
+- Dodano dodatkowe przeliczanie layoutu w metodzie show_quote
+- Dodano margines do wysokości okna
+
+1. Funkcjonalność Pomodoro:
+- Dodano dwa timery: work_timer i break_timer
+- Dodano pola do ustawiania czasów pracy i przerwy
+- Dodano label pokazujący aktualny tryb (praca/przerwa)
+- Zmieniono kolorystykę w zależności od trybu
+- Dodano automatyczne przełączanie między trybami
+
+1. Interfejs:
+- Dodano grupę ustawień z polami do wprowadzania czasów
+- Dodano wizualne oznaczenie trybu pracy/przerwy
+- Zorganizowano elementy w przejrzysty sposób
+- Zwiększono minimalną szerokość okna
+
+Teraz program:
+- Automatycznie dostosowuje rozmiar do długości cytatu
+- Pozwala ustawić czas pracy i przerwy
+- Zmienia tryby automatycznie
+- Pokazuje okno przy każdej zmianie trybu
+- Zachowuje wszystkie poprzednie funkcjonalności
+
+Czy chciałbyś wprowadzić jakieś dodatkowe modyfikacje w wyglądzie lub działaniu programu?
