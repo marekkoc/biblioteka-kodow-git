@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "rozne/kurs-repozytorium-niezmienialne.md",
+                "file": "rozne/git-merge.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "kurs-repozytorium-niezmienialne"
+              "title": "git-merge"
             }
           }
         ]
@@ -170,8 +170,9 @@
   },
   "active": "ec16c259301df04f",
   "lastOpenFiles": [
-    "rozne/usuniecie-plikow-z-add.md",
     "rozne/kurs-repozytorium-niezmienialne.md",
+    "rozne/git-merge.md",
+    "rozne/usuniecie-plikow-z-add.md",
     "rozne/gitignore.md",
     "rozne/wspoldzielenie-repozytorium.md",
     "2025-02-08.md",

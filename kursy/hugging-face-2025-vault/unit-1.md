@@ -34,6 +34,11 @@ Think → Act → Observe.
 
 - This allows the model to consider sub-steps in more detail, which in general leads to less errors than trying to generate the final solution directly.
 
-￼
 - The (d) is an example of Re-Act approach where we prompt "Let's think step by step"
 
+
+##  [Observe: Integrating Feedback to Reflect and Adapt](https://huggingface.co/learn/agents-course/unit1/observations)
+
+ - Observations are how an Agent perceives the consequences of its actions.
+   
+ - They provide crucial information that fuels the Agent’s thought process and guides future actions.
