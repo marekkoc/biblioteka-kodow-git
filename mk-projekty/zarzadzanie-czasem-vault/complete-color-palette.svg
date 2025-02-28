@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 740">
+  <!-- Tło -->
+  <rect width="800" height="740" fill="#f8f8f8"/>
+  
+  <!-- Tytuł -->
+  <text x="400" y="40" font-family="Arial" font-size="24" text-anchor="middle" fill="#333">Kompletna paleta kolorów do kalendarza aktywności</text>
+  
+  <!-- Lewa kolumna -->
+  <rect x="80" y="80" width="70" height="70" fill="#3366CC"/>
+  <text x="170" y="105" font-family="Arial" font-size="16" fill="#333">#3366CC</text>
+  <text x="170" y="130" font-family="Arial" font-size="18" font-weight="bold" fill="#333">Praca</text>
+  <text x="170" y="155" font-family="Arial" font-size="14" fill="#666">Królewski Niebieski</text>
+  
+  <rect x="80" y="170" width="70" height="70" fill="#FF9900"/>
+  <text x="170" y="195" font-family="Arial" font-size="16" fill="#333">#FF9900</text>
+  <text x="170" y="220" font-family="Arial" font-size="18" font-weight="bold" fill="#333">Posiłek</text>
+  <text x="170" y="245" font-family="Arial" font-size="14" fill="#666">Bursztynowy</text>
+  
+  <rect x="80" y="260" width="70" height="70" fill="#1AE6B5"/>
+  <text x="170" y="285" font-family="Arial" font-size="16" fill="#333">#1AE6B5</text>
+  <text x="170" y="310" font-family="Arial" font-size="18" font-weight="bold" fill="#333">Odpoczynek</text>
+  <text x="170" y="335" font-family="Arial" font-size="14" fill="#666">Akwamaryna</text>
+  
+  <rect x="80" y="350" width="70" height="70" fill="#FF3333"/>
+  <text x="170" y="375" font-family="Arial" font-size="16" fill="#333">#FF3333</text>
+  <text x="170" y="400" font-family="Arial" font-size="18" font-weight="bold" fill="#333">Sport</text>
+  <text x="170" y="425" font-family="Arial" font-size="14" fill="#666">Ognista Czerwień</text>
+  
+  <rect x="80" y="440" width="70" height="70" fill="#6633CC"/>
+  <text x="170" y="465" font-family="Arial" font-size="16" fill="#333">#6633CC</text>
+  <text x="170" y="490" font-family="Arial" font-size="18" font-weight="bold" fill="#333">Drzemka</text>
+  <text x="170" y="515" font-family="Arial" font-size="14" fill="#666">Indygo</text>
+  
+  <rect x="80" y="530" width="70" height="70" fill="#669933"/>
+  <text x="170" y="555" font-family="Arial" font-size="16" fill="#333">#669933</text>
+  <text x="170" y="580" font-family="Arial" font-size="18" font-weight="bold" fill="#333">Czytanie</text>
+  <text x="170" y="605" font-family="Arial" font-size="14" fill="#666">Oliwkowy Zielony</text>
+  
+  <rect x="80" y="620" width="70" height="70" fill="#6699CC"/>
+  <text x="170" y="645" font-family="Arial" font-size="16" fill="#333">#6699CC</text>
+  <text x="170" y="670" font-family="Arial" font-size="18" font-weight="bold" fill="#333">Papierologia</text>
+  <text x="170" y="695" font-family="Arial" font-size="14" fill="#666">Błękitno-szary</text>
+  
+  <!-- Prawa kolumna -->
+  <rect x="430" y="80" width="70" height="70" fill="#00CCFF"/>
+  <text x="520" y="105" font-family="Arial" font-size="16" fill="#333">#00CCFF</text>
+  <text x="520" y="130" font-family="Arial" font-size="18" font-weight="bold" fill="#333">Kodowanie</text>
+  <text x="520" y="155" font-family="Arial" font-size="14" fill="#666">Cyjan</text>
+  
+  <rect x="430" y="170" width="70" height="70" fill="#996633"/>
+  <text x="520" y="195" font-family="Arial" font-size="16" fill="#333">#996633</text>
+  <text x="520" y="220" font-family="Arial" font-size="18" font-weight="bold" fill="#333">Prace domowe</text>
+  <text x="520" y="245" font-family="Arial" font-size="14" fill="#666">Kasztanowy</text>
+  
+  <rect x="430" y="260" width="70" height="70" fill="#CCCCCC"/>
+  <text x="520" y="285" font-family="Arial" font-size="16" fill="#333">#CCCCCC</text>
+  <text x="520" y="310" font-family="Arial" font-size="18" font-weight="bold" fill="#333">Nic</text>
+  <text x="520" y="335" font-family="Arial" font-size="14" fill="#666">Srebrny</text>
+  
+  <rect x="430" y="350" width="70" height="70" fill="#FF33CC"/>
+  <text x="520" y="375" font-family="Arial" font-size="16" fill="#333">#FF33CC</text>
+  <text x="520" y="400" font-family="Arial" font-size="18" font-weight="bold" fill="#333">Multimedia</text>
+  <text x="520" y="425" font-family="Arial" font-size="14" fill="#666">Fuksja</text>
+  
+  <rect x="430" y="440" width="70" height="70" fill="#FFCC00"/>
+  <text x="520" y="465" font-family="Arial" font-size="16" fill="#333">#FFCC00</text>
+  <text x="520" y="490" font-family="Arial" font-size="18" font-weight="bold" fill="#333">Spotkanie</text>
+  <text x="520" y="515" font-family="Arial" font-size="14" fill="#666">Złoty</text>
+  
+  <rect x="430" y="530" width="70" height="70" fill="#33CCCC"/>
+  <text x="520" y="555" font-family="Arial" font-size="16" fill="#333">#33CCCC</text>
+  <text x="520" y="580" font-family="Arial" font-size="18" font-weight="bold" fill="#333">Inne</text>
+  <text x="520" y="605" font-family="Arial" font-size="14" fill="#666">Turkusowy</text>
+  
+  <rect x="430" y="620" width="70" height="70" fill="#FF6600"/>
+  <text x="520" y="645" font-family="Arial" font-size="16" fill="#333">#FF6600</text>
+  <text x="520" y="670" font-family="Arial" font-size="18" font-weight="bold" fill="#333">Ja (promocja)</text>
+  <text x="520" y="695" font-family="Arial" font-size="14" fill="#666">Pomarańczowy</text>
+</svg>

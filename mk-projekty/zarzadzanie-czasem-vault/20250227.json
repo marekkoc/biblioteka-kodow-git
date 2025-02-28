@@ -1,0 +1,61 @@
+{
+  "activities": [
+    {"name": "Praca", "color": "#FF5733"},
+    {"name": "Sen", "color": "#33A8FF"},
+    {"name": "Odpoczynek", "color": "#33FF57"},
+    {"name": "Czytanie", "color": "#F3FF33"},
+    {"name": "Sport", "color": "#FF33F6"},
+    {"name": "Nauka", "color": "#33FFF6"},
+    {"name": "Bezczynność", "color": "#AAAAAA"},
+    {"name": "Czynnosci domowe", "color": "#aaaa00"},
+    {"name": "Posilek", "color": "#0aff12"}
+  ],
+  "days": {
+    "2025-02-27": {
+      "Czynnosci domowe": [
+        {"row": 7, "col": 0},
+        {"row": 7, "col": 1},
+        {"row": 7, "col": 2},
+        {"row": 7, "col": 3},
+        {"row": 7, "col": 4},
+        {"row": 7, "col": 5}
+      ],
+      "Praca": [
+        {"row": 8, "col": 0},
+        {"row": 8, "col": 1},
+        {"row": 8, "col": 2},
+        {"row": 8, "col": 3},
+        {"row": 8, "col": 4},
+        {"row": 8, "col": 5},
+        {"row": 9, "col": 5},
+        {"row": 10, "col": 0},
+        {"row": 10, "col": 1},
+        {"row": 10, "col": 2},
+        {"row": 10, "col": 3},
+        {"row": 10, "col": 4},
+        {"row": 10, "col": 5},
+        {"row": 11, "col": 0},
+        {"row": 11, "col": 1},
+        {"row": 11, "col": 2},
+        {"row": 11, "col": 3},
+        {"row": 11, "col": 4},
+        {"row": 11, "col": 5},
+        {"row": 12, "col": 0},
+        {"row": 12, "col": 1}
+      ],
+      "Posilek": [
+        {"row": 9, "col": 0},
+        {"row": 9, "col": 1},
+        {"row": 9, "col": 2},
+        {"row": 9, "col": 3},
+        {"row": 9, "col": 4},
+        {"row": 12, "col": 2},
+        {"row": 12, "col": 3},
+        {"row": 12, "col": 4},
+        {"row": 12, "col": 5},
+        {"row": 13, "col": 0},
+        {"row": 13, "col": 1}
+      ]
+    }
+  }
+}

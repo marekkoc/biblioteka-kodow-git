@@ -1,0 +1,18 @@
+{
+  "activities": [
+    {"name": "Praca", "color": "#3366CC"},
+    {"name": "Posilek", "color": "#FF9900"},
+    {"name": "Odpoczynek", "color": "#1AE6B5"},
+    {"name": "Sport", "color": "#FF3333"},
+    {"name": "Drzemka", "color": "#6633CC"},
+    {"name": "Czytanie", "color": "#669933"},
+    {"name": "Kodowanie", "color": "#00CCFF"},
+    {"name": "Prace_domowe", "color": "#996633"},
+    {"name": "Nic", "color": "#CCCCCC"},
+    {"name": "Multimedia", "color": "#FF33CC"},
+    {"name": "Spotkanie", "color": "#FFCC00"},
+    {"name": "Inne", "color": "#33CCCC"},
+    {"name": "Papierologia", "color": "#6699CC"},
+    {"name": "Ja_promocja", "color": "#FF6600"}
+  ]
+}
