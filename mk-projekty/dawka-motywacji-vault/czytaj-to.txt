@@ -3,7 +3,9 @@
 2. W bieżącym katalogu znajdują się TYLKO KODY i ewentualnie kopia skryptów!!!
 2. KATALOGI:
 	-  /biblioteka-repozytoriow/biblioteka-kodow/mk-projekty/dawka-motywacji.
+3. KODY DO PROJEKTU:
 	- /home/marek/programy/skrypty-git/dawka-motywacji/dawka_motywacji.odt  (Oryginalny plik: dawka_motywacji.odt)
+
 
 
 
