@@ -1,0 +1,117 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800">
+  <!-- Tło -->
+  <rect width="800" height="800" fill="#f8f8f8"/>
+  
+  <!-- Tytuł -->
+  <text x="400" y="40" font-family="Arial" font-size="24" font-weight="bold" text-anchor="middle" fill="#333">Rozpoznane kolory bloków</text>
+  
+  <!-- Tabela z kolorami -->
+  <!-- Wiersz 1 -->
+  <rect x="50" y="80" width="160" height="100" fill="#7ac052"/>
+  <rect x="220" y="80" width="160" height="100" fill="#9c8cb6"/>
+  <rect x="390" y="80" width="160" height="100" fill="#b83d97"/>
+  <rect x="560" y="80" width="160" height="100" fill="#1a8572"/>
+  
+  <!-- Wiersz 2 -->
+  <rect x="50" y="190" width="160" height="70" fill="#ffffff"/>
+  <rect x="220" y="190" width="160" height="70" fill="#ffffff"/>
+  <rect x="390" y="190" width="160" height="70" fill="#ffffff"/>
+  <rect x="560" y="190" width="160" height="70" fill="#ffffff"/>
+  
+  <!-- Wiersz 3 -->
+  <rect x="50" y="270" width="160" height="100" fill="#5a82b4"/>
+  <rect x="220" y="270" width="160" height="100" fill="#c25d20"/>
+  <rect x="390" y="270" width="160" height="100" fill="#8e8e8e"/>
+  <rect x="560" y="270" width="160" height="100" fill="#ffc900"/>
+  
+  <!-- Wiersz 4 -->
+  <rect x="50" y="380" width="160" height="70" fill="#ffffff"/>
+  <rect x="220" y="380" width="160" height="70" fill="#ffffff"/>
+  <rect x="390" y="380" width="160" height="70" fill="#ffffff"/>
+  <rect x="560" y="380" width="160" height="70" fill="#ffffff"/>
+  
+  <!-- Wiersz 5 -->
+  <rect x="50" y="460" width="160" height="100" fill="#0095b6"/>
+  <rect x="220" y="460" width="160" height="100" fill="#f4a4b4"/>
+  <rect x="390" y="460" width="160" height="100" fill="#cc3333"/>
+  <rect x="560" y="460" width="160" height="100" fill="#ffffff"/>
+  
+  <!-- Wiersz 6 -->
+  <rect x="50" y="570" width="160" height="70" fill="#ffffff"/>
+  <rect x="220" y="570" width="160" height="70" fill="#ffffff"/>
+  <rect x="390" y="570" width="160" height="70" fill="#ffffff"/>
+  <rect x="560" y="570" width="160" height="70" fill="#ffffff"/>
+  
+  <!-- Etykiety bloków -->
+  <text x="130" y="115" font-family="Arial" font-size="14" text-anchor="middle" fill="#000">Blok 1</text>
+  <text x="300" y="115" font-family="Arial" font-size="14" text-anchor="middle" fill="#000">Blok 2</text>
+  <text x="470" y="115" font-family="Arial" font-size="14" text-anchor="middle" fill="#000">Blok 3</text>
+  <text x="640" y="115" font-family="Arial" font-size="14" text-anchor="middle" fill="#000">Blok 4</text>
+  
+  <text x="130" y="305" font-family="Arial" font-size="14" text-anchor="middle" fill="#000">Blok 5</text>
+  <text x="300" y="305" font-family="Arial" font-size="14" text-anchor="middle" fill="#000">Blok 6</text>
+  <text x="470" y="305" font-family="Arial" font-size="14" text-anchor="middle" fill="#000">Blok 7</text>
+  <text x="640" y="305" font-family="Arial" font-size="14" text-anchor="middle" fill="#000">Blok 8</text>
+  
+  <text x="130" y="495" font-family="Arial" font-size="14" text-anchor="middle" fill="#000">Blok 9</text>
+  <text x="300" y="495" font-family="Arial" font-size="14" text-anchor="middle" fill="#000">Blok 10</text>
+  <text x="470" y="495" font-family="Arial" font-size="14" text-anchor="middle" fill="#000">Blok 11</text>
+  <text x="640" y="495" font-family="Arial" font-size="14" text-anchor="middle" fill="#fff">Blok 12</text>
+  
+  <!-- Etykiety kategorii -->
+  <text x="130" y="225" font-family="Arial" font-size="12" text-anchor="middle" fill="#000">ROZWÓJ OSOBISTY</text>
+  <text x="300" y="225" font-family="Arial" font-size="12" text-anchor="middle" fill="#000">ROZWÓJ W PRACY</text>
+  <text x="470" y="225" font-family="Arial" font-size="12" text-anchor="middle" fill="#000">SZUKANIE PRACY</text>
+  <text x="640" y="225" font-family="Arial" font-size="12" text-anchor="middle" fill="#000">ZDROWIE, OSTRZENIE PIŁY</text>
+  
+  <text x="130" y="415" font-family="Arial" font-size="12" text-anchor="middle" fill="#000">ZŁOTA GODZINA</text>
+  <text x="300" y="415" font-family="Arial" font-size="11" text-anchor="middle" fill="#000">PORZĄDKI, WYRZUCANIE, PRACE DOMOWE</text>
+  <text x="470" y="415" font-family="Arial" font-size="12" text-anchor="middle" fill="#000">DOKUMENTY BIEŻĄCE, OPŁATY</text>
+  <text x="640" y="415" font-family="Arial" font-size="12" text-anchor="middle" fill="#000">SPRAWY RÓŻNE</text>
+  
+  <text x="130" y="605" font-family="Arial" font-size="12" text-anchor="middle" fill="#000">NORWESKI</text>
+  <text x="300" y="605" font-family="Arial" font-size="12" text-anchor="middle" fill="#000">ŻYCIE TOWARZYSKIE</text>
+  <text x="470" y="605" font-family="Arial" font-size="12" text-anchor="middle" fill="#000">POSIŁKI, ROZRYWKA</text>
+  
+  <!-- Wartości kolorów -->
+  <text x="130" y="140" font-family="Arial" font-size="12" text-anchor="middle" fill="#000">#7ac052</text>
+  <text x="130" y="160" font-family="Arial" font-size="12" text-anchor="middle" fill="#000">Limonkowy zielony</text>
+  
+  <text x="300" y="140" font-family="Arial" font-size="12" text-anchor="middle" fill="#000">#9c8cb6</text>
+  <text x="300" y="160" font-family="Arial" font-size="12" text-anchor="middle" fill="#000">Wrzosowy</text>
+  
+  <text x="470" y="140" font-family="Arial" font-size="12" text-anchor="middle" fill="#fff">#b83d97</text>
+  <text x="470" y="160" font-family="Arial" font-size="12" text-anchor="middle" fill="#fff">Magenta</text>
+  
+  <text x="640" y="140" font-family="Arial" font-size="12" text-anchor="middle" fill="#fff">#1a8572</text>
+  <text x="640" y="160" font-family="Arial" font-size="12" text-anchor="middle" fill="#fff">Morski zielony</text>
+  
+  <text x="130" y="330" font-family="Arial" font-size="12" text-anchor="middle" fill="#fff">#5a82b4</text>
+  <text x="130" y="350" font-family="Arial" font-size="12" text-anchor="middle" fill="#fff">Niebieski stalowy</text>
+  
+  <text x="300" y="330" font-family="Arial" font-size="12" text-anchor="middle" fill="#fff">#c25d20</text>
+  <text x="300" y="350" font-family="Arial" font-size="12" text-anchor="middle" fill="#fff">Terakota</text>
+  
+  <text x="470" y="330" font-family="Arial" font-size="12" text-anchor="middle" fill="#fff">#8e8e8e</text>
+  <text x="470" y="350" font-family="Arial" font-size="12" text-anchor="middle" fill="#fff">Szary neutralny</text>
+  
+  <text x="640" y="330" font-family="Arial" font-size="12" text-anchor="middle" fill="#000">#ffc900</text>
+  <text x="640" y="350" font-family="Arial" font-size="12" text-anchor="middle" fill="#000">Złoty żółty</text>
+  
+  <text x="130" y="520" font-family="Arial" font-size="12" text-anchor="middle" fill="#fff">#0095b6</text>
+  <text x="130" y="540" font-family="Arial" font-size="12" text-anchor="middle" fill="#fff">Turkusowy</text>
+  
+  <text x="300" y="520" font-family="Arial" font-size="12" text-anchor="middle" fill="#000">#f4a4b4</text>
+  <text x="300" y="540" font-family="Arial" font-size="12" text-anchor="middle" fill="#000">Róż pastelowy</text>
+  
+  <text x="470" y="520" font-family="Arial" font-size="12" text-anchor="middle" fill="#fff">#cc3333</text>
+  <text x="470" y="540" font-family="Arial" font-size="12" text-anchor="middle" fill="#fff">Pomidorowy czerwony</text>
+  
+  <text x="640" y="520" font-family="Arial" font-size="12" text-anchor="middle" fill="#000">#ffffff</text>
+  <text x="640" y="540" font-family="Arial" font-size="12" text-anchor="middle" fill="#000">Biały</text>
+  
+  <!-- Legenda -->
+  <text x="400" y="670" font-family="Arial" font-size="18" font-weight="bold" text-anchor="middle" fill="#333">Kolory z nazwami</text>
+  <text x="400" y="700" font-family="Arial" font-size="14" text-anchor="middle" fill="#333">Nazwy kolorów dopasowane do kodów HEX</text>
+  <text x="400" y="725" font-family="Arial" font-size="14" text-anchor="middle" fill="#333">i przypisane do odpowiednich kategorii</text>
+</svg>

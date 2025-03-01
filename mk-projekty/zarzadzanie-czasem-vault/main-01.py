@@ -1,3 +1,4 @@
+#!/home/marek/miniconda3/envs/py312/bin/python
 import sys
 from PyQt5.QtWidgets import (QApplication, QMainWindow, QWidget, QVBoxLayout, 
                             QHBoxLayout, QPushButton, QLabel, QGridLayout, 
