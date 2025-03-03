@@ -1,0 +1,144 @@
+{
+  "bloki_tematyczne": [
+    {
+      "id": 1,
+      "nazwa": "Blok Osobisty",
+      "kolor_podstawowy": "niebieski",
+      "bloki_czasowe": [
+        {
+          "id": 1,
+          "nazwa": "Higiena/rutyny osobiste",
+          "opis": "Poranne i wieczorne czynności higieniczne, przygotowanie do dnia/snu",
+          "sugerowany_czas": "30-60 min",
+          "odcien_koloru": "jasnoniebieski"
+        },
+        {
+          "id": 2,
+          "nazwa": "Posiłki",
+          "opis": "Śniadanie, obiad, kolacja i ewentualne przekąski",
+          "sugerowany_czas": "30 min na posiłek",
+          "odcien_koloru": "morski"
+        },
+        {
+          "id": 5,
+          "nazwa": "Aktywność fizyczna",
+          "opis": "Treningi, spacery, joga itp.",
+          "sugerowany_czas": "30-60 min",
+          "odcien_koloru": "kobaltowy"
+        },
+        {
+          "id": 6,
+          "nazwa": "Obowiązki domowe",
+          "opis": "Sprzątanie, zakupy, gotowanie",
+          "sugerowany_czas": "zależne od zadania",
+          "odcien_koloru": "granatowy"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "nazwa": "Blok Produktywności",
+      "kolor_podstawowy": "zielony",
+      "bloki_czasowe": [
+        {
+          "id": 3,
+          "nazwa": "Praca/nauka",
+          "opis": "Podzielone na konkretne zadania lub projekty",
+          "sugerowany_czas": "90-120 min bloki",
+          "odcien_koloru": "limonkowy"
+        },
+        {
+          "id": 15,
+          "nazwa": "Moja marka",
+          "opis": "Tworzenie strony www, profilu LinkedIn, budowanie wizerunku w sieci",
+          "sugerowany_czas": "60-90 min",
+          "odcien_koloru": "szmaragdowy"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "nazwa": "Blok Rozwojowy",
+      "kolor_podstawowy": "fioletowy",
+      "bloki_czasowe": [
+        {
+          "id": 8,
+          "nazwa": "Rozwój osobisty",
+          "opis": "Czytanie, kursy, nauka nowych umiejętności",
+          "sugerowany_czas": "30-60 min",
+          "odcien_koloru": "lawendowy"
+        },
+        {
+          "id": 12,
+          "nazwa": "Newslettery",
+          "opis": "Czytanie i przeglądanie subskrybowanych treści",
+          "sugerowany_czas": "15-30 min",
+          "odcien_koloru": "ametystowy"
+        },
+        {
+          "id": 7,
+          "nazwa": "Spotkania",
+          "opis": "Zarówno zawodowe jak i prywatne",
+          "sugerowany_czas": "zależne od spotkania",
+          "odcien_koloru": "śliwkowy"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "nazwa": "Blok Czasu Wolnego",
+      "kolor_podstawowy": "pomarańczowy",
+      "bloki_czasowe": [
+        {
+          "id": 9,
+          "nazwa": "Czas wolny/rozrywka",
+          "opis": "Filmy, gry, hobby",
+          "sugerowany_czas": "zależne od aktywności",
+          "odcien_koloru": "brzoskwiniowy"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "nazwa": "Blok Nieproduktywny",
+      "kolor_podstawowy": "szary/czerwony",
+      "bloki_czasowe": [
+        {
+          "id": 14,
+          "nazwa": "Rozpraszacze/marnotrawstwo czasu",
+          "opis": "Przeglądanie mediów społecznościowych, wiadomości, nieproduktywne używanie multimediów",
+          "sugerowany_czas": "do monitorowania i ograniczania",
+          "odcien_koloru": "czerwony"
+        },
+        {
+          "id": 4,
+          "nazwa": "Przerwy",
+          "opis": "Krótkie oddechy między zadaniami",
+          "sugerowany_czas": "10-15 min",
+          "odcien_koloru": "jasnoszary"
+        },
+        {
+          "id": 10,
+          "nazwa": "E-maile/komunikacja",
+          "opis": "Odpowiadanie na wiadomości, zarządzanie skrzynką",
+          "sugerowany_czas": "30 min, 1-2 razy dziennie",
+          "odcien_koloru": "srebrny"
+        },
+        {
+          "id": 13,
+          "nazwa": "Organizacja dnia",
+          "opis": "Planowanie, przegląd zadań, ustalanie priorytetów",
+          "sugerowany_czas": "15-30 min, najlepiej rano lub wieczorem",
+          "odcien_koloru": "ciemnoszary"
+        },
+        {
+          "id": 11,
+          "nazwa": "Finanse",
+          "opis": "Płacenie rachunków, budżetowanie, zarządzanie inwestycjami",
+          "sugerowany_czas": "30-60 min, najlepiej raz w tygodniu",
+          "odcien_koloru": "bordowy"
+        }
+      ]
+    }
+  ]
+}
