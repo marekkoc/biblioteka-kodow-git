@@ -1,6 +1,6 @@
 {
   "created_at": "2025-02-27T15:36:49.288927",
-  "updated_at": "2025-03-03T09:49:24.054027",
+  "updated_at": "2025-03-03T21:48:48.980616",
   "days": {
     "2025-02-27": {
       "Prace-domowe": [
@@ -403,17 +403,109 @@
       "Prace-domowe": [
         {"row": 9, "col": 0},
         {"row": 9, "col": 1},
-        {"row": 10, "col": 0},
-        {"row": 10, "col": 1}
+        {"row": 10, "col": 2},
+        {"row": 10, "col": 3}
       ],
       "Posilek": [
         {"row": 9, "col": 2},
-        {"row": 9, "col": 3}
+        {"row": 9, "col": 3},
+        {"row": 13, "col": 1},
+        {"row": 13, "col": 2},
+        {"row": 13, "col": 3},
+        {"row": 13, "col": 4},
+        {"row": 13, "col": 5},
+        {"row": 17, "col": 3},
+        {"row": 17, "col": 4},
+        {"row": 17, "col": 5},
+        {"row": 18, "col": 0},
+        {"row": 18, "col": 1},
+        {"row": 18, "col": 2}
       ],
       "Dokumenty": [
         {"row": 9, "col": 4},
-        {"row": 9, "col": 5}
+        {"row": 9, "col": 5},
+        {"row": 10, "col": 0},
+        {"row": 10, "col": 1},
+        {"row": 10, "col": 4},
+        {"row": 10, "col": 5},
+        {"row": 11, "col": 0},
+        {"row": 14, "col": 0}
+      ],
+      "Nic": [
+        {"row": 11, "col": 1},
+        {"row": 11, "col": 2},
+        {"row": 12, "col": 2},
+        {"row": 12, "col": 3},
+        {"row": 14, "col": 1},
+        {"row": 14, "col": 2},
+        {"row": 16, "col": 0},
+        {"row": 16, "col": 1},
+        {"row": 16, "col": 2},
+        {"row": 19, "col": 0},
+        {"row": 19, "col": 1},
+        {"row": 19, "col": 2},
+        {"row": 19, "col": 3}
+      ],
+      "Rozwoj-osobisty": [
+        {"row": 11, "col": 3},
+        {"row": 11, "col": 4},
+        {"row": 11, "col": 5},
+        {"row": 12, "col": 0},
+        {"row": 12, "col": 1},
+        {"row": 12, "col": 4},
+        {"row": 12, "col": 5}
+      ],
+      "Zycie-towarzyskie": [
+        {"row": 13, "col": 0}
+      ],
+      "Zdrowie": [
+        {"row": 14, "col": 3},
+        {"row": 14, "col": 4},
+        {"row": 14, "col": 5},
+        {"row": 15, "col": 0},
+        {"row": 15, "col": 1},
+        {"row": 20, "col": 0},
+        {"row": 20, "col": 1},
+        {"row": 20, "col": 2},
+        {"row": 20, "col": 3},
+        {"row": 20, "col": 4},
+        {"row": 20, "col": 5},
+        {"row": 21, "col": 0},
+        {"row": 21, "col": 1},
+        {"row": 21, "col": 2}
+      ],
+      "Praca": [
+        {"row": 15, "col": 2},
+        {"row": 15, "col": 3},
+        {"row": 15, "col": 4},
+        {"row": 15, "col": 5},
+        {"row": 16, "col": 3},
+        {"row": 16, "col": 4},
+        {"row": 16, "col": 5},
+        {"row": 17, "col": 0},
+        {"row": 17, "col": 1},
+        {"row": 17, "col": 2},
+        {"row": 18, "col": 3},
+        {"row": 18, "col": 4},
+        {"row": 18, "col": 5},
+        {"row": 21, "col": 5},
+        {"row": 22, "col": 0},
+        {"row": 22, "col": 1},
+        {"row": 22, "col": 2},
+        {"row": 22, "col": 3},
+        {"row": 22, "col": 4},
+        {"row": 22, "col": 5}
+      ],
+      "Zakupy": [
+        {"row": 19, "col": 4},
+        {"row": 19, "col": 5}
+      ],
+      "Rozrywka": [
+        {"row": 21, "col": 3},
+        {"row": 21, "col": 4}
       ]
+    },
+    "2025-03-04": {
     }
   }
 }

@@ -1,4 +1,11 @@
 #!/home/marek/miniconda3/envs/py312/bin/python
+
+"""
+Created on 2025-02-27
+Modified on 2025-03-03
+
+@author: marek
+"""
 import sys
 from PyQt5.QtWidgets import (QApplication, QMainWindow, QWidget, QVBoxLayout, 
                             QHBoxLayout, QPushButton, QLabel, QGridLayout, 
@@ -43,7 +50,7 @@ class ActivityItem(QListWidgetItem):
         self.color = color
         self.setBackground(QColor(color))
 
-class TimeManagementApp(QMainWindow):
+class TimeManagementApp(QMainWindow): 
     def __init__(self):
         super().__init__()
         self.setWindowTitle("Zarządzanie Czasem")
@@ -113,23 +120,7 @@ class TimeManagementApp(QMainWindow):
         self.activity_list.itemClicked.connect(self.select_activity)
         left_layout.addWidget(self.activity_list)
         
-        # Przyciski zarządzania aktywnościami
-        buttons_layout = QHBoxLayout()
-        
-        add_button = QPushButton("Dodaj")
-        add_button.clicked.connect(self.add_activity)
-        buttons_layout.addWidget(add_button)
-        
-        edit_button = QPushButton("Edytuj")
-        edit_button.clicked.connect(self.edit_activity)
-        buttons_layout.addWidget(edit_button)
-        
-        delete_button = QPushButton("Usuń")
-        delete_button.clicked.connect(self.delete_activity)
-        buttons_layout.addWidget(delete_button)
-        
-        left_layout.addLayout(buttons_layout)
-        
+         
         # Przyciski do zapisywania i wczytywania danych
         file_buttons_layout = QHBoxLayout()
         
@@ -246,80 +237,6 @@ class TimeManagementApp(QMainWindow):
             self.squares[row][col].set_activity(self.selected_activity)
         
         self.data_changed = True  # Oznacz, że dane zostały zmienione
-    
-    def add_activity(self):
-        name, ok = QInputDialog.getText(self, "Dodaj aktywność", "Nazwa aktywności:")
-        if ok and name:
-            color_dialog = QColorDialog(self)
-            color = color_dialog.getColor()
-            if color.isValid():
-                color_hex = color.name()
-                new_activity = {"name": name, "color": color_hex}
-                self.activities.append(new_activity)
-                self.update_activity_list()
-                
-                # Zapisz aktywności do pliku
-                self.save_activities_to_file()
-                
-                # Dodaj oznaczenie zmiany danych
-                self.data_changed = True
-    
-    def edit_activity(self):
-        if not self.activity_list.currentItem():
-            QMessageBox.warning(self, "Ostrzeżenie", "Wybierz aktywność do edycji!")
-            return
-        
-        current_item = self.activity_list.currentItem()
-        current_index = self.activity_list.currentRow()
-        
-        name, ok = QInputDialog.getText(self, "Edytuj aktywność", 
-                                       "Nazwa aktywności:", text=current_item.name)
-        if ok and name:
-            color_dialog = QColorDialog(self)
-            color = color_dialog.getColor(QColor(current_item.color))
-            if color.isValid():
-                color_hex = color.name()
-                self.activities[current_index]["name"] = name
-                self.activities[current_index]["color"] = color_hex
-                self.update_activity_list()
-                
-                # Zapisz aktywności do pliku
-                self.save_activities_to_file()
-                
-                # Aktualizuj siatkę
-                self.update_grid()
-                
-                # Dodaj oznaczenie zmiany danych
-                self.data_changed = True
-    
-    def delete_activity(self):
-        if not self.activity_list.currentItem():
-            QMessageBox.warning(self, "Ostrzeżenie", "Wybierz aktywność do usunięcia!")
-            return
-        
-        current_index = self.activity_list.currentRow()
-        reply = QMessageBox.question(self, "Potwierdzenie", 
-                                    f"Czy na pewno chcesz usunąć '{self.activities[current_index]['name']}'?",
-                                    QMessageBox.Yes | QMessageBox.No)
-        
-        if reply == QMessageBox.Yes:
-            deleted_activity = self.activities.pop(current_index)
-            self.update_activity_list()
-            
-            # Zapisz aktywności do pliku
-            self.save_activities_to_file()
-            
-            # Usuń aktywność z siatki
-            for row in range(24):
-                for col in range(6):
-                    if (self.grid_data[row][col] is not None and 
-                        isinstance(self.grid_data[row][col], dict) and 
-                        self.grid_data[row][col]["name"] == deleted_activity["name"]):
-                        self.grid_data[row][col] = None
-                        self.squares[row][col].set_activity(None)
-            
-            # Dodaj oznaczenie zmiany danych
-            self.data_changed = True
     
     def update_grid(self):
         for row in range(24):

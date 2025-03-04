@@ -21,7 +21,7 @@ class ColorSquare(QFrame):
         self.row = row
         self.col = col
         self.activity = None
-        self.setFrameShape(QFrame.Box)X
+        self.setFrameShape(QFrame.Box)
         self.setMinimumSize(30, 30)
         self.setMaximumSize(30, 30)
         self.setStyleSheet("background-color: white; border: 1px solid black;")
