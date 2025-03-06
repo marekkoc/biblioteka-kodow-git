@@ -1,6 +1,6 @@
 {
   "created_at": "2025-02-27T15:36:49.288927",
-  "updated_at": "2025-03-05T08:02:59.950272",
+  "updated_at": "2025-03-06T09:47:27.877783",
   "days": {
     "2025-02-27": {
       "Prace-domowe": [
@@ -620,14 +620,129 @@
       "Prace-domowe": [
         {"row": 7, "col": 3},
         {"row": 7, "col": 4},
-        {"row": 7, "col": 5}
+        {"row": 7, "col": 5},
+        {"row": 9, "col": 0},
+        {"row": 11, "col": 4},
+        {"row": 11, "col": 5},
+        {"row": 12, "col": 0},
+        {"row": 16, "col": 2},
+        {"row": 16, "col": 3},
+        {"row": 21, "col": 2}
       ],
       "Dokumenty": [
         {"row": 8, "col": 0},
-        {"row": 8, "col": 1}
+        {"row": 8, "col": 1},
+        {"row": 8, "col": 2},
+        {"row": 9, "col": 1},
+        {"row": 9, "col": 2},
+        {"row": 11, "col": 0},
+        {"row": 11, "col": 1},
+        {"row": 11, "col": 2},
+        {"row": 11, "col": 3}
+      ],
+      "Ja-promocja": [
+        {"row": 8, "col": 3},
+        {"row": 8, "col": 4},
+        {"row": 8, "col": 5}
+      ],
+      "Posilek": [
+        {"row": 9, "col": 3},
+        {"row": 13, "col": 0},
+        {"row": 13, "col": 1},
+        {"row": 13, "col": 2},
+        {"row": 13, "col": 3},
+        {"row": 16, "col": 4},
+        {"row": 16, "col": 5},
+        {"row": 17, "col": 0},
+        {"row": 17, "col": 1},
+        {"row": 17, "col": 2},
+        {"row": 17, "col": 3}
+      ],
+      "Rozwoj-osobisty": [
+        {"row": 9, "col": 4},
+        {"row": 9, "col": 5},
+        {"row": 10, "col": 2},
+        {"row": 10, "col": 3},
+        {"row": 10, "col": 4},
+        {"row": 10, "col": 5},
+        {"row": 15, "col": 4},
+        {"row": 15, "col": 5},
+        {"row": 16, "col": 0},
+        {"row": 16, "col": 1}
+      ],
+      "Nic": [
+        {"row": 10, "col": 0},
+        {"row": 10, "col": 1},
+        {"row": 15, "col": 3}
+      ],
+      "Zycie-towarzyskie": [
+        {"row": 12, "col": 1},
+        {"row": 12, "col": 2},
+        {"row": 13, "col": 4},
+        {"row": 13, "col": 5},
+        {"row": 14, "col": 0},
+        {"row": 14, "col": 1},
+        {"row": 14, "col": 2},
+        {"row": 14, "col": 3},
+        {"row": 14, "col": 4},
+        {"row": 14, "col": 5},
+        {"row": 21, "col": 0},
+        {"row": 21, "col": 1}
+      ],
+      "Praca": [
+        {"row": 12, "col": 3},
+        {"row": 12, "col": 4},
+        {"row": 12, "col": 5},
+        {"row": 17, "col": 4},
+        {"row": 17, "col": 5},
+        {"row": 18, "col": 0},
+        {"row": 18, "col": 1},
+        {"row": 18, "col": 2},
+        {"row": 18, "col": 3},
+        {"row": 18, "col": 4},
+        {"row": 18, "col": 5},
+        {"row": 19, "col": 0},
+        {"row": 19, "col": 1},
+        {"row": 19, "col": 2},
+        {"row": 20, "col": 3},
+        {"row": 20, "col": 4},
+        {"row": 20, "col": 5},
+        {"row": 21, "col": 3},
+        {"row": 21, "col": 4},
+        {"row": 21, "col": 5},
+        {"row": 22, "col": 0},
+        {"row": 22, "col": 1}
+      ],
+      "Zakupy": [
+        {"row": 15, "col": 0},
+        {"row": 15, "col": 1},
+        {"row": 15, "col": 2}
+      ],
+      "Rozrywka": [
+        {"row": 19, "col": 3},
+        {"row": 19, "col": 4},
+        {"row": 19, "col": 5}
+      ],
+      "Zdrowie": [
+        {"row": 20, "col": 0},
+        {"row": 20, "col": 1},
+        {"row": 20, "col": 2}
       ]
     },
     "2025-03-06": {
+      "Prace-domowe": [
+        {"row": 9, "col": 1},
+        {"row": 9, "col": 2},
+        {"row": 9, "col": 3}
+      ],
+      "Dokumenty": [
+        {"row": 9, "col": 4}
+      ],
+      "Posilek": [
+        {"row": 9, "col": 5},
+        {"row": 10, "col": 0},
+        {"row": 10, "col": 1}
+      ]
     }
   }
 }
