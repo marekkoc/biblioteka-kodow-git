@@ -15,9 +15,10 @@ from PyQt5.QtWidgets import (QApplication, QMainWindow, QWidget, QVBoxLayout,
 from PyQt5.QtCore import Qt, QTimer
 from PyQt5.QtGui import QFont, QIcon
 
-from file_paths import FilePaths
-from motto import Motto
-from motto_selector import MottoSelector
+from mkenvs import EnvVars
+from mkquotes import FilePaths
+from mkquotes import QuoteSelector
+
 class QuoteWindow(QMainWindow):
     def __init__(self):
         super().__init__()
@@ -32,13 +33,12 @@ class QuoteWindow(QMainWindow):
         
     def read_quotes(self):
         try:
-            home_dir = Path.home()
-            pth = home_dir / "programy" / "skrypty-git" / "dawka-motywacji" / "cytaty" / "dawka-motywacji"
-            motto_selector = MottoSelector(FilePaths(str(pth)))
-            mottoes = motto_selector.get_mottoes()
-            return mottoes
+            pth = FilePaths("dawka-motywacji")
+            quote_selector = QuoteSelector(pth)
+            quotes = quote_selector.get_quotes()
+            return quotes
         except FileNotFoundError:
-            print(f"Nie znaleziono pliku: {self.filename}")
+            print(f"Nie znaleziono pliku: {str(pth)}")
             return []
 
     def setupSystemTray(self):

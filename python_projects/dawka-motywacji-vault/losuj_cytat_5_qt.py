@@ -14,9 +14,8 @@ from PyQt5.QtWidgets import (QApplication, QMainWindow, QWidget, QVBoxLayout,
 from PyQt5.QtCore import Qt, QTimer
 from PyQt5.QtGui import QFont, QIcon
 
-from file_paths import FilePaths
-from motto import Motto
-from motto_selector import MottoSelector
+from mkquotes import FilePaths
+from mkquotes import QuoteSelector
 
 class QuoteWindow(QMainWindow):
     def __init__(self):
@@ -45,11 +44,10 @@ class QuoteWindow(QMainWindow):
         self.start_work_mode()
 
     def read_quotes(self):      
-        home_dir = Path.home()
-        pth = home_dir / "programy" / "skrypty-git" / "dawka-motywacji" / "cytaty" / "dawka-motywacji"
-        motto_selector = MottoSelector(FilePaths(str(pth)))
-        mottoes = motto_selector.get_mottoes()
-        return mottoes               
+        pth = FilePaths("dawka-motywacji")
+        quote_selector = QuoteSelector(pth)
+        quotes = quote_selector.get_quotes()
+        return quotes               
         
     def setupSystemTray(self):
         # Utworzenie ikony w zasobniku systemowym

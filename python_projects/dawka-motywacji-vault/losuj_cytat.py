@@ -1,10 +1,6 @@
 """
 Klasa do zarządzania plikiem dawka motywacji, np. do konwersji na plik json.
 
-To do: 
-	1. dodać losowanie cytatu do konsoli linuxa
-	2. zmodyfikowac GUI  (losuj-cytat-?-qt.py)
-
 Created: 2025.03.04
 Modified: 2025.03.15
 Author: MK
