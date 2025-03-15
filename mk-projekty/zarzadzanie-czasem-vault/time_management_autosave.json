@@ -1,6 +1,6 @@
 {
   "created_at": "2025-02-27T15:36:49.288927",
-  "updated_at": "2025-03-15T15:25:04.299126",
+  "updated_at": "2025-03-15T22:54:44.931368",
   "days": {
     "2025-02-27": {
       "Prace-domowe": [
@@ -1731,7 +1731,9 @@
         {"row": 8, "col": 4},
         {"row": 8, "col": 5},
         {"row": 10, "col": 5},
-        {"row": 11, "col": 0}
+        {"row": 11, "col": 0},
+        {"row": 17, "col": 4},
+        {"row": 17, "col": 5}
       ],
       "Dokumenty": [
         {"row": 8, "col": 1},
@@ -1751,7 +1753,9 @@
         {"row": 13, "col": 0},
         {"row": 13, "col": 1},
         {"row": 13, "col": 2},
-        {"row": 13, "col": 3}
+        {"row": 13, "col": 3},
+        {"row": 16, "col": 4},
+        {"row": 16, "col": 5}
       ],
       "Rozwoj-osobisty": [
         {"row": 9, "col": 3},
@@ -1760,7 +1764,24 @@
       ],
       "Rozrywka": [
         {"row": 11, "col": 1},
-        {"row": 11, "col": 2}
+        {"row": 11, "col": 2},
+        {"row": 17, "col": 0},
+        {"row": 17, "col": 1},
+        {"row": 17, "col": 2},
+        {"row": 17, "col": 3},
+        {"row": 19, "col": 4},
+        {"row": 19, "col": 5},
+        {"row": 20, "col": 0},
+        {"row": 20, "col": 1},
+        {"row": 20, "col": 2},
+        {"row": 20, "col": 3},
+        {"row": 20, "col": 4},
+        {"row": 20, "col": 5},
+        {"row": 21, "col": 0},
+        {"row": 21, "col": 1},
+        {"row": 21, "col": 2},
+        {"row": 21, "col": 3},
+        {"row": 21, "col": 4}
       ],
       "Praca": [
         {"row": 11, "col": 3},
@@ -1784,7 +1805,34 @@
         {"row": 15, "col": 2},
         {"row": 15, "col": 3},
         {"row": 15, "col": 4},
-        {"row": 15, "col": 5}
+        {"row": 15, "col": 5},
+        {"row": 16, "col": 0},
+        {"row": 19, "col": 0},
+        {"row": 22, "col": 1},
+        {"row": 22, "col": 2},
+        {"row": 22, "col": 3},
+        {"row": 22, "col": 4},
+        {"row": 22, "col": 5}
+      ],
+      "Zakupy": [
+        {"row": 16, "col": 1},
+        {"row": 16, "col": 2},
+        {"row": 16, "col": 3},
+        {"row": 19, "col": 1},
+        {"row": 19, "col": 2},
+        {"row": 19, "col": 3}
+      ],
+      "Zdrowie": [
+        {"row": 18, "col": 0},
+        {"row": 18, "col": 1},
+        {"row": 18, "col": 2},
+        {"row": 18, "col": 3},
+        {"row": 18, "col": 4},
+        {"row": 18, "col": 5}
+      ],
+      "Zycie-towarzyskie": [
+        {"row": 21, "col": 5},
+        {"row": 22, "col": 0}
       ]
     },
     "2025-03-16": {
