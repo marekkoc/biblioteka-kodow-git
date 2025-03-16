@@ -1,5 +1,6 @@
+#!/home/marek/miniconda3/envs/py312/bin/python
 """
-Klasa do zarządzania plikiem dawka motywacji, np. do konwersji na plik json.
+Losuje cytat z pliku np. dawka-motywacji.json
 
 Created: 2025.03.04
 Modified: 2025.03.15
@@ -13,11 +14,8 @@ from mkquotes import Txt2JsonConverter
 from mkquotes import QuoteSelector
 
 if __name__ == "__main__":
-
-    quote_selector = QuoteSelector(FilePaths("dawka-motywacji"))
-    print(quote_selector.random_quote())
-    
-    if 0:
+           
+    def test1():
         names = ["dawka-motywacji", "52-notatki", "2007_Ruiz_Cztery-umowy"]
         for name in names:
             print("*"*100)
@@ -46,3 +44,11 @@ if __name__ == "__main__":
                 print(f"   {k+1}. {cytat}")
             print("-"*100)
             print()
+
+    def main():
+        print()
+        quote_selector = QuoteSelector(FilePaths("dawka-motywacji"))
+        print(quote_selector.random_quote())
+        print()
+
+    main()  

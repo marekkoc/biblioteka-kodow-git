@@ -7,7 +7,8 @@ Author: MK
 import subprocess
 from pathlib import Path
 
-from .quote_file_paths import FilePaths
+from .quote_file_paths import FilePaths  # Import względny dla użycia jako pakiet
+
 
 class Odt2TxtConverter:
         
@@ -50,14 +51,17 @@ class Odt2TxtConverter:
 
 
 if __name__ == "__main__":
-
-    names = ["dawka-motywacji", "52-notatki", "2007_Ruiz_Cztery-umowy"] 
-    for name in names:
-        print(f"\n\"{name}\":")
-        file_paths = FilePaths(name)
-
-        odt_converter = Odt2TxtConverter(file_paths)
-        odt_converter.odt_2_txt()
+    
+    def main():
+        names = ["dawka-motywacji", "52-notatki", "2007_Ruiz_Cztery-umowy"] 
+        for name in names:
+            print(f"\n\"{name}\":")
+            file_paths = FilePaths(name)
+            
+            odt_converter = Odt2TxtConverter(file_paths)
+            odt_converter.odt_2_txt()
+    
+    main()
 
 
 

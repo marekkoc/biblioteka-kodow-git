@@ -20,29 +20,29 @@ class EnvVars:
         return cls.env_vars[var_name]
     
     @classmethod
-    def get_mk_projekty(cls):
-        if "MK_PROJEKTY" not in cls.env_vars:
-            raise KeyError("Zmienna środowiskowa MK_PROJEKTY nie istnieje")
-        return cls.get_env_var("MK_PROJEKTY")
+    def get_python_projects(cls):
+        if "PYTHON_PROJECTS" not in cls.env_vars:
+            raise KeyError("Zmienna środowiskowa PYTHON_PROJECTS nie istnieje")
+        return cls.get_env_var("PYTHON_PROJECTS")
 
     @classmethod
-    def get_mk_pakiety(cls):
-        if "MK_PAKIETY" not in cls.env_vars:
-            raise KeyError("Zmienna środowiskowa MK_PAKIETY nie istnieje")
-        return cls.get_env_var("MK_PAKIETY")
+    def get_python_packages(cls):
+        if "PYTHON_PACKAGES" not in cls.env_vars:
+            raise KeyError("Zmienna środowiskowa PYTHON_PACKAGES nie istnieje")
+        return cls.get_env_var("PYTHON_PACKAGES")
      
     @classmethod
-    def get_mk_cytaty(cls):
-        if "MK_CYTATY" not in cls.env_vars:
-            raise KeyError("Zmienna środowiskowa MK_CYTATY nie istnieje")
-        return cls.get_env_var("MK_CYTATY")
+    def get_python_quotes(cls):
+        if "PYTHON_QUOTES" not in cls.env_vars:
+            raise KeyError("Zmienna środowiskowa PYTHON_QUOTES nie istnieje")
+        return cls.get_env_var("PYTHON_QUOTES")
 
 
 if __name__ == "__main__":
     print()
-    print(EnvVars.get_mk_projekty())
-    print(EnvVars.get_mk_pakiety())
-    print(EnvVars.get_mk_cytaty())
+    print(EnvVars.get_python_projects())
+    print(EnvVars.get_python_packages())
+    print(EnvVars.get_python_quotes())
     print()
 
 

@@ -8,6 +8,7 @@ import json
 import datetime
 from pathlib import Path
 
+
 from .quote import Quote
 from .quote_file_paths import FilePaths
 from .quote_manager_io import QuoteManagerIO
@@ -118,17 +119,18 @@ class Txt2JsonConverter(QuoteManagerIO):
 
 if __name__ == "__main__":
 
-    names = ["dawka-motywacji", "52-notatki", "2007_Ruiz_Cztery-umowy"]
-    print()
-    for name in names:
-        print(f"\"{name}\":")
-        file_paths = FilePaths(name)
-        raw_file = Txt2JsonConverter(file_paths)    
-        for key, value in raw_file.meta_data.items():
-            print(f"\t{key}: {value}")
-            
-        raw_file.save_to_json()
+    def main():
+        names = ["dawka-motywacji", "52-notatki", "2007_Ruiz_Cztery-umowy"]
         print()
+        for name in names:
+            print(f"\"{name}\":")
+            file_paths = FilePaths(name)
+            raw_file = Txt2JsonConverter(file_paths)    
+            for key, value in raw_file.meta_data.items():
+                print(f"\t{key}: {value}")
+                
+            raw_file.save_to_json()
+            print()
     print()
 
 
