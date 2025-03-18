@@ -1,0 +1,5 @@
+2025.03.01:
+
+drugi katalog do ktorego nalezy przeniesc kody gdy program bedzie juz ustabilizowany i dojrzaly:
+
+	/home/marek/biblioteka-repozytoriow/biblioteka-kodow/mk-projekty/dawka-motywacji

@@ -1,6 +1,6 @@
 {
   "created_at": "2025-02-27T15:36:49.288927",
-  "updated_at": "2025-03-18T10:27:21.813259",
+  "updated_at": "2025-03-18T13:01:21.043960",
   "days": {
     "2025-02-27": {
       "Prace-domowe": [
@@ -2057,11 +2057,36 @@
         {"row": 9, "col": 4},
         {"row": 9, "col": 5},
         {"row": 10, "col": 2},
-        {"row": 10, "col": 3}
+        {"row": 10, "col": 3},
+        {"row": 10, "col": 4},
+        {"row": 12, "col": 1},
+        {"row": 12, "col": 5}
       ],
       "Posilek": [
         {"row": 10, "col": 0},
         {"row": 10, "col": 1}
+      ],
+      "Dokumenty": [
+        {"row": 10, "col": 5},
+        {"row": 11, "col": 0},
+        {"row": 11, "col": 5},
+        {"row": 12, "col": 0}
+      ],
+      "Rozwoj-osobisty": [
+        {"row": 11, "col": 1},
+        {"row": 11, "col": 2},
+        {"row": 11, "col": 3},
+        {"row": 11, "col": 4},
+        {"row": 12, "col": 2},
+        {"row": 12, "col": 3}
+      ],
+      "Rozrywka": [
+        {"row": 12, "col": 4}
+      ],
+      "Praca": [
+        {"row": 13, "col": 0},
+        {"row": 13, "col": 1},
+        {"row": 13, "col": 2}
       ]
     },
     "2025-03-19": {
