@@ -6,10 +6,6 @@ from MainWindow_13 import Ui_MainWindow
 
 
 
-
-
-
-
 if __name__ == "__main__":
     import sys
     app = QtWidgets.QApplication(sys.argv)

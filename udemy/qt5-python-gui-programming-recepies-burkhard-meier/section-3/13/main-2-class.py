@@ -50,7 +50,7 @@ class MainWindow():
         print(f"Old progressBar: {progress_value}")
 
         new_value = self.ui.lcdNumber.value()
-        self.ui.progressBar.setValue(new_value)
+        self.ui.progressBar.setValue(int(new_value))
         print(f"New progressBar: {progress_value}\n")
 
 
