@@ -1,6 +1,6 @@
 """
 Created: 2025.03.12
-Modified: 2025.03.15
+Modified: 2025.03.18
 Author: MK
 """
 
@@ -12,10 +12,12 @@ class FilePaths:
         self.home_folder = Path.home()
         self.base_folder = Path(base_folder) if base_folder else Path(EnvVars.get_python_quotes())
         self.base_name = base_name
+        self.odt_folder = self.base_folder / 'odt'
+        self.txt_folder = self.base_folder / 'txt'
         self.txt_extension = 'txt'
         self.json_extension = 'json'
-        self.file_path_txt = self.base_folder / f"{self.base_name}.{self.txt_extension}"
-        self.file_path_json = self.base_folder / f"{self.base_name}.{self.json_extension}"
+        self.file_path_txt = self.txt_folder / f"{self.base_name}.{self.txt_extension}"
+        self.file_path_json = self.base_folder / f"{self.base_name}.{self.json_extension}" 
 
 
 if __name__ == "__main__":

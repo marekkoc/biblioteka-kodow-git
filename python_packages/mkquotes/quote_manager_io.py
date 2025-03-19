@@ -13,7 +13,7 @@ from .quote import Quote
 
 class QuoteManagerIO(QuoteManager):
     """
-    Klasa wczytująca i zapisująca motta do pliku JSON.
+    Klasa wczytująca i zapisująca motta do pliku typu JSON.
     """
     def __init__(self, file_paths: FilePaths) -> None:
         super().__init__()
@@ -49,12 +49,15 @@ class QuoteManagerIO(QuoteManager):
         try:
             with open(self.file_paths.file_path_json, 'w', encoding='utf-8') as plik:
                 json.dump(data, plik, ensure_ascii=False, indent=4)
-            print(f'Dane zostały zapisane do pliku \"{self.file_paths.file_path_json}\"')
+            print(f'Dane zapisane do pliku \"{self.file_paths.file_path_json}\"')
         except Exception as e:
             print(f"Wystąpił błąd podczas zapisywania do pliku: {e}")
 
 
 if __name__ == "__main__":
-    file_paths = FilePaths("dawka-motywacji")
-    quote_manager_io = QuoteManagerIO(file_paths)
-    quote_manager_io.save_to_json()
+    def main():
+        file_paths = FilePaths("dawka-motywacji")
+        quote_manager_io = QuoteManagerIO(file_paths)
+        quote_manager_io.save_to_json()
+
+    main()

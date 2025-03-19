@@ -56,7 +56,7 @@ class QuoteSelector(QuoteManagerIO):
     
     def sort_by_count(self) -> None:
         """
-        Sortuje autory po liczbie mott.
+        Sortuje autorow po liczbie mott.
         """    
         self.autors = sorted(self.autors, key=lambda x: self.autor_quote_count[x], reverse=True)
 

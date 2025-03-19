@@ -1,6 +1,6 @@
 """
 Created: 2025.03.10
-Modified: 2025.03.15
+Modified: 2025.03.18
 Author: MK
 """
 
@@ -22,8 +22,9 @@ class Odt2TxtConverter:
         """        
         
         base_name = self.file_paths.base_name
-        base_folder = self.file_paths.base_folder
-        input_file = base_folder / f"{base_name}.odt"
+        odt_folder = self.file_paths.odt_folder
+        txt_folder = self.file_paths.txt_folder
+        input_file = odt_folder / f"{base_name}.odt"
         
         # Sprawdzenie czy plik istnieje
         if not input_file.exists():
@@ -37,7 +38,7 @@ class Odt2TxtConverter:
             # Przeniesienie pliku do katalogu cytaty, jeśli został utworzony w bieżącym katalogu
             output_file = Path(f"{base_name}.txt")
             if output_file.exists():
-                target_path = base_folder / output_file.name
+                target_path = txt_folder / output_file.name
                 output_file.rename(target_path)
                 print(f'Plik: \"{input_file}\" -----> \"{target_path}\"')
             else:

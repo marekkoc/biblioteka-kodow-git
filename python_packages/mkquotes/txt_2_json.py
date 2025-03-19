@@ -1,6 +1,6 @@
 """
 Created: 2025.03.07
-Modified: 2025.03.15
+Modified: 2025.03.18
 Author: MK
 """
 
@@ -133,6 +133,7 @@ if __name__ == "__main__":
             print()
     print()
 
+    main()
 
 
     
