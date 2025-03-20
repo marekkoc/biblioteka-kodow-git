@@ -1,9 +1,9 @@
-﻿data: 2025.03.12
-źródło: Cztery umowy
-autor: Don Miguel Ruiz
-rok: 1997, ed. 2007
-kategoria: książka
-aktualizacja: 2025-03-18, 20:07:48
+﻿* date: 2025.03.12
+* source: Cztery umowy
+* autor: Don Miguel Ruiz
+* year: 1997, ed. 2007
+* category: książka
+* modified: 2025-03-19, 23:29:56
 
 #### Umowa pierwsza: Szanuj swoje słowo (s.37)
 

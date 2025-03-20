@@ -9,6 +9,13 @@ from mkenvs import EnvVars
 
 class FilePaths:
     def __init__(self, base_name: str, base_folder: str | None = None) -> None:
+        """
+        Inicjalizuje obiekt FilePaths.
+
+        Args:
+            base_name (str): Nazwa podstawowa pliku.
+            base_folder (str | None, optional): Ścieżka do folderu bazowego. Domyślnie None.
+        """
         self.home_folder = Path.home()
         self.base_folder = Path(base_folder) if base_folder else Path(EnvVars.get_python_quotes())
         self.base_name = base_name

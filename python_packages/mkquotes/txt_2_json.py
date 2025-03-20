@@ -1,6 +1,6 @@
 """
 Created: 2025.03.07
-Modified: 2025.03.18
+Modified: 2025.03.19
 Author: MK
 """
 
@@ -11,11 +11,11 @@ from pathlib import Path
 
 from .quote import Quote
 from .quote_file_paths import FilePaths
-from .quote_manager_io import QuoteManagerIO
+from .json_saver import JsonSaver
 
 
-class Txt2JsonConverter(QuoteManagerIO):
-    def __init__(self, file_paths: FilePaths) -> None:
+class Txt2JsonConverter():
+    def __init__(self, json_saver: JsonSaver) -> None:
         """
         Klasa wczytuje plik tekstowy. 
 
@@ -24,8 +24,9 @@ class Txt2JsonConverter(QuoteManagerIO):
         Created: 2025.03.10
         Modified: 2025.03.12
         """
-        self.file_paths = file_paths
-        self.file_keys: list[str] = ["data", "zrodlo", "kategoria", "aktualizacja", "wersja", "autor", "rok"]
+        self.json_saver = json_saver    
+        self.file_paths = json_saver.file_paths
+        self.file_keys: list[str] = ["date", "source", "category", "modivied", "version", "autor", "year"]
         # '\xa0'-niełamliwa spacja, '\u200b'-zero-width space, '\u200c'-zero-width non-joiner,
         #  '\u200d'-zero-width joiner, '\u200e'-left-to-right mark
         # '\u200f'-right-to-left mark, '\u202f'-narrow no-break space
@@ -34,6 +35,9 @@ class Txt2JsonConverter(QuoteManagerIO):
         self.lines_content: list[str] = self._load_lines_from_txt()
         self.meta_data: dict[str, str] = self._load_meta_data()
         self.quotes: list[Quote] = self._load_various_atuhor_mottoes()
+        self.json_saver.set_meta_data(self.meta_data)
+        self.json_saver.set_quotes(self.quotes)
+        self.json_saver.save_to_json()
 
     def _load_lines_from_txt(self) -> list[str]:
 
@@ -67,14 +71,16 @@ class Txt2JsonConverter(QuoteManagerIO):
         """
         meta_data = {}
         for linia in self.lines_content:
-            # Normalizujemy tekst przed sprawdzeniem kluczy
-            normalized_line = self._normalize_text(linia.lower())
-            # Dodaj informacje o cytatach do słownika
-            for key in self.file_keys:
-                if normalized_line.startswith(key):
-                    original_key = linia.lower().split(": ")[0].strip().title()
-                    meta_data[original_key] = linia.lower().split(": ")[1].title().strip()
-                    break
+            if linia.startswith(tuple(["*", " *", "  *"])):
+                linia = linia.strip().strip("*").strip()
+                # Normalizujemy tekst przed sprawdzeniem kluczy
+                #normalized_line = self._normalize_text(linia.lower())
+                # Dodaj informacje o cytatach do słownika
+                #for key in self.file_keys:
+                 #   if normalized_line.startswith(key.lower()):
+                print(linia)
+                original_key = linia.lower().split(": ")[0].strip().title()
+                meta_data[original_key] = linia.lower().split(": ")[1].title().strip()
         return meta_data
 
     def _load_various_atuhor_mottoes(self) -> list[Quote]:
@@ -91,7 +97,7 @@ class Txt2JsonConverter(QuoteManagerIO):
             linia = linia.strip()  # usuń białe znaki z początku i końca
 
             # Pomiń puste linie
-            if not linia or linia.startswith("#"):
+            if not linia or linia.startswith(tuple(["#", "*", " *", "  *"])):
                 continue
 
             # Pomijamy meta dane
@@ -124,12 +130,15 @@ if __name__ == "__main__":
         print()
         for name in names:
             print(f"\"{name}\":")
+            
             file_paths = FilePaths(name)
-            raw_file = Txt2JsonConverter(file_paths)    
+            json_saver = JsonSaver(file_paths)
+            raw_file = Txt2JsonConverter(json_saver) 
+
             for key, value in raw_file.meta_data.items():
                 print(f"\t{key}: {value}")
                 
-            raw_file.save_to_json()
+            json_saver.save_to_json()
             print()
     print()
 

@@ -1,7 +1,7 @@
-﻿Data: 2025.03.10
-źródło: dawka motywacji
-kategoria: rożne
-aktualizacja: 11.03.2025, 20:07:47
+﻿* date: 2025.03.10
+* source: dawka motywacji
+* category: rożne
+* modified: 11.03.2025, 23:29:55
 
 
 Pamiętaj, iż twoja własna determinacja, by osiągnąć sukces, liczy się bardziej, niż cokolwiek innego na świecie.
@@ -7296,14 +7296,14 @@ Johann Wolfgang von Goethe
 Głównym powodem porażki i nieszczęścia jest wymienianie tego, czego najbardziej pragniesz na to, czego pragniesz teraz.
 Zig Ziglar
 
-„Kim się stajemy zależy od tego, co czytamy kiedy zakończymy już standardową edukację. Najlepszym uniwersytetem ze wszystkich jest kolekcja książek”.
+Kim się stajemy zależy od tego, co czytamy kiedy zakończymy już standardową edukację. Najlepszym uniwersytetem ze wszystkich jest kolekcja książek.
 Thomas Carlyle
 
 
 Ponosiłem porażkę za porażką - to dlatego osiągnąłem sukces
 Michael Jordan
 
-*** Niezdecydowanie jest największą chorobą ***
+Niezdecydowanie jest największą chorobą
 Johann Wolfgang von Goethe
 
 Bogaci wybierają, by płacono im w oparciu o rezultaty, jakie uzyskują w pracy. Biedni chcą, by płacono im za spędzony w niej czas.
@@ -7706,7 +7706,7 @@ Joseph Lawton Collins
 Zmień się zanim będziesz musiał
 Jack Welch
 
-"Niemożliwe" to słowo dla głupców!
+„Niemożliwe" to słowo dla głupców!
 Napoleon Bonaparte
 
 Sposobem na zaczęcie jest skończenie mówienia i podjęcie działania.

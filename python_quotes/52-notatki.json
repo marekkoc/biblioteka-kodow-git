@@ -1,33 +1,19 @@
 {
     "meta_data": {
-        "Data": "2025.03.10",
-        "Źródło": "52 Notatki",
-        "Kategoria": "Rożne",
-        "Aktualizacja": "2025-03-18 21:01"
+        "Date": "2025.03.10",
+        "Source": "52 Notatki",
+        "Category": "Rożne",
+        "Modified": "2025-03-19 23:47",
+        "Number_of_autors": 5,
+        "Number_of_quotes": 30
     },
     "quotes": [
         {
-            "tekst": "Najlepsza zbroja chroniąca przed starością to dobrze spędzone życie.",
-            "autor": "Charlie Munger"
-        },
-        {
-            "tekst": "Jeśli chodzi o umiejętności, ilość często przewyższa jakość. Lepiej jest być dobrym w dwóch uzupełniających się umiejętnościach niż być doskonałym w jednej.(książka: Jak ponieść porażkę prawie we wszystkim i nadal wygrywać) (2023.02.11).",
-            "autor": "Scott Adams"
-        },
-        {
-            "tekst": "Zbiór umiejętności jakie gromadzimy jest naszym najcenniejszym aktywem, które możemy dowolnie rozwijać i rozbudowywać. To ich unikatowe połączenie jest tu kluczem do sukcesu, a nie dalsza specjalizacja w wąskim zakresie. (2023.02.11).",
+            "tekst": "Nowe umiejętności są jak klocki lego - czasem lepszy efekt uzyskuje się z wielu małych elementów niż z kilku dużych. (2023.02.11).",
             "autor": "Przemek Gerschmann"
         },
         {
-            "tekst": "Dużo trudniejsze od wstania rano jest wcześniejsze położenie się do snu. Zawsze się znajdzie coś, co jeszcze chcemy dziś zrobić, poszukać i obejrzeć. (2024.05.11).",
-            "autor": "Przemek Gerschmann"
-        },
-        {
-            "tekst": "Na początku trudno jest określić, co dokładnie będziemy robić za kilka lat czy dekad. Nasz dokładny kurs można wyznaczyć dopiero, gdy już wypłyniemy w drogę, a nie z poziomu bezpiecznego portu. (2024.06.22).",
-            "autor": "Przemek Gerschmann"
-        },
-        {
-            "tekst": "Jestem fanem weekendowych projektów i dodatkowych aktywności zawodowych. Dzięki nim możemy próbować nowych rzeczy bez porzucania głównej ścieżki kariery. Zyskujemy doświadczenie i dajemy sobie szansę, aby zrobić coś innego. (2024.06.22).",
+            "tekst": "Nawet osoby z długą listą sukcesów czasem robią coś bardzo głupiego. I może to być na tyle duża rzecz, że jest w stanie zrujnować ich całe życie. Weźmy choćby jazdę autem po alkoholu, romans w pracy czy wydawanie oszczędności na hazard. Dlatego oprócz podejmowania dobrych decyzji, trzeba umieć bronić się przed tymi złymi.",
             "autor": "Przemek Gerschmann"
         },
         {
@@ -35,20 +21,36 @@
             "autor": "Przemek Gerschmann"
         },
         {
-            "tekst": "Oryginalność znowu będzie w cenie. […] Najdroższe zegarki są robione ręcznie i trzeba je codziennie nakręcać, a te składane w fabryce, z baterią na 10 lat kosztują kilka złotych i są ich tysiące. (2023.04.15).",
+            "tekst": "Nic nie jest dane za darmo, ani na zawsze.",
             "autor": "Przemek Gerschmann"
         },
         {
-            "tekst": "Zazdrość, zawiść, zemsta i użalanie się nad sobą to zgubne sposoby myślenia. Zwłaszcza użalanie się nad sobą to absurdalny sposób zachowania, który nie poprawi sytuacji. Życie przyniesie Ci straszne i niesprawiedliwe ciosy.",
-            "autor": "Charlie Munger"
-        },
-        {
-            "tekst": "W całym moim życiu nie spotkałem mądrych ludzi, którzy nie czytają dużo. Żadnego, zero. Zdziwiłbyś się, ile czyta Warren i ile ja czytam. Moje dzieci śmieją się ze mnie, mówią, że jestem książką z kilkoma wystającymi nogami.",
-            "autor": "Charlie Munger"
+            "tekst": "Zbiór umiejętności jakie gromadzimy jest naszym najcenniejszym aktywem, które możemy dowolnie rozwijać i rozbudowywać. To ich unikatowe połączenie jest tu kluczem do sukcesu, a nie dalsza specjalizacja w wąskim zakresie. (2023.02.11).",
+            "autor": "Przemek Gerschmann"
         },
         {
             "tekst": "Ludzie starają się być mądrzy – ja staram się przede wszystkim nie być idiotą. To trudniejsze niż większość myśli.",
             "autor": "Charlie Munger"
+        },
+        {
+            "tekst": "Musisz potrafić znaleźć jak najlepsze rozwiązanie, zrealizować je szybko i niskim kosztem. Produktywność to bardzo ważny temat. (2023.02.11).",
+            "autor": "Przemek Gerschmann"
+        },
+        {
+            "tekst": "Jeśli chodzi o umiejętności, ilość często przewyższa jakość. Lepiej jest być dobrym w dwóch uzupełniających się umiejętnościach niż być doskonałym w jednej.(książka: Jak ponieść porażkę prawie we wszystkim i nadal wygrywać) (2023.02.11).",
+            "autor": "Scott Adams"
+        },
+        {
+            "tekst": "Staram się pozbyć ze swojego otoczenia osób, które zawsze pewnie odpowiadają na pytania, o których nie mają zielonego pojęcia.",
+            "autor": "Charlie Munger"
+        },
+        {
+            "tekst": "Najlepsza zbroja chroniąca przed starością to dobrze spędzone życie.",
+            "autor": "Charlie Munger"
+        },
+        {
+            "tekst": "Oryginalność znowu będzie w cenie. […] Najdroższe zegarki są robione ręcznie i trzeba je codziennie nakręcać, a te składane w fabryce, z baterią na 10 lat kosztują kilka złotych i są ich tysiące. (2023.04.15).",
+            "autor": "Przemek Gerschmann"
         },
         {
             "tekst": "Najlepszą metodą zapewniającą przetrwanie, jest rozwój. (2024.05.11).",
@@ -59,51 +61,11 @@
             "autor": "Charlie Munger"
         },
         {
-            "tekst": "Jeśli nie potrafisz się czymś bardzo zainteresować, to nie sądzę, że odniesiesz w tym duży sukces, nawet jeśli jesteś dość mądry. Mi się to nigdy nie przydarzyło.",
-            "autor": "Charlie Munger"
-        },
-        {
-            "tekst": "Mądrzy ludzie nie są zwolnieni od zawodowych wpadek wynikających z nadmiernej pewności siebie.",
-            "autor": "Charlie Munger"
-        },
-        {
-            "tekst": "Spędzaj każdy dzień starając się być choć trochę mądrzejszy niż byłeś wczoraj. Wypełniaj swoje obowiązki wiernie i dobrze. Większość ludzi dostaje to, na co zasługuje, jeśli pożyje wystarczająco długo.",
-            "autor": "Charlie Munger"
-        },
-        {
             "tekst": "Jakość pamięta się o wiele dłużej niż cenę. (2024.06.22).",
             "autor": "Aldo Gucci"
         },
         {
-            "tekst": "Nawet osoby z długą listą sukcesów czasem robią coś bardzo głupiego. I może to być na tyle duża rzecz, że jest w stanie zrujnować ich całe życie. Weźmy choćby jazdę autem po alkoholu, romans w pracy czy wydawanie oszczędności na hazard. Dlatego oprócz podejmowania dobrych decyzji, trzeba umieć bronić się przed tymi złymi.",
-            "autor": "Przemek Gerschmann"
-        },
-        {
-            "tekst": "Staram się pozbyć ze swojego otoczenia osób, które zawsze pewnie odpowiadają na pytania, o których nie mają zielonego pojęcia.",
-            "autor": "Charlie Munger"
-        },
-        {
-            "tekst": "Nie sprzedawaj niczego, czego sam byś nie kupił. Nie pracuj dla nikogo, kogo nie szanujesz i nie podziwiasz.",
-            "autor": "Charlie Munger"
-        },
-        {
-            "tekst": "Umiejętność tworzenia i sprzedawania. […] nawet przeciętna umiejętność sprzedaży gwałtownie zwiększy nasze szanse na sukces. (2023.02.11).",
-            "autor": "Przemek Gerschmann"
-        },
-        {
-            "tekst": "Musisz potrafić znaleźć jak najlepsze rozwiązanie, zrealizować je szybko i niskim kosztem. Produktywność to bardzo ważny temat. (2023.02.11).",
-            "autor": "Przemek Gerschmann"
-        },
-        {
-            "tekst": "Więcej umiejętności to więcej szans na powodzenie, więcej ofert pracy, na które możemy zaaplikować czy możliwości biznesowych, które jesteśmy w stanie zrealizować. (2023.02.11).",
-            "autor": "Przemek Gerschmann"
-        },
-        {
-            "tekst": "Nowe umiejętności są jak klocki lego - czasem lepszy efekt uzyskuje się z wielu małych elementów niż z kilku dużych. (2023.02.11).",
-            "autor": "Przemek Gerschmann"
-        },
-        {
-            "tekst": "Nie ma dróg na skróty. To, co nas interesuje przychodzi nam z lekkością, nawet jeśli dla innych jest trudne.",
+            "tekst": "Jestem fanem weekendowych projektów i dodatkowych aktywności zawodowych. Dzięki nim możemy próbować nowych rzeczy bez porzucania głównej ścieżki kariery. Zyskujemy doświadczenie i dajemy sobie szansę, aby zrobić coś innego. (2024.06.22).",
             "autor": "Przemek Gerschmann"
         },
         {
@@ -111,20 +73,60 @@
             "autor": "Katsushika Hokusai"
         },
         {
+            "tekst": "Zazdrość, zawiść, zemsta i użalanie się nad sobą to zgubne sposoby myślenia. Zwłaszcza użalanie się nad sobą to absurdalny sposób zachowania, który nie poprawi sytuacji. Życie przyniesie Ci straszne i niesprawiedliwe ciosy.",
+            "autor": "Charlie Munger"
+        },
+        {
             "tekst": "Zła wiadomość obiega cały świat nim dobra wyjdzie z domu. (2023.04.15).",
             "autor": "Przemek Gerschmann"
+        },
+        {
+            "tekst": "W całym moim życiu nie spotkałem mądrych ludzi, którzy nie czytają dużo. Żadnego, zero. Zdziwiłbyś się, ile czyta Warren i ile ja czytam. Moje dzieci śmieją się ze mnie, mówią, że jestem książką z kilkoma wystającymi nogami.",
+            "autor": "Charlie Munger"
+        },
+        {
+            "tekst": "Dużo trudniejsze od wstania rano jest wcześniejsze położenie się do snu. Zawsze się znajdzie coś, co jeszcze chcemy dziś zrobić, poszukać i obejrzeć. (2024.05.11).",
+            "autor": "Przemek Gerschmann"
+        },
+        {
+            "tekst": "Spędzaj każdy dzień starając się być choć trochę mądrzejszy niż byłeś wczoraj. Wypełniaj swoje obowiązki wiernie i dobrze. Większość ludzi dostaje to, na co zasługuje, jeśli pożyje wystarczająco długo.",
+            "autor": "Charlie Munger"
+        },
+        {
+            "tekst": "Jeśli nie potrafisz się czymś bardzo zainteresować, to nie sądzę, że odniesiesz w tym duży sukces, nawet jeśli jesteś dość mądry. Mi się to nigdy nie przydarzyło.",
+            "autor": "Charlie Munger"
+        },
+        {
+            "tekst": "Nie sprzedawaj niczego, czego sam byś nie kupił. Nie pracuj dla nikogo, kogo nie szanujesz i nie podziwiasz.",
+            "autor": "Charlie Munger"
         },
         {
             "tekst": "Przede wszystkim nie negować czegoś tylko dlatego, że jest inne, nieznane, że tego nie rozumiemy albo nam się nie podoba. Nowe rzeczy są trudne. Dlatego sam staram się robić drugie podejście, nawet jeśli za pierwszym coś znanego i polecanego mnie odrzuciło. (2024.05.11).",
             "autor": "Przemek Gerschmann"
         },
         {
-            "tekst": "Nic nie jest dane za darmo, ani na zawsze.",
+            "tekst": "Mądrzy ludzie nie są zwolnieni od zawodowych wpadek wynikających z nadmiernej pewności siebie.",
+            "autor": "Charlie Munger"
+        },
+        {
+            "tekst": "Więcej umiejętności to więcej szans na powodzenie, więcej ofert pracy, na które możemy zaaplikować czy możliwości biznesowych, które jesteśmy w stanie zrealizować. (2023.02.11).",
+            "autor": "Przemek Gerschmann"
+        },
+        {
+            "tekst": "Nie ma dróg na skróty. To, co nas interesuje przychodzi nam z lekkością, nawet jeśli dla innych jest trudne.",
+            "autor": "Przemek Gerschmann"
+        },
+        {
+            "tekst": "Umiejętność tworzenia i sprzedawania. […] nawet przeciętna umiejętność sprzedaży gwałtownie zwiększy nasze szanse na sukces. (2023.02.11).",
             "autor": "Przemek Gerschmann"
         },
         {
             "tekst": "Zawsze mówię prawdę, bo dzięki temu nie muszę pamiętać swoich kłamstw.",
             "autor": "Charlie Munger"
+        },
+        {
+            "tekst": "Na początku trudno jest określić, co dokładnie będziemy robić za kilka lat czy dekad. Nasz dokładny kurs można wyznaczyć dopiero, gdy już wypłyniemy w drogę, a nie z poziomu bezpiecznego portu. (2024.06.22).",
+            "autor": "Przemek Gerschmann"
         }
     ]
 }

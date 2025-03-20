@@ -1,7 +1,7 @@
-﻿Data: 2025.03.10
-źródło: 52 notatki
-kategoria: rożne
-aktualizacja: 2025-03-18, 20:07:47
+﻿* Date: 2025.03.10
+* Source: 52 notatki
+* Category: rożne
+* Modified: 2025-03-19, 23:29:56
 
 Świadomość tego, czego nie wiesz, jest bardziej przydatna niż bycie genialnym. Chciałbym wiedzieć, gdzie umrę, wtedy nigdy bym tam nie poszedł.
 Charlie Munger

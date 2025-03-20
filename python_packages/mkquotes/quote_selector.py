@@ -1,6 +1,6 @@
 """
 Created: 2025.03.10
-Modified: 2025.03.15
+Modified: 2025.03.19
 Author: MK
 """
 
@@ -10,15 +10,18 @@ import random
 
 from .quote import Quote
 from .quote_file_paths import FilePaths
-from .quote_manager_io import QuoteManagerIO
+from .json_loader import JsonLoader
+from .json_saver import JsonSaver
+from .quote_manager import QuoteManager
 
 
-class QuoteSelector(QuoteManagerIO):
+class QuoteSelector(QuoteManager):
     """
     Klasa selektująca motta w pliku JSON.
     """
-    def __init__(self, file_paths: FilePaths) -> None:
-        super().__init__(file_paths)        
+    def __init__(self) -> None:
+        super().__init__()       
+
         self.autor_quote_count = self._count_quotes_for_autor()    
         self.autor_quote_list = self._get_autor_with_quotes()
         self.autors = list(self.autor_quote_count.keys())
@@ -84,7 +87,7 @@ class QuoteSelector(QuoteManagerIO):
     
 if __name__ == "__main__":
     file_paths = FilePaths("2007_Ruiz_Cztery-umowy")
-    quote_selector = QuoteSelector(file_paths)
+    quote_selector = QuoteSelector()
     
     if 1:
         print()

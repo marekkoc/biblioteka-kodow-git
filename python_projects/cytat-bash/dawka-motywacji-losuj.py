@@ -3,7 +3,7 @@
 Author: @marekkoc
 
 Created: 2020.12.15 
-Updated: 2025.03.18
+Updated: 2025.03.19
 """
 
 import os
@@ -15,7 +15,8 @@ from pathlib import Path
 from mkquotes import (
                     Quote,
                     QuoteSelector,
-                    FilePaths
+                    FilePaths,
+                    JsonLoader
                     )
 
 
@@ -32,8 +33,16 @@ from mkquotes import (
 #    # Usuń deterministyczne ustawienie
 #    os.environ.pop('PYTHONHASHSEED', None)
 #    os.execv(sys.executable, [sys.executable] + sys.argv)    
-    
 
-quote_selector = QuoteSelector(FilePaths("dawka-motywacji"))
+# 2025.03.17
+#quote_selector = QuoteSelector(FilePaths("dawka-motywacji"))
+#quote = quote_selector.random_quote()
+#print(f"{quote.tekst}\n  ** {quote.autor} **")
+
+# 2025.03.19
+file_paths = FilePaths("dawka-motywacji")
+json_loader = JsonLoader(file_paths)
+quote_selector = QuoteSelector()
+quote_selector.set_json_loader(json_loader)
 quote = quote_selector.random_quote()
 print(f"{quote.tekst}\n  ** {quote.autor} **")
