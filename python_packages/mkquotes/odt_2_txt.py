@@ -22,12 +22,12 @@ class Odt2TxtConverter:
         """        
         
         base_name = self.file_paths.base_name
-        odt_folder = self.file_paths.odt_folder
-        txt_folder = self.file_paths.txt_folder
-        input_file = odt_folder / f"{base_name}.odt"
+        odt_folder = self.file_paths.odt.odt_folder if self.file_paths.odt else None
+        txt_folder = self.file_paths.txt.txt_folder if self.file_paths.txt else None
+        input_file = odt_folder / f"{base_name}.odt" if odt_folder else None
         
         # Sprawdzenie czy plik istnieje
-        if not input_file.exists():
+        if not input_file:
             raise FileNotFoundError(f"Plik {input_file} nie znaleziony")
         
         try:
@@ -38,9 +38,12 @@ class Odt2TxtConverter:
             # Przeniesienie pliku do katalogu cytaty, jeśli został utworzony w bieżącym katalogu
             output_file = Path(f"{base_name}.txt")
             if output_file.exists():
-                target_path = txt_folder / output_file.name
-                output_file.rename(target_path)
-                print(f'Plik: \"{input_file}\" -----> \"{target_path}\"')
+                if self.file_paths.txt:
+                    target_path: Path = self.file_paths.txt.txt_folder / output_file.name
+                    output_file.rename(target_path)
+                    print(f'   Plik: \"{input_file.name}\" -----> \"./{self.file_paths.txt.txt_folder.name}/{target_path.name}\"')
+                else:
+                    print(f"Nie można przenieść pliku - brak skonfigurowanego katalogu TXT")
             else:
                 print("Konwersja zakończona, ale nie znaleziono pliku wyjściowego")
                 

@@ -40,10 +40,13 @@ class Txt2JsonConverter():
         self.json_saver.save_to_json()
 
     def _load_lines_from_txt(self) -> list[str]:
-
         """
         Metoda wczytuje zawartość pliku tekstowego.
         """       
+        # Sprawdzenie czy ścieżka do pliku istnieje
+        if self.file_paths.file_path_txt is None:
+            raise FileNotFoundError("Ścieżka do pliku tekstowego nie jest zdefiniowana")
+        
         # Sprawdzenie czy plik istnieje
         if not self.file_paths.file_path_txt.exists():
             raise FileNotFoundError(f"Plik {self.file_paths.file_path_txt} nie znaleziony")       
@@ -78,7 +81,7 @@ class Txt2JsonConverter():
                 # Dodaj informacje o cytatach do słownika
                 #for key in self.file_keys:
                  #   if normalized_line.startswith(key.lower()):
-                print(linia)
+                print(f"\t{linia}")
                 original_key = linia.lower().split(": ")[0].strip().title()
                 meta_data[original_key] = linia.lower().split(": ")[1].title().strip()
         return meta_data
@@ -131,14 +134,13 @@ if __name__ == "__main__":
         for name in names:
             print(f"\"{name}\":")
             
-            file_paths = FilePaths(name)
+            file_paths = FilePaths(name, create="json-txt")
             json_saver = JsonSaver(file_paths)
             raw_file = Txt2JsonConverter(json_saver) 
 
-            for key, value in raw_file.meta_data.items():
-                print(f"\t{key}: {value}")
-                
-            json_saver.save_to_json()
+            #for key, value in raw_file.meta_data.items():
+            #    print(f"\t{key}: {value}")
+            
             print()
     print()
 

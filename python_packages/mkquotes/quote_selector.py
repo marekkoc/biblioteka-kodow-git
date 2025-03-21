@@ -86,10 +86,18 @@ class QuoteSelector(QuoteManager):
     
     
 if __name__ == "__main__":
-    file_paths = FilePaths("2007_Ruiz_Cztery-umowy")
-    quote_selector = QuoteSelector()
-    
-    if 1:
+
+    def main():
+        print()
+        file_paths = FilePaths("2007_Ruiz_Cztery-umowy", create="json")
+        quote_selector = QuoteSelector()
+        quote_selector.set_json_loader(JsonLoader(file_paths))
+        print(quote_selector.random_quote())
+        print()
+    def test():
+        file_paths = FilePaths("2007_Ruiz_Cztery-umowy")
+        quote_selector = QuoteSelector()
+     
         print()
         print(f"Liczba autorów: {quote_selector.get_number_of_autors()}")
         print(f"Liczba mott: {quote_selector.get_number_of_quotes()}")
@@ -114,7 +122,6 @@ if __name__ == "__main__":
             print(f"{autor}: {quote_selector.autor_quote_count[autor]}")
         print("-"*100)
 
-    if 1:
         print(quote_selector.random_quote())
         print("-"*100)
 
@@ -126,7 +133,7 @@ if __name__ == "__main__":
         print("-"*100)
 
 
- 
+    main()
     
 
 

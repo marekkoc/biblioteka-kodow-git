@@ -48,14 +48,18 @@ class QuoteManager:
     
 if __name__ == "__main__":
 
-    for name in ["dawka-motywacji", "52-notatki", "2007_Ruiz_Cztery-umowy"]:
+    def main():
+        print()
+        for name in ["dawka-motywacji", "52-notatki", "2007_Ruiz_Cztery-umowy"]:
+            file_paths = FilePaths(name, create="json")
+            json_loader = JsonLoader(file_paths)
+            json_saver = JsonSaver(file_paths)
 
-        file_paths = FilePaths(name)
-        json_loader = JsonLoader(file_paths)
-        json_saver = JsonSaver(file_paths)
+            quote_manager = QuoteManager()
 
-        quote_manager = QuoteManager()
+            quote_manager.set_json_loader(json_loader)
+            quote_manager.set_json_saver(json_saver)
+            quote_manager.save_to_json()
 
-        quote_manager.set_json_loader(json_loader)
-        quote_manager.set_json_saver(json_saver)
-        quote_manager.save_to_json()
+    main()
+    print()

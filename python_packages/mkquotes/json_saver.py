@@ -63,9 +63,13 @@ class JsonSaver:
             "quotes": [quote.to_dict() for quote in self.quotes]
         }        
         try:
+            if self.file_paths.file_path_json is None:
+                print("Błąd: Nie można zapisać pliku - ścieżka do pliku JSON nie jest zdefiniowana.")
+                return
+                
             with open(self.file_paths.file_path_json, 'w', encoding='utf-8') as plik:
                 json.dump(data, plik, ensure_ascii=False, indent=4)
-            print(f'Dane zapisane do pliku \"{self.file_paths.file_path_json}\"')
+            print(f'  Zapisano do pliku \"{self.file_paths.file_path_json.name}\"')
         except Exception as e:
             print(f"Wystąpił błąd podczas zapisywania do pliku: {e}")
 
