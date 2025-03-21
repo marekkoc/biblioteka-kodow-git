@@ -1,7 +1,7 @@
 ﻿* Date: 2025.03.10
 * Source: 52 notatki
 * Category: rożne
-* Modified: 2025-03-19, 23:29:56
+* Modified: 2025-03-20, 21:27:24
 
 Świadomość tego, czego nie wiesz, jest bardziej przydatna niż bycie genialnym. Chciałbym wiedzieć, gdzie umrę, wtedy nigdy bym tam nie poszedł.
 Charlie Munger
@@ -92,4 +92,19 @@ Przemek Gerschmann
 
 Dużo trudniejsze od wstania rano jest wcześniejsze położenie się do snu. Zawsze się znajdzie coś, co jeszcze chcemy dziś zrobić, poszukać i obejrzeć. (2024.05.11)
 Przemek Gerschmann
+
+Nasz mózg został stworzony tak, aby jak najbardziej upraszczać i generalizować. (2023.04.08)
+Przemek Gerschmann
+
+Mam złą wiadomość: nie wszyscy będą się zgadzać z Twoimi opiniami i decyzjami. Mam też dobrą: to bez znaczenia. (2023.04.08)
+Richard Feynman
+
+Kiedy zmieniają się fakty, ja zmieniam zdanie. A pan co robi? (2023.04.08)
+John Maynard Keynes
+
+Zamiast wstrzymywać się z osądem do czasu zakończenia wyczerpujących poszukiwań danych, zmuszam się do sporządzenia wstępnej prognozy na podstawie dostępnych informacji. Następnie systematycznie ją rozbrajam, jeśli znajduje nowe informacje albo jeśli ktoś mnie przekona do swojego zdania. (2023.04.08)
+Paul Saffo
+
+Hipoteza jednego dnia polega na opracowaniu propozycji rozwiązania problemu klienta w ciągu pierwszych 24 godzin od jego zdefiniowania. (2023.04.08)
+McKinsey.
 

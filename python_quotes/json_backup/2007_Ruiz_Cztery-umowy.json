@@ -1,95 +1,21 @@
 {
     "meta_data": {
-        "Data": "2025.03.12",
-        "Źródło": "Cztery Umowy",
+        "Date": "2025.03.12",
+        "Source": "Cztery Umowy",
         "Autor": "Don Miguel Ruiz",
-        "Rok": "1997, Ed. 2007",
-        "Kategoria": "Książka",
-        "Aktualizacja": "2025-03-19 20:54"
+        "Year": "1997, Ed. 2007",
+        "Category": "Książka",
+        "Modified": "2025-03-20 21:58",
+        "Number_of_autors": 1,
+        "Number_of_quotes": 43
     },
     "quotes": [
-        {
-            "tekst": "Kiedy szanujesz siebie i swoje słowo, czujesz się dobrze, jesteś spokojny i szczęśliwy. (s. 51).",
-            "autor": "Don Miguel Ruiz"
-        },
-        {
-            "tekst": "Słowo jest potęgą, którą sam tworzysz. (s. 37).",
-            "autor": "Don Miguel Ruiz"
-        },
-        {
-            "tekst": "Słowo jest siłą (s.38).",
-            "autor": "Don Miguel Ruiz"
-        },
-        {
-            "tekst": "Rób wszystko najlepiej jak potrafisz. […]. Jeśli będziesz się starał nadmiernie, stracisz więcej energii niż trzeba, w rezultacie może ci jej zabraknąć. (s. 76).",
-            "autor": "Don Miguel Ruiz"
-        },
-        {
-            "tekst": "Cokolwiek czujesz, cokolwiek myślisz, to twój problem, nie mój. Po prostu tak widzisz świat. Nie ma w tym niczego osobistego, bo rozprawiasz się ze sobą, a nie ze mną. (s. 57).",
-            "autor": "Don Miguel Ruiz"
-        },
-        {
-            "tekst": "Mamy tendencję do stawiania hipotez i przyjmowania założeń odnośnie wszystkiego. Absolutnie wszystkiego. Problem zaś z naszymi założeniami polega na tym, że wierzymy, iż są one prawdziwe. (s. 65).",
-            "autor": "Don Miguel Ruiz"
-        },
-        {
-            "tekst": "Poprzez słowo wyrażasz swoją moc twórczą. Słowem […] wyrażasz wszystko – o czym śnisz, co czujesz i kim naprawdę jesteś – wszystko to objawia się słowem. (s. 38).",
-            "autor": "Don Miguel Ruiz"
-        },
-        {
-            "tekst": "Szanuj swoje słowo. Oto pierwsza umowa, jaką powinieneś zawrzeć, jeśli chcesz podnieść poziom swojego życia ponad poziom właściwy dla piekła. Tak wyzwala się ogromna moc. Posługuj się słowem poprawnie. Używaj go, by dzielić się miłością. (s. 52).",
-            "autor": "Don Miguel Ruiz"
-        },
-        {
-            "tekst": "Zakładamy, że każdy widzi życie w taki sposób, w jaki my je widzimy. (s. 69).",
-            "autor": "Don Miguel Ruiz"
-        },
-        {
-            "tekst": "Cokolwiek dzieje się dookoła ciebie, nie musisz brać tego do siebie (s. 54).",
-            "autor": "Don Miguel Ruiz"
-        },
-        {
-            "tekst": "Jeśli czegoś nie rozumiesz, lepiej spytać i się upewnić, niż snuć domysły i założenia. (s. 72).",
-            "autor": "Don Miguel Ruiz"
-        },
-        {
-            "tekst": "To, co mówisz, co robisz,m co myślisz, wynika z umów, jakie wcześniej zawarłeś. A mnie zupełnie nie dotyczy. Nie ma dla mnie znaczenia, co o mnie myślisz, ponieważ twoich poglądów nie biorę do siebie. (s. 56-57).",
-            "autor": "Don Miguel Ruiz"
-        },
-        {
-            "tekst": "Większość ludzi idzie każdego dnia do pracy wyłącznie z myślą o dniu wypłaty i o pieniądzach, które dostaną za swój trud. Ledwie mogą się doczekać piątku lub soboty, czy też innego dnia, gdy otrzymają pieniądze i trochę wolnego. Pracują dla nagrody, a w rezultacie sabotują pracę. Jak mogą, unikają wysiłku, przez co mają zaległości, a obowiązki stają się jeszcze cięższe. Bo się nie starają. (s. 78).",
-            "autor": "Don Miguel Ruiz"
-        },
-        {
-            "tekst": "Nie rozumiejąc sytuacji, czynimy jakieś założenie, które bierzemy osobiście, do siebie, a w efekcie robimy wielką tragedię z niczego. (s. 66).",
-            "autor": "Don Miguel Ruiz"
-        },
-        {
-            "tekst": "Rób wszystko najlepiej jak potrafisz. […].Po prostu staraj się jak najlepiej – w każdej życiowej sytuacji. Nieważne, czy jesteś chory lub zmęczony. Jeśli zawsze starasz się z całych sił, nie ma mowy, żebyś sam siebie osądzał. A jeśli siebie nie sądzisz, nie ma mowy, żebyś cierpiał z poczucia winy, żebyś miał wyrzuty i żebyś pragnął dla siebie kary. (s. 76-77).",
-            "autor": "Don Miguel Ruiz"
-        },
-        {
-            "tekst": "Rób wszystko najlepiej jak potrafisz. […]. Rano, gdy wstajesz wypoczęty i energiczny, twoje możliwości są o wiele większe niż wieczorem, kiedy jesteś zmęczony. Na więcej się stać, gdy jesteś zdrowy, a nie chory, trzeźwy, nie pijany i – podobnie – kiedy czujesz się doskonale, jesteś szczęśliwy, a nie przygnębiony, zły lub zazdrosny. (s. 76).",
-            "autor": "Don Miguel Ruiz"
-        },
-        {
-            "tekst": "W każdych okolicznościach staraj się na ile możesz, nie mniej, nie więcej. (s. 75).",
-            "autor": "Don Miguel Ruiz"
-        },
         {
             "tekst": "Jeśli weźmiesz [wszystko] do siebie, przyjmiesz również truciznę i od tej pory stanie się twoją. Branie różnych rzeczy do siebie czynie z ciebie łatwą ofiarę dla drapieżników, inaczej czarnoksiężników. Bez trudu mogą cię przygwoździć jednym rzuconym od niechcenia zdaniem, by potem karmić się wszelkimi truciznami, jakimi tylko zechcą. Skoro wziąłeś do siebie jedno, połkniesz wszystko.(s. 56).",
             "autor": "Don Miguel Ruiz"
         },
         {
-            "tekst": "Twoim potrzaskiem jest zjawisko zwane „poczuciem ważności”. Poczucie ważności lub branie wszystkiego do siebie to wyraz najwyższego egoizmu, ponieważ zakładamy, że wszystko dzieje się z naszego powodu. […] Myślimy, że za wszystko jesteśmy odpowiedzialni. Ja, ja, ja i tylko ja! (s.55).",
-            "autor": "Don Miguel Ruiz"
-        },
-        {
             "tekst": "Jeśli inni coś nam mówią, robimy jakieś założenia, a jeśli niczego nie mówią, tym bardziej przyjmujemy założenia, żeby zaspokoić potrzebę posiadania wiedzy i by wypełnić nimi lukę w autentycznej komunikacji. Nawet jeśli słyszymy coś, czego nie rozumiemy, robimy założenia co do znaczenia zasłyszanego, a potem wierzymy własnym założeniom. Tworzymy najprzeróżniejsze hipotezy, bo nie mamy odwagi zadawania pytań wprost. (s. 69).",
-            "autor": "Don Miguel Ruiz"
-        },
-        {
-            "tekst": "Większość naszych założeń podejmujemy szybko i nieświadomie, głównie przez to, że zgodziliśmy się na taką komunikację. (s. 69).",
             "autor": "Don Miguel Ruiz"
         },
         {
@@ -101,7 +27,7 @@
             "autor": "Don Miguel Ruiz"
         },
         {
-            "tekst": "Rób wszystko najlepiej jak potrafisz. […].Bez względu na jakość poczynań, staraj się jak tylko możesz – i to ani więcej, ani mniej, niż potrafisz. Jeśli będziesz starał się nadmiernie, stracisz więcej energii niż trzeba, w rezultacie może ci jej zabraknąć. Przepracowując się, wyniszczasz ciało i działasz wbrew sobie, na własną szkodę. W rezultacie osiągnięcie wyznaczonych celów zabierze ci więcej czasu. Natomiast kiedy starasz się mniej, niż być mógł, narażasz się na frustracje, wyrzuty sumienia, poczucie winy i skruchę. (s. 76).",
+            "tekst": "Rób wszystko najlepiej jak potrafisz. […]. Rano, gdy wstajesz wypoczęty i energiczny, twoje możliwości są o wiele większe niż wieczorem, kiedy jesteś zmęczony. Na więcej się stać, gdy jesteś zdrowy, a nie chory, trzeźwy, nie pijany i – podobnie – kiedy czujesz się doskonale, jesteś szczęśliwy, a nie przygnębiony, zły lub zazdrosny. (s. 76).",
             "autor": "Don Miguel Ruiz"
         },
         {
@@ -109,15 +35,31 @@
             "autor": "Don Miguel Ruiz"
         },
         {
-            "tekst": "Cokolwiek powiesz, mnie to nie dotknie, bo wiem, jaki jestem. (s. 57).",
+            "tekst": "Rób wszystko najlepiej jak potrafisz. W każdych okolicznościach staraj się na ile możesz, nie mniej, nie więcej. Pamiętaj jednak, że „ile możesz” wcale nie oznacza zawsze tego samego. […] toteż twoje największe starania czasem są najwyższej jakości, a czasem bardzo im do tego daleko.(s. 75-76).",
             "autor": "Don Miguel Ruiz"
         },
         {
-            "tekst": "Nawet wtedy, gdy sytuacja wygląda na bardzo osobistą, nawet wtedy, kiedy cię ktoś obraża bezpośrednio, nie ma to nic wspólnego z tobą. To, co ludzie mówią, co robią, jakie wygłaszają opinie, wynika z umów, jakie oni zawarli w swoich umysłach. Ich punkt widzenia odzwierciedla program, jaki im zainstalowano w trakcie udomowienia (s.55).",
+            "tekst": "Twoim potrzaskiem jest zjawisko zwane „poczuciem ważności”. Poczucie ważności lub branie wszystkiego do siebie to wyraz najwyższego egoizmu, ponieważ zakładamy, że wszystko dzieje się z naszego powodu. […] Myślimy, że za wszystko jesteśmy odpowiedzialni. Ja, ja, ja i tylko ja! (s.55).",
             "autor": "Don Miguel Ruiz"
         },
         {
-            "tekst": "Bez względu na jakość poczynań, staraj się jak tylko możesz – i to ani więcej, ani mniej, niż potrafisz. (s. 76).",
+            "tekst": "To, co mówisz, co robisz,m co myślisz, wynika z umów, jakie wcześniej zawarłeś. A mnie zupełnie nie dotyczy. Nie ma dla mnie znaczenia, co o mnie myślisz, ponieważ twoich poglądów nie biorę do siebie. (s. 56-57).",
+            "autor": "Don Miguel Ruiz"
+        },
+        {
+            "tekst": "Mamy potrzebę uzasadniania, wyjaśniania i pojmowania wszystkiego. Zrozumienie daje nam poczucie bezpieczeństwa. Stawiamy miliony pytań, które wymagają odpowiedzi […]. Nieważne, czy odpowiedź jest prawidłowa, już samo jej sformułowanie sprawia, że czujemy się bezpieczni. Dlatego właśnie stale coś zakładamy. (s. 68-69).",
+            "autor": "Don Miguel Ruiz"
+        },
+        {
+            "tekst": "Zakładamy, że każdy widzi życie w taki sposób, w jaki my je widzimy. (s. 69).",
+            "autor": "Don Miguel Ruiz"
+        },
+        {
+            "tekst": "W każdych okolicznościach staraj się na ile możesz, nie mniej, nie więcej. (s. 75).",
+            "autor": "Don Miguel Ruiz"
+        },
+        {
+            "tekst": "Nie jesteś tu po to, by poświęcać swoją radość ani tym bardziej życie. Jesteś po to, by żyć, być szczęśliwym, by kochać. Jeśli możesz wypełnić zadanie w ciągu dwóch godzin medytacji, a zużyjesz zamiast tego osie, zmęczysz się tylko, zagubisz i przestaniesz cieszyć się życiem. Staraj się jak najlepiej, a być może dowiesz się, że bez względu na długość medytacji możesz żyć, kochać i być szczęśliwy. (s.77-78).",
             "autor": "Don Miguel Ruiz"
         },
         {
@@ -125,7 +67,31 @@
             "autor": "Don Miguel Ruiz"
         },
         {
-            "tekst": "Jest wiele metod zadawania sobie bólu, gdy nie lubimy siebie takimi, jakimi jesteśmy. (s. 79).",
+            "tekst": "Cokolwiek powiesz, mnie to nie dotknie, bo wiem, jaki jestem. (s. 57).",
+            "autor": "Don Miguel Ruiz"
+        },
+        {
+            "tekst": "Kiedy bierzesz wszystko do siebie, stale czujesz się obrażony, reagujesz zażartą obroną swych przekonań i wywołujesz konflikt. Robisz z igły widły, ponieważ masz potrzebę posiadania racji i udowodnienia, że inni się mylą. Bardzo walczysz o swoją nieomylność i z całych sił próbujesz narzucić otoczeniu swoje zdanie. (s. 56).",
+            "autor": "Don Miguel Ruiz"
+        },
+        {
+            "tekst": "Rób wszystko najlepiej jak potrafisz. […]. Jeśli będziesz się starał nadmiernie, stracisz więcej energii niż trzeba, w rezultacie może ci jej zabraknąć. (s. 76).",
+            "autor": "Don Miguel Ruiz"
+        },
+        {
+            "tekst": "Rób wszystko najlepiej jak potrafisz. […].Bez względu na jakość poczynań, staraj się jak tylko możesz – i to ani więcej, ani mniej, niż potrafisz. Jeśli będziesz starał się nadmiernie, stracisz więcej energii niż trzeba, w rezultacie może ci jej zabraknąć. Przepracowując się, wyniszczasz ciało i działasz wbrew sobie, na własną szkodę. W rezultacie osiągnięcie wyznaczonych celów zabierze ci więcej czasu. Natomiast kiedy starasz się mniej, niż być mógł, narażasz się na frustracje, wyrzuty sumienia, poczucie winy i skruchę. (s. 76).",
+            "autor": "Don Miguel Ruiz"
+        },
+        {
+            "tekst": "Mamy tendencję do stawiania hipotez i przyjmowania założeń odnośnie wszystkiego. Absolutnie wszystkiego. Problem zaś z naszymi założeniami polega na tym, że wierzymy, iż są one prawdziwe. (s. 65).",
+            "autor": "Don Miguel Ruiz"
+        },
+        {
+            "tekst": "Nie bierz niczego do siebie (s. 54).",
+            "autor": "Don Miguel Ruiz"
+        },
+        {
+            "tekst": "Ludzie niczego nie robią z twojego powodu. Oni robią to ze swojego powodu. Każdy człowiek żyje we własnym śnie, we własnym umyśle. […] Odnosząc wszystko do siebie, zakładamy, że oni wiedzą, co jest w naszym świecie, i tym samym próbujemy wciskać swój świat do ich świata.(s. 55).",
             "autor": "Don Miguel Ruiz"
         },
         {
@@ -133,7 +99,35 @@
             "autor": "Don Miguel Ruiz"
         },
         {
-            "tekst": "Musimy być tacy jacy jesteśmy, i nie powinniśmy tworzyć fałszywego wizerunku. (s. 71).",
+            "tekst": "Większość naszych założeń podejmujemy szybko i nieświadomie, głównie przez to, że zgodziliśmy się na taką komunikację. (s. 69).",
+            "autor": "Don Miguel Ruiz"
+        },
+        {
+            "tekst": "Bez względu na jakość poczynań, staraj się jak tylko możesz – i to ani więcej, ani mniej, niż potrafisz. (s. 76).",
+            "autor": "Don Miguel Ruiz"
+        },
+        {
+            "tekst": "Wielkie mitote tworzy w ludzkim umyśle olbrzymi chaos, który sprawia, że wszystko błędnie interpretujemy i niewłaściwie pojmujemy. Widzimy tylko to, co chcemy widzieć, i słyszymy tylko to, co chcemy słyszeć. Nie odbieramy rzeczy takimi, jakimi są. (s.66-67).",
+            "autor": "Don Miguel Ruiz"
+        },
+        {
+            "tekst": "Cokolwiek dzieje się dookoła ciebie, nie musisz brać tego do siebie (s. 54).",
+            "autor": "Don Miguel Ruiz"
+        },
+        {
+            "tekst": "Jeśli czegoś nie rozumiesz, lepiej spytać i się upewnić, niż snuć domysły i założenia. (s. 72).",
+            "autor": "Don Miguel Ruiz"
+        },
+        {
+            "tekst": "Słowo jest siłą (s.38).",
+            "autor": "Don Miguel Ruiz"
+        },
+        {
+            "tekst": "Kiedy szanujesz siebie i swoje słowo, czujesz się dobrze, jesteś spokojny i szczęśliwy. (s. 51).",
+            "autor": "Don Miguel Ruiz"
+        },
+        {
+            "tekst": "Większość ludzi idzie każdego dnia do pracy wyłącznie z myślą o dniu wypłaty i o pieniądzach, które dostaną za swój trud. Ledwie mogą się doczekać piątku lub soboty, czy też innego dnia, gdy otrzymają pieniądze i trochę wolnego. Pracują dla nagrody, a w rezultacie sabotują pracę. Jak mogą, unikają wysiłku, przez co mają zaległości, a obowiązki stają się jeszcze cięższe. Bo się nie starają. (s. 78).",
             "autor": "Don Miguel Ruiz"
         },
         {
@@ -141,7 +135,7 @@
             "autor": "Don Miguel Ruiz"
         },
         {
-            "tekst": "Kiedy bierzesz wszystko do siebie, stale czujesz się obrażony, reagujesz zażartą obroną swych przekonań i wywołujesz konflikt. Robisz z igły widły, ponieważ masz potrzebę posiadania racji i udowodnienia, że inni się mylą. Bardzo walczysz o swoją nieomylność i z całych sił próbujesz narzucić otoczeniu swoje zdanie. (s. 56).",
+            "tekst": "Musimy być tacy jacy jesteśmy, i nie powinniśmy tworzyć fałszywego wizerunku. (s. 71).",
             "autor": "Don Miguel Ruiz"
         },
         {
@@ -153,31 +147,39 @@
             "autor": "Don Miguel Ruiz"
         },
         {
-            "tekst": "Ludzie niczego nie robią z twojego powodu. Oni robią to ze swojego powodu. Każdy człowiek żyje we własnym śnie, we własnym umyśle. […] Odnosząc wszystko do siebie, zakładamy, że oni wiedzą, co jest w naszym świecie, i tym samym próbujemy wciskać swój świat do ich świata.(s. 55).",
-            "autor": "Don Miguel Ruiz"
-        },
-        {
             "tekst": "[…] robimy założenie, że druga strona wie, czego chcemy. Dramat nakręca się tak: poczyniliśmy fałszywe założenie, a potem uskładaliśmy na nim całą stertę kolejnych błędnych założeń. (s. 68).",
             "autor": "Don Miguel Ruiz"
         },
         {
-            "tekst": "Wielkie mitote tworzy w ludzkim umyśle olbrzymi chaos, który sprawia, że wszystko błędnie interpretujemy i niewłaściwie pojmujemy. Widzimy tylko to, co chcemy widzieć, i słyszymy tylko to, co chcemy słyszeć. Nie odbieramy rzeczy takimi, jakimi są. (s.66-67).",
+            "tekst": "Szanuj swoje słowo. Oto pierwsza umowa, jaką powinieneś zawrzeć, jeśli chcesz podnieść poziom swojego życia ponad poziom właściwy dla piekła. Tak wyzwala się ogromna moc. Posługuj się słowem poprawnie. Używaj go, by dzielić się miłością. (s. 52).",
             "autor": "Don Miguel Ruiz"
         },
         {
-            "tekst": "Nie jesteś tu po to, by poświęcać swoją radość ani tym bardziej życie. Jesteś po to, by żyć, być szczęśliwym, by kochać. Jeśli możesz wypełnić zadanie w ciągu dwóch godzin medytacji, a zużyjesz zamiast tego osie, zmęczysz się tylko, zagubisz i przestaniesz cieszyć się życiem. Staraj się jak najlepiej, a być może dowiesz się, że bez względu na długość medytacji możesz żyć, kochać i być szczęśliwy. (s.77-78).",
+            "tekst": "Słowo jest potęgą, którą sam tworzysz. (s. 37).",
             "autor": "Don Miguel Ruiz"
         },
         {
-            "tekst": "Nie bierz niczego do siebie (s. 54).",
+            "tekst": "Poprzez słowo wyrażasz swoją moc twórczą. Słowem […] wyrażasz wszystko – o czym śnisz, co czujesz i kim naprawdę jesteś – wszystko to objawia się słowem. (s. 38).",
             "autor": "Don Miguel Ruiz"
         },
         {
-            "tekst": "Mamy potrzebę uzasadniania, wyjaśniania i pojmowania wszystkiego. Zrozumienie daje nam poczucie bezpieczeństwa. Stawiamy miliony pytań, które wymagają odpowiedzi […]. Nieważne, czy odpowiedź jest prawidłowa, już samo jej sformułowanie sprawia, że czujemy się bezpieczni. Dlatego właśnie stale coś zakładamy. (s. 68-69).",
+            "tekst": "Cokolwiek czujesz, cokolwiek myślisz, to twój problem, nie mój. Po prostu tak widzisz świat. Nie ma w tym niczego osobistego, bo rozprawiasz się ze sobą, a nie ze mną. (s. 57).",
             "autor": "Don Miguel Ruiz"
         },
         {
-            "tekst": "Rób wszystko najlepiej jak potrafisz. W każdych okolicznościach staraj się na ile możesz, nie mniej, nie więcej. Pamiętaj jednak, że „ile możesz” wcale nie oznacza zawsze tego samego. […] toteż twoje największe starania czasem są najwyższej jakości, a czasem bardzo im do tego daleko.(s. 75-76).",
+            "tekst": "Jest wiele metod zadawania sobie bólu, gdy nie lubimy siebie takimi, jakimi jesteśmy. (s. 79).",
+            "autor": "Don Miguel Ruiz"
+        },
+        {
+            "tekst": "Nawet wtedy, gdy sytuacja wygląda na bardzo osobistą, nawet wtedy, kiedy cię ktoś obraża bezpośrednio, nie ma to nic wspólnego z tobą. To, co ludzie mówią, co robią, jakie wygłaszają opinie, wynika z umów, jakie oni zawarli w swoich umysłach. Ich punkt widzenia odzwierciedla program, jaki im zainstalowano w trakcie udomowienia (s.55).",
+            "autor": "Don Miguel Ruiz"
+        },
+        {
+            "tekst": "Nie rozumiejąc sytuacji, czynimy jakieś założenie, które bierzemy osobiście, do siebie, a w efekcie robimy wielką tragedię z niczego. (s. 66).",
+            "autor": "Don Miguel Ruiz"
+        },
+        {
+            "tekst": "Rób wszystko najlepiej jak potrafisz. […].Po prostu staraj się jak najlepiej – w każdej życiowej sytuacji. Nieważne, czy jesteś chory lub zmęczony. Jeśli zawsze starasz się z całych sił, nie ma mowy, żebyś sam siebie osądzał. A jeśli siebie nie sądzisz, nie ma mowy, żebyś cierpiał z poczucia winy, żebyś miał wyrzuty i żebyś pragnął dla siebie kary. (s. 76-77).",
             "autor": "Don Miguel Ruiz"
         }
     ]
