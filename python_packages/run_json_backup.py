@@ -1,6 +1,9 @@
+#! /usr/bin/env python3
 """
+Skrypt testujący. Tworzy kopie zapasowe plików JSON.
+
 Created: 2025.03.20
-Modified: 2025.03.20
+Modified: 2025.03.22
 
 Author: MK
 """

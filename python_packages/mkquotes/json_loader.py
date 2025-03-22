@@ -18,7 +18,10 @@ class JsonLoader:
         self._load_json_file()
 
     def _load_json_file(self) -> None:
-            with open(self.file_paths.file_path_json, 'r') as file:
+            if not self.file_paths.json:
+                raise ValueError("Ścieżki JSON nie są zdefiniowane")
+                
+            with open(self.file_paths.json.json_file, 'r') as file:
                 self.json_file = json.load(file)
             self.quotes = [Quote(**quote) for quote in self.json_file['quotes']]
             self.meta_data = self.json_file['meta_data']

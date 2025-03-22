@@ -1,3 +1,14 @@
+#! /usr/bin/env python3
+
+"""
+Skrypt testujący. Sprawdza działanie klsy do losowego wyboru cytatu.
+
+Created: 2025.03.20
+Modified: 2025.03.22
+
+Author: MK
+"""
+
 from mkquotes.quote_selector import QuoteSelector
 from mkquotes.quote_file_paths import FilePaths
 from mkquotes.json_loader import JsonLoader

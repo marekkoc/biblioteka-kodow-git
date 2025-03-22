@@ -122,7 +122,18 @@ class Txt2JsonConverter():
                 # Dodaj parę cytat-autor do listy i zresetuj zmienne
                 quotes.append(Quote(quote["c"], quote["a"]))
                 quote = {}        
+        
         # usuwamy duplikaty
+        quotes = list(set(quotes))
+        
+        # dodajemy id do cytatów jako liczba całkowita
+        for i, quote in enumerate(quotes, start=1):
+            quote.id = i
+        print(f"  Dodano id do {len(quotes)} cytatów.")
+
+        # sortujemy cytaty po id
+        quotes.sort(key=lambda x: x.id)
+
         return list(set(quotes)).copy()
     
 

@@ -26,7 +26,7 @@ class JsonSaver:
         self.quotes = quotes
         self.number_of_autors = len(set([quote.autor for quote in self.quotes]))     
         self.number_of_quotes = len(self.quotes)  
-    
+        
     def save_to_json(self, **kwargs) -> None:
         """
         Zapisuje metadane i motta do pliku JSON.
@@ -34,6 +34,10 @@ class JsonSaver:
         Args:
             **kwargs: Opcjonalne argumenty słownikowe, które zostaną dodane do meta_data.
             
+            oraz dodatkowo:
+                test_mode=True : gdy True, zapisuje do pliku tmp_name.json
+                test_mode=False : gdy False, zapisuje do pliku base_name.json
+
         Returns:
             None: Funkcja nie zwraca wartości, ale wyświetla komunikat o powodzeniu lub błędzie.
         """
@@ -41,6 +45,16 @@ class JsonSaver:
         if not self.quotes:
             print("Błąd: Nie można zapisać pliku - lista cytatów jest pusta.")
             return
+    
+        if self.file_paths.json is None:
+            print("Błąd: Scieżki do plików JSON nie są zdefiniowane.")
+            return
+        
+        test_mode = kwargs.get('test_mode', False)
+        if test_mode:
+            file_path = self.file_paths.json.json_tmp_file
+        else:
+            file_path = self.file_paths.json.json_file
             
         # Dodanie aktualnej daty i godziny do meta_data
         meta_data = self.meta_data.copy()
@@ -61,15 +75,14 @@ class JsonSaver:
         data = {
             "meta_data": meta_data,
             "quotes": [quote.to_dict() for quote in self.quotes]
-        }        
-        try:
-            if self.file_paths.file_path_json is None:
-                print("Błąd: Nie można zapisać pliku - ścieżka do pliku JSON nie jest zdefiniowana.")
-                return
-                
-            with open(self.file_paths.file_path_json, 'w', encoding='utf-8') as plik:
+        }  
+        
+
+
+        try:                
+            with open(file_path, 'w', encoding='utf-8') as plik:
                 json.dump(data, plik, ensure_ascii=False, indent=4)
-            print(f'  Zapisano do pliku \"{self.file_paths.file_path_json.name}\"')
+            print(f'  Zapisano do pliku \"{file_path.parent.name}/{file_path.name}\"')
         except Exception as e:
             print(f"Wystąpił błąd podczas zapisywania do pliku: {e}")
 

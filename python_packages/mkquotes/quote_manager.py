@@ -1,6 +1,6 @@
 """
 Created: 2025.03.14
-Modified: 2025.03.19
+Modified: 2025.03.22
 Author: MK
 """
 
@@ -35,10 +35,10 @@ class QuoteManager:
         self.json_saver.set_meta_data(self.meta_data)
         self.json_saver.set_quotes(self.quotes)
 
-    def save_to_json(self) -> None:
+    def save_to_json(self, test_mode: bool = False) -> None:
         if self.json_saver is None:
             raise ValueError("JsonSaver is not set")          
-        self.json_saver.save_to_json()
+        self.json_saver.save_to_json(**{'test_mode': test_mode})
 
     def get_number_of_autors(self) -> int:
         return self.number_of_autors

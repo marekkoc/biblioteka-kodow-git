@@ -1,6 +1,10 @@
 """
+Klasa reprezentująca pojedynczy cytat. Klasa bazowa dla innych klas cytatów. 
+
+Klasa zawiera tekst, autora, id oraz liczbę obiektów.
+
 Created: 2025.03.06
-Modified: 2025.03.15
+Modified: 2025.03.22
 Author: MK
 """
 
@@ -10,16 +14,15 @@ class Quote:
 
     Zawiera tekst, autora, id oraz liczbę obiektów.
     """
-    # Zmienna klasowa do śledzenia liczby obiektów
-    liczba_obiektow = 0
-    
-    def __init__(self, tekst: str, autor: str) -> None:
+
+    def __init__(self, tekst: str, autor: str, id: int | None = None) -> None:
         self.tekst: str = tekst
         self.autor: str = autor
-        # Zwiększamy licznik przy tworzeniu nowego obiektu
-        Quote.liczba_obiektow += 1
-        self.id = Quote.liczba_obiektow
 
+        # to jest nick klasy, do zapisu w pliku JSON jako "id"
+        #self.id = id if id is not None else Quote.ostatnie_id
+        self.id = id
+        
     def __str__(self) -> str:
         """
         Zwraca tekstową reprezentację pojedynczego cytatu.
@@ -36,33 +39,21 @@ class Quote:
         """
         Zwraca tekstową reprezentację pojedynczego cytatu.
         """
-        return f"{self.id}) ** {self.tekst} **  -  {self.autor}"
+        return f"** {self.tekst} **  -  {self.autor} ({self.id})"
 
     def to_dict(self) -> dict:
         """
         Konwertuje obiekt Cytat na słownik.
         """
-        return {"tekst": self.tekst, "autor": self.autor}
-    
+        return {"tekst": self.tekst, "autor": self.autor, "id": self.id}
+
     @classmethod
     def from_dict(cls, data: dict) -> 'Quote':
         """
         Tworzy obiekt Quote z słownika.
         """
         return cls(data["tekst"], data["autor"])
-    
-    def __del__(self) -> None:
-        """
-        Destruktor obiektu - zmniejsza licznik obiektów przy usunięciu.
-        """
-        Quote.liczba_obiektow -= 1
-    
-    @classmethod
-    def get_liczba_obiektow(cls) -> int:
-        """
-        Zwraca aktualną liczbę istniejących obiektów klasy Quote.
-        """
-        return cls.liczba_obiektow
+       
     
     def __eq__(self, other: object) -> bool:
         """
@@ -106,7 +97,7 @@ class Quote:
 if __name__ == "__main__":
     quote: Quote  = Quote("Dupa lampa", "Violka")
     print(quote.print_with_id())
-    print(f"Liczba obiektów: {quote.get_liczba_obiektow()}")
+    
    
 
     
