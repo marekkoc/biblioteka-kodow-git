@@ -84,7 +84,8 @@ class QuoteSelector(QuoteManager):
     def get_quotes(self) -> list[Quote]:
         return self.quotes
     
-    
+   
+
 if __name__ == "__main__":
 
     def main():
