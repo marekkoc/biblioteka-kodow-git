@@ -1,9 +1,10 @@
-﻿* date: 2025.03.12
-* source: Cztery umowy
-* autor: Don Miguel Ruiz
-* year: 1997, ed. 2007
-* category: książka
-* modified: 2025-03-22, 12:37:07
+﻿* Date: 2025.03.12
+* Source: Cztery umowy
+* Autor: Don Miguel Ruiz
+* Year: 1997, ed. 2007
+* Category: książka
+* Shortname: 4-umowy
+* Modified: 2025-03-23, 18:51:33
 
 #### Umowa pierwsza: Szanuj swoje słowo (s.37)
 
@@ -117,7 +118,7 @@ Don Miguel Ruiz
 Jeśli czegoś nie rozumiesz, lepiej spytać i się upewnić, niż snuć domysły i założenia. (s. 72)
 Don Miguel Ruiz
 
-# Umowa czwarta: Rób wszystko najlepiej jak potrafisz (s. 75)
+### Umowa czwarta: Rób wszystko najlepiej jak potrafisz (s. 75)
 
 # 75
 Rób wszystko najlepiej jak potrafisz. (s. 75)
@@ -139,7 +140,7 @@ Don Miguel Ruiz
 Rób wszystko najlepiej jak potrafisz. […].Bez względu na jakość poczynań, staraj się jak tylko możesz – i to ani więcej, ani mniej, niż potrafisz. Jeśli będziesz starał się nadmiernie, stracisz więcej energii niż trzeba, w rezultacie może ci jej zabraknąć. Przepracowując się, wyniszczasz ciało i działasz wbrew sobie, na własną szkodę. W rezultacie osiągnięcie wyznaczonych celów zabierze ci więcej czasu. Natomiast kiedy starasz się mniej, niż być mógł, narażasz się na frustracje, wyrzuty sumienia, poczucie winy i skruchę. (s. 76)
 Don Miguel Ruiz
 
-Rób wszystko najlepiej jak potrafisz. […]. Jeśli będziesz się starał nadmiernie, stracisz więcej energii niż trzeba, w rezultacie może ci jej zabraknąć. (s. 76)
+Rób wszystko najlepiej jak potrafisz. […]. Jeśli będziesz się starał nadmiernie, stracisz więcej energii niż trzeba, w rezultacie może ci jej zabraknąć. […] W rezultacie osiągnięcie wyznaczonych celów zabierze ci więcej czasu. (s. 76)
 Don Miguel Ruiz
 
 Rób wszystko najlepiej jak potrafisz. […].Po prostu staraj się jak najlepiej – w każdej życiowej sytuacji. Nieważne, czy jesteś chory lub zmęczony. Jeśli zawsze starasz się z całych sił, nie ma mowy, żebyś sam siebie osądzał. A jeśli siebie nie sądzisz, nie ma mowy, żebyś cierpiał z poczucia winy, żebyś miał wyrzuty i żebyś pragnął dla siebie kary. (s. 76-77)
@@ -156,6 +157,9 @@ Don Miguel Ruiz
 Starając się zawsze ze wszystkich sił, podejmujesz działania. I nie dlatego, że spodziewasz się nagrody, ale dlatego że po prostu to lubisz. (s. 78)
 Don Miguel Ruiz
 
+Większość ludzi […] podejmuje działania tylko wtedy, kiedy spodziewają się nagrody, zupełnie zaś nie potrafią się cieszyć samym faktem, że coś robią.  […] Pracują dla nagrody, a w rezultacie sabotują pracę, […] unikają wysiłku, przez co mają zaległości, a obowiązki stają się jeszcze cięższe. Bo się nie starają. (s. 78)
+Don Miguel Ruiz
+
 Większość ludzi idzie każdego dnia do pracy wyłącznie z myślą o dniu wypłaty i o pieniądzach, które dostaną za swój trud. Ledwie mogą się doczekać piątku lub soboty, czy też innego dnia, gdy otrzymają pieniądze i trochę wolnego. Pracują dla nagrody, a w rezultacie sabotują pracę. Jak mogą, unikają wysiłku, przez co mają zaległości, a obowiązki stają się jeszcze cięższe. Bo się nie starają. (s. 78)
 Don Miguel Ruiz
 
@@ -163,10 +167,120 @@ Don Miguel Ruiz
 Jest wiele metod zadawania sobie bólu, gdy nie lubimy siebie takimi, jakimi jesteśmy. (s. 79)
 Don Miguel Ruiz
 
+Starając się z całych sił, uczysz się akceptować swoją osobę. (s. 79)
+Don Miguel Ruiz
+
 # 80
+
+# 81
+Działanie oznacza życie. Jest podjęciem ryzyka, wyjściem na zewnątrz i wyrażenia swojego marzenie, swojego snu. (s. 81)
+Don Miguel Ruiz
+
+Staranie się ze wszystkich sił to najdoskonalszy nawyk, jaki tylko można posiadać. (s. 81)
+Don Miguel Ruiz
+
+
+# 82
+Najlepszym sposobem na powiedzenie „Dziękuję Ci Boże”, jest pozwolić odejść przeszłości i zacząć żyć w chwili obecnej, tu i teraz. (s. 82)
+Don Miguel Ruiz 
+
+# 84
+Trening czyni mistrza. Starając się z całych sił, ty staniesz się mistrzem. Wszak czegokolwiek się w życiu nauczyłeś, nauczyłeś się dzięki powtórkom. (s.84)
+Don Miguel Ruiz
+
+Musisz ruszyć z miejsca i być człowiekiem. Uszanuj siebie – mężczyznę lub kobietę. (s. 84)
+Don Miguel Ruiz
+
+Odnoś się z respektem do swojego ciała, ciesz się nim, kochaj swoje ciało, karm, myj i lecz swoje ciało. Ćwicz i rób wszystko, by się czuło dobrze. (s. 84)
+Don Miguel Ruiz
+
+# 86
+Upadałem wiele razy, ale podnosiłem się i ruszałem dalej. Wcale sobie nie współczułem. W żadnym wypadku nie rozczulałem się nad sobą. (s. 86)
+Don Miguel Ruiz
+
+Jeśli nawet upadnę, jestem wystarczająco silny, jestem wystarczająco inteligentny, aby wziąć się w garść. (s.86)
+Don Miguel Ruiz
+
+# 87
+A więc kiedy upadniesz, nie osądzaj się. Nie dawaj swojemu Sędziemu satysfakcji uczynienia z ciebie ofiary. Bądź twardy wobec siebie. Powstań i zawrzyj umowę na nowo. „Dobra, złamałem umowę, że będę szanował swoje słowo. Ale zacznę wszystko od początku.” (s. 87)
+Don Miguel Ruiz
+
+# 87
+Jeśli złamiesz przyrzeczenie, zacznij od nowa jutro, i kolejnego dnia. (s. 87)
+Don Miguel Ruiz
+
+# 88
+Nie martw się o przyszłość, skup się na dniu dzisiejszym i trzymaj się chwili obecnej. Po prostu przeżywaj każdy dzień. (s. 88)
+Don Miguel Ruiz
+
 
 ### 6. Zerwanie dotychczasowych umów
 
+# 89
+Prawdziwa wolność jest domeną ducha – jest to wolność bycia tym, kim się jest naprawdę. (s. 89)
+Don Miguel Ruiz
+
+# 91
+Normalnym ludzkim odruchem jest radość życia, zabawa, poznawanie, szczęście i miłość. (s. 91)
+Don Miguel Ruiz
+
+Z punktu widzenia Ofiary możemy powiedzieć, że przydarzyło się nam coś smutnego, natomiast z punku widzenia Rycerza powiedzielibyśmy, że to, co nas spotkało, było normalne. (s. 91)
+Don Miguel Ruiz
+
+Dostaliśmy Księgę Zasad, Wielkiego Sędziego i Ofiarę, którzy nami rządzą. Już nie jesteśmy wolni, bo Sędzia, Ofiara i cały System Wierzeń oraz Wartości nie pozwalają nam być tym, kim naprawdę jesteśmy. (s. 91)
+Don Miguel Ruiz
+
+Nie powinieneś obwiniać rodziców za to, że nauczyli cię być takimi jak oni. Czegóż innego mogli cię nauczyć, jak nie tego, co sami wiedzą? Starali się jak mogli. A jeśli cię zniewolili, zdarzyło się to z powodu ich własnego udomowienia, ich własnych obaw i przekonań. Nie mieli żadnej kontroli nad programem, jaki im zainstalowano, więc nie mogli postąpić inaczej. (s. 91)
+Don Miguel Ruiz
+
+Nie trzeba obwiniać rodziców ani nikogo innego, kto cię w życiu spętał, łącznie z tobą samym. (s. 91)
+Don Miguel Ruiz
+
+# 92
+Czas uwolnić się od roli Ofiary. (s. 92)
+Don Miguel Ruiz
+
+
 # 93
+
+Problem większości ludzi polega na tym, że żyją swoim życiem i nigdy nie uświadamiają sobie, iż Sędzia i Ofiara rządzą ich umysłami. Dlatego nie mają najmniejszej szansy na wyzwolenie. (s. 93)
+Don Miguel Ruiz
+
 Trzeba odkryć istnienie problemu, żeby go rozwiązać. Świadomość jest zawsze pierwszym krokiem, ponieważ bez świadomości nie możesz niczego zmienić. Jeżeli nie jesteś świadom, że twój umysł przepełniają rany oraz emocjonalna trucizna, nie potrafisz oczyścić i wyleczyć tych ran. Będziesz nadal cierpieć.
 Don Miguel Ruiz
+
+# 104
+Każdego dnia budzimy się z określoną ilością fizycznej, psychicznej i duchowej energii, którą wydatkujemy w ciągu dnia. Jeśli pozwolimy emocjom, by wyzuły nas z energii, nie odnajdziemy w sobie sił na odmianę naszego życia ani na danie czegokolwiek innym. (s. 104)
+Don Miguel Ruiz
+
+Sposób, w jaki postrzegamy świat, zależy od buzujących w nas emocji. Kiedy się złościsz, wszystko dookoła wydaje się złe, nic nie jest w porządku. Obwiniasz wszystkich i wszystko, łącznie z pogodą. Masz pretensje do deszczu, że pada, i do słońca, że świeci. (s. 104)
+Don Miguel Ruiz
+
+Kiedy jesteś smutny, otoczenie jest żałosne i skłania cię do płaczu. Patrzysz na drzewa i jest ci tęskno, widzisz deszcz i serce ci się kraje. Prawdopodobnie czujesz się bezbronny, potrzebujesz opieki, bo nie wiesz, kiedy zostaniesz zaatakowany. Nie ufasz nikomu i niczemu. A wszystko dlatego, że patrzysz na świat oczyma lęku! (s. 104)
+Don Miguel Ruiz
+
+# 106
+Przebaczenie jest jedyną drogą ku uzdrowieniu. (s. 106)
+Don Miguel Ruiz
+
+# 107
+Dość! Nie będę więcej wielkim Sędzią, który występuje przeciwko mnie. Nie będę się dłużej biczował i umartwiał. Nie będę dłużej Ofiarą. (s. 107)
+Don Miguel Ruiz
+
+# 108
+Problemem większości ludzi jest utrata kontroli nad emocjami. To emocje rządzą ludzkim zachowaniem, a nie człowiek włada emocjami. (s. 108)
+Don Miguel Ruiz
+
+Wojownik ma świadomość. To bardzo ważne. Musimy być świadomi, że jesteśmy w stanie wojny i że wojna w naszym umyśle wymaga dyscypliny. Nie dyscypliny żołnierza, lecz dyscypliny wojownika. Nie dyscypliny zewnętrznej, która narzuca nam, co robić, a czego nie, lecz dyscypliny bycia sobą, bez względu na wszystko. (s. 108)
+Don Miguel Ruiz
+
+Wojownik ma kontrolę. Nie kontrolę nad innym człowiekiem, lecz kontrolę nad własnymi emocjami, kontrolę nad samym sobą. (s. 108)
+Don Miguel Ruiz
+
+# 110
+Anioł śmierci potrafi nauczyć nas żyć każdego dnia tak, jakby to był ostatni dzień naszego życia, tak jakby nie było żadnego jutra. (s. 110)
+Don Miguel Ruiz
+
+I oczywiście odnoszę się do ludzi, których kocham, z miłością, bo to może być ostatni dzień, kiedy będę im mógł powiedzieć, jak bardzo ich kocham. Nie wiem, czy zobaczę ich jeszcze, więc nie chce z nimi walczyć. (s. 110)
+Don Miguel Ruiz
+
