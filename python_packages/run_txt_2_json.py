@@ -11,14 +11,16 @@ from mkquotes.txt_2_json import Txt2JsonConverter
 from mkquotes.quote_file_paths import FilePaths
 from mkquotes.json_saver import JsonSaver
 from mkquotes.quote import Quote
-from mkquotes.old.quote_instances import DAWKA, NOTATKI, UMOWY, ALL_QUOTE_FILE_NAMES
+from mkquotes.cli_utils import get_file_names
 
 if __name__ == "__main__":
 
     def main():
 
         print()
-        for name in ["dawka-motywacji", "52-notatki", "2007_Ruiz_Cztery-umowy"]:
+        default_files = ["dawka-motywacji", "52-notatki", "2007_Ruiz_Cztery-umowy"]
+        file_names = get_file_names(default_files)
+        for name in file_names:
             print(f"\"{name}\":")
             
             file_paths = FilePaths(name, create="json-txt")

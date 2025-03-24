@@ -39,7 +39,7 @@ class Quote:
         """
         Zwraca tekstową reprezentację pojedynczego cytatu.
         """
-        return f"** {self.tekst} **  -  {self.autor} ({self.id})"
+        return f"({self.id}) {self.tekst} ({self.autor})"
 
     def to_dict(self) -> dict:
         """

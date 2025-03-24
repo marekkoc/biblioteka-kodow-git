@@ -3,7 +3,7 @@
 Skrypt testujący działanie klasy FilePaths.
 
 Created: 2025.03.22
-Modified: 2025.03.22
+Modified: 2025.03.23
 Author: MK
 """
 
@@ -11,6 +11,7 @@ from mkquotes.quote_file_paths import FilePaths
 from mkquotes.quote_file_paths import ODTPaths
 from mkquotes.quote_file_paths import TXTPaths
 from mkquotes.quote_file_paths import JSONPaths
+from mkquotes.cli_utils import get_file_names
 
 
 def test_odt_paths(name):   
@@ -33,13 +34,16 @@ def test_file_paths1(name, create="odt-txt-json"):
     print(file_paths)
 
 def main():
-    name = "52-notatki"
+    default_files = ["dawka-motywacji", "52-notatki", "2007_Ruiz_Cztery-umowy"]
+    file_names = get_file_names(default_files)
+    for name in file_names:
+        print(f"\n\"{name}\":")
 
-    #test_odt_paths(name)
-    #test_txt_paths(name)
-    #test_json_paths(name)
+        #test_odt_paths(name)
+        #test_txt_paths(name)
+        #test_json_paths(name)
 
-    test_file_paths1(name, create = "json")
+        test_file_paths1(name, create = "json")
     print()
 
 

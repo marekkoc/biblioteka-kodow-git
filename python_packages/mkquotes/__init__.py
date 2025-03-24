@@ -18,7 +18,7 @@ from .odt_2_txt import Odt2TxtConverter
 from .json_loader import JsonLoader
 from .json_saver import JsonSaver
 from .old.quote_file_names import QuoteFileNames
-
+from .cli_utils import get_file_names
 
 __all__ = [
     'Quote',
@@ -30,6 +30,7 @@ __all__ = [
     'JsonLoader',
     'JsonSaver',
     'QuoteFileNames',
+    'get_file_names',
 ]
 
 __version__ = '0.1.0' 
