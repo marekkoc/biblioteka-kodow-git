@@ -23,7 +23,7 @@ from mkquotes import (
 quote_selector = QuoteSelector()
 quote_selector.set_json_loader(JsonLoader(FilePaths("2007_Ruiz_Cztery-umowy", create="json")))
 quote = quote_selector.random_quote()
-print(f"{quote.tekst}\n  ** {quote.autor} **")
+print(f"{quote.tekst}\n  ** {quote.autor} **  ({quote.id})")
 
 # 2025.03.19
 # file_paths = FilePaths("dawka-motywacji")
