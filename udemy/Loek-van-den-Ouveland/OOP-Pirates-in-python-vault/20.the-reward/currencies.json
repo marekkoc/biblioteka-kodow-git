@@ -1,8 +1,0 @@
-{
-    "currencies":{
-        "DKT":{"name":"Dukat", "exchange_rate":1},
-        "GCH":{"name":"Gold Chain", "exchange_rate":16},
-        "PRL":{"name": "Pearl", "exchange_rate":23},
-        "DMD":{"name": "Diamond", "exchange_rate": 40}
-    }
-}

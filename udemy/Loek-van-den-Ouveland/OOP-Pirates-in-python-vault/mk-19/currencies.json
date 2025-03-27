@@ -1,6 +1,0 @@
-{
-"currencies":{
-    "DKT": {"name":"Dukat", "exchange_rate": 1},
-    "GCH": {"name": "Gold Chain", "exchange_rate": 16}
-    }
-}
