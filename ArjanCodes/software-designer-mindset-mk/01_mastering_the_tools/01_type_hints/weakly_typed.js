@@ -1,1 +1,0 @@
-let myVar = 5 + "hello"

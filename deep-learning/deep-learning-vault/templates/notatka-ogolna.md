@@ -1,6 +1,0 @@
----
-Utworzono: 
-Zmodyfikowano: 
-tags:
----
-

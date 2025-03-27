@@ -1,3 +1,0 @@
-The mobile phone company PhonyPhones needs to create a system for managing their customers' phone plans and they need to get better insight into the data that they need to store. Because their CEO knows a bit of Python, he asks you to write a few dataclasses representing the data structure of their application. In short, they have customers (name, address, email address), phones (brand, model, price, serial number) and plans (which refer to a customer, a phone, a start date, the total number of months in the contract, a monthly price, and whether the phone is included in the contract).
-
-Write dataclasses that can represent this data. You may take some freedom in how things like addresses etc. are represented.

@@ -1,1 +1,0 @@
-Compatible Python Versions: 3.9+
