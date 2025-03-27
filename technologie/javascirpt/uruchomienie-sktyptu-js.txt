@@ -1,8 +1,0 @@
-node skrypt1.js
-# lub możesz nadać uprawnienia do wykonywania
-chmod +x skrypt1.js
-# dodać shebang na początku pliku
-#!/usr/bin/env node
-# i uruchamiać bezpośrednio
-./skrypt1.js
-
