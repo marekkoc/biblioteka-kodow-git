@@ -1,3 +1,0 @@
-1;231;3423;dowolnie długi napis;345456;inny napis
-napis;321;345;67;inny długi napis;8893;krótki tekst;123123;1212;12;tekst
--31.21;napis kosmiczny;0.001;-1.0;2

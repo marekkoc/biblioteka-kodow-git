@@ -1,2 +1,0 @@
-10:2.5:True:rabarbar:na:rowerze
-4:-5.5:False:marynowana rozwielitka
